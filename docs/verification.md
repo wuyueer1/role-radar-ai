@@ -67,3 +67,10 @@ npm run test:all
 - 页面明确“分数 ≠ 录用概率”；
 - 所有模型解释都不能覆盖底层分数；
 - 社交预览封面为 1200×630 PNG。
+
+## 生产发布
+
+- 生产地址：<https://careergraph-ai-yueer.workspace-860933.chatgpt.site>
+- 访问模式：owner-only；首次访问点击 `Continue with ChatGPT`。
+- Sites 版本状态：发布成功。
+- 生产认证入口已验证可达；核心应用内容已通过相同源码树的本地生产构建、自动化测试和多视口浏览器验收。
