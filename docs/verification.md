@@ -78,5 +78,6 @@ npm run test:all
 
 - 生产地址：<https://careergraph-ai-yueer.workspace-860933.chatgpt.site>
 - 访问模式：owner-only；首次访问点击 `Continue with ChatGPT`。
-- Sites 版本状态：发布成功。
+- Sites 版本：4；发布状态：成功。
+- 生产 Worker 错误日志：最近 30 分钟无错误事件。
 - 生产认证入口已验证可达；核心应用内容已通过相同源码树的本地生产构建、自动化测试和多视口浏览器验收。
