@@ -32,6 +32,14 @@ test("server-renders the CareerGraph AI decision workspace", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>CareerGraph AI \| 职业跃迁智能实验室<\/title>/i);
+  assert.match(
+    html,
+    /property="og:image" content="http:\/\/localhost(?::3000)?\/og\.png"/i,
+  );
+  assert.match(
+    html,
+    /name="twitter:card" content="summary_large_image"/i,
+  );
   assert.match(html, /看见、比较并质疑 AI 的职业决策依据/);
   assert.match(html, /稳定演示/);
   assert.match(html, /aria-label="候选人画像与偏好"/);
@@ -55,4 +63,3 @@ test("removes all disposable starter-preview infrastructure", async () => {
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await assert.rejects(access(new URL("../app/_sites-preview", templateRoot)));
 });
-

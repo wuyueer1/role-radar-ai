@@ -1,98 +1,97 @@
-# vinext-starter
+# CareerGraph AI
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+CareerGraph AI 是一个面向 AI 转型者的可解释职业跃迁实验室。它把候选人的具体经历转成可核验的能力证据，在策展职业图谱中比较多条转型路径，并把结论落到 90 天行动计划。
 
-## Prerequisites
+核心主张：**看见、比较并质疑 AI 的职业决策依据。**
 
-- Node.js `>=22.13.0`
+![CareerGraph AI 社交预览](public/og.png)
 
-## Quick Start
+## 为什么做这个作品
+
+这个作品根据 Yueer W. 的背景设计，集中展示四类能力：
+
+- 职业与人才场景的领域理解；
+- NLP、职业网络、因果推断和大规模数据分析；
+- 把研究方法转成可交互产品的能力；
+- 对 AI 证据边界、失败降级和用户决策权的判断。
+
+它不是简历关键词匹配器，也不宣称预测实时招聘市场。所有演示数据均为经过说明的本地策展数据。
+
+## 核心体验
+
+- 画像面板：8 条简历证据和 7 项核心能力；
+- 职业图谱：当前角色、桥接岗位和目标 AI 岗位；
+- 三条路径：AI 产品经理、People Analytics 数据科学家、AI 解决方案顾问；
+- 五维评分：技能迁移、职业邻近、证据强度、AI 杠杆、转型速度；
+- 情景模拟：最快进入 AI、最大化技术深度、发挥商业优势；
+- 依据抽屉：证据、评分、90 天行动计划和模型说明；
+- 三分钟讲解：5 步内置面试演示；
+- 双模式边界：默认稳定演示完整离线运行，可选 Live AI 仅做结构化抽取和语言表达。
+
+## 技术结构
+
+```mermaid
+flowchart LR
+    A["策展画像与简历证据"] --> B["数据完整性校验"]
+    B --> C["确定性职业图谱"]
+    B --> D["五维评分与权重归一"]
+    C --> E["路径排序与变化解释"]
+    D --> E
+    E --> F["证据追踪与 90 天计划"]
+    G["可选 Live AI"] -->|"仅结构化抽取与表达"| F
+    G -. "不能改分或创造证据" .-> D
+```
+
+- React 19 + TypeScript + Vinext；
+- 原生 SVG 职业图谱；
+- 纯函数领域引擎，UI 不复制评分规则；
+- Vitest、Testing Library 和 Node 测试；
+- Cloudflare/Sites 构建与部署；
+- 无远程字体、无客户端密钥、无数据库依赖。
+
+## 本地运行
+
+需要 Node.js 22.13 或更高版本。
 
 ```bash
 npm install
 npm run dev
-npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+默认本地地址为 `http://localhost:3000/`。
 
-## Included Shape
+## 验证
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+npm run test:all
+npm run lint
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+`test:all` 会运行生产构建、数据/评分/降级测试、服务端渲染测试和整页交互测试。
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+## 面试演示
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+页面右上角的“开始三分钟讲解”可直接完成内置演示。更完整的话术、点击顺序和岗位追问准备见：
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+- [`../docs/interview-demo.md`](../docs/interview-demo.md)
+- [`../docs/verification.md`](../docs/verification.md)
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+## AI 与数据边界
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
+- 路径分数由本地确定性引擎计算；
+- Live AI 不能修改组件分数或总分；
+- 模型不能创造不存在的简历证据；
+- schema 校验失败时保留原始输入并回退稳定模式；
+- 页面中的图谱不代表实时市场规模，分数也不是录用概率；
+- 内置画像使用 `Yueer W.`，不包含手机号或邮箱。
 
-## Useful Commands
+## 目录
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+```text
+app/
+  components/        画像、图谱、路径、抽屉和讲解组件
+  lib/               策展数据与职业决策引擎
+  CareerGraphApp.tsx 整页状态协调
+tests/               领域、SSR 与交互验证
+public/og.png         社交预览封面
+```
