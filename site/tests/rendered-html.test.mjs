@@ -77,3 +77,15 @@ test("uses only the supported public npm registry in the lockfile", async () => 
 
   assert.deepEqual(unsupported, []);
 });
+
+test("registers an offline-safe service worker for interview reloads", async () => {
+  const [appSource, serviceWorker] = await Promise.all([
+    readFile(new URL("../app/CareerGraphApp.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../public/sw.js", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(appSource, /serviceWorker\.register\("\/sw\.js"\)/);
+  assert.match(serviceWorker, /addEventListener\("fetch"/);
+  assert.match(serviceWorker, /request\.mode === "navigate"/);
+  assert.match(serviceWorker, /caches\.match\("\/"\)/);
+});

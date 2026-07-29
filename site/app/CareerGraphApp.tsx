@@ -42,33 +42,39 @@ export function CareerGraphApp() {
   const [modeOpen, setModeOpen] = useState(false);
   const [tourOpen, setTourOpen] = useState(false);
   const [tourTarget, setTourTarget] = useState("profile");
+  const appRef = useRef<HTMLDivElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
 
-  const baselineScores = useMemo(
-    () =>
-      new Map(
-        rankRoutes(dataset, DEFAULT_WEIGHTS, 6).map((route) => [
-          route.id,
-          route.overallScore,
-        ]),
-      ),
+  const baselineRoutes = useMemo(
+    () => rankRoutes(dataset, DEFAULT_WEIGHTS, 6),
     [],
   );
 
   const routes = useMemo(
-    () =>
-      enrichRoutes(
+    () => {
+      const currentRoutes = enrichRoutes(
         dataset,
         rankRoutes(dataset, weights, horizonMonths),
-      ).map((route) => ({
+      );
+      return currentRoutes.map((route, index) => {
+        const previousRoute = baselineRoutes.find(
+          (item) => item.id === route.id,
+        );
+        return {
         ...route,
         changeReason: explainScenario(
           route,
-          baselineScores.get(route.id),
+          previousRoute,
           scenarioLabel,
+          weights,
+          DEFAULT_WEIGHTS,
+          index + 1,
+          previousRoute ? baselineRoutes.indexOf(previousRoute) + 1 : undefined,
         ),
-      })),
-    [baselineScores, horizonMonths, scenarioLabel, weights],
+        };
+      });
+    },
+    [baselineRoutes, horizonMonths, scenarioLabel, weights],
   );
 
   const drawerRoute = drawerRouteId
@@ -98,6 +104,13 @@ export function CareerGraphApp() {
       document.body.style.overflow = "";
     };
   }, [drawerRoute, modeOpen, tourOpen]);
+
+  useEffect(() => {
+    appRef.current?.setAttribute("data-app-ready", "true");
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js").catch(() => undefined);
+    }
+  }, []);
 
   function setPreset(preset: PresetName) {
     setWeights(PRESET_WEIGHTS[preset]);
@@ -133,11 +146,7 @@ export function CareerGraphApp() {
 
   function updateTourTarget(target: string) {
     setTourTarget(target);
-    if (target === "drawer") {
-      setDrawerRouteId(selectedRouteId);
-    } else {
-      setDrawerRouteId(null);
-    }
+    setDrawerRouteId(null);
   }
 
   function closeTour() {
@@ -148,75 +157,91 @@ export function CareerGraphApp() {
 
   return (
     <div
+      ref={appRef}
       className={`app-shell${tourOpen ? " tour-is-open" : ""}`}
+      data-app-ready="false"
       data-tour-focus={tourOpen ? tourTarget : undefined}
     >
-      <a className="skip-link" href="#main-content">
-        跳到主要内容
-      </a>
+      <div
+        className="app-content"
+        data-testid="app-content"
+        inert={drawerRoute || modeOpen || tourOpen ? true : undefined}
+        aria-hidden={drawerRoute || modeOpen || tourOpen ? true : undefined}
+      >
+        <a className="skip-link" href="#main-content">
+          跳到主要内容
+        </a>
 
-      <header className="app-header">
-        <div>
-          <p className="eyebrow">Career intelligence / curated demo</p>
-          <h1>
-            CareerGraph <span>AI</span>
-          </h1>
-          <p className="promise">看见、比较并质疑 AI 的职业决策依据。</p>
-        </div>
-        <div className="header-actions">
-          <button
-            className="mode-pill"
-            type="button"
-            onClick={() => setModeOpen(true)}
-          >
-            ● 稳定演示
-          </button>
-          <button
-            className="primary-button"
-            type="button"
-            onClick={startTour}
-          >
-            开始三分钟讲解
-          </button>
-        </div>
-      </header>
+        <header className="app-header">
+          <div>
+            <p className="eyebrow">Career intelligence / curated demo</p>
+            <h1>
+              CareerGraph <span>AI</span>
+            </h1>
+            <p className="promise">看见、比较并质疑 AI 的职业决策依据。</p>
+          </div>
+          <div className="header-actions">
+            <button
+              className="mode-pill"
+              type="button"
+              onClick={() => setModeOpen(true)}
+            >
+              ● 稳定演示
+            </button>
+            <button
+              className="primary-button"
+              type="button"
+              onClick={startTour}
+            >
+              开始三分钟讲解
+            </button>
+          </div>
+        </header>
 
-      <main className="workspace" id="main-content">
-        <ProfilePanel
-          profile={dataset.profile}
-          skills={dataset.skills}
-          weights={weights}
-          horizonMonths={horizonMonths}
-          onWeightChange={setCustomWeight}
-          onPreset={setPreset}
-          onReset={resetWeights}
-          onHorizonChange={(months) => {
-            setHorizonMonths(months);
-            setScenarioLabel(`${months} 个月窗口`);
-          }}
-        />
-        <CareerMap
-          roles={dataset.roles}
-          transitions={dataset.transitions}
-          routes={dataset.routes}
-          selectedRoleId={selectedRoleId}
-          onSelectRole={setSelectedRoleId}
-        />
-        <RoutePanel
-          routes={routes}
-          selectedRouteId={selectedRouteId}
-          selectedRoleId={selectedRoleId}
-          onSelectRoute={setSelectedRouteId}
-          onOpenDetails={openDrawer}
-        />
-      </main>
+        <main className="workspace" id="main-content">
+          <ProfilePanel
+            profile={dataset.profile}
+            skills={dataset.skills}
+            weights={weights}
+            horizonMonths={horizonMonths}
+            onWeightChange={setCustomWeight}
+            onPreset={setPreset}
+            onReset={resetWeights}
+            onHorizonChange={(months) => {
+              setHorizonMonths(months);
+              setScenarioLabel(`${months} 个月窗口`);
+            }}
+          />
+          <CareerMap
+            roles={dataset.roles}
+            transitions={dataset.transitions}
+            routes={dataset.routes}
+            selectedRoleId={selectedRoleId}
+            onSelectRole={setSelectedRoleId}
+          />
+          <RoutePanel
+            routes={routes}
+            selectedRouteId={selectedRouteId}
+            selectedRoleId={selectedRoleId}
+            selectedRole={
+              selectedRoleId
+                ? dataset.roles.find((role) => role.id === selectedRoleId)
+                : undefined
+            }
+            profile={dataset.profile}
+            skills={dataset.skills}
+            onSelectRoute={setSelectedRouteId}
+            onOpenDetails={openDrawer}
+          />
+        </main>
 
-      <footer className="app-footer">
-        <p>
-          Curated portfolio dataset <span aria-hidden="true">·</span> 不是实时招聘预测
-        </p>
-        <p>本地图谱 + 确定性评分 + 可选 Live AI</p>
-      </footer>
+        <footer className="app-footer">
+          <p>
+            Curated portfolio dataset <span aria-hidden="true">·</span> 不是实时招聘预测
+          </p>
+          <p>本地图谱 + 确定性评分 + 可选 Live AI</p>
+        </footer>
+      </div>
 
       {drawerRoute && (
         <DetailDrawer
@@ -237,4 +262,3 @@ export function CareerGraphApp() {
     </div>
   );
 }
-

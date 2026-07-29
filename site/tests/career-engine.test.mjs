@@ -8,6 +8,7 @@ import {
   analyzeProfileWithFallback,
   buildNinetyDayPlan,
   enrichRoutes,
+  explainScenario,
   normalizeWeights,
   rankRoutes,
   rebalanceWeights,
@@ -52,6 +53,55 @@ test("route scoring is deterministic, bounded, and reacts to scenarios", () => {
   assert.notDeepEqual(technicalOrder, businessOrder);
 });
 
+test("speed reflects target preparation time and the candidate's real skill gaps", () => {
+  const baseline = rankRoutes(dataset, DEFAULT_WEIGHTS, 6).find(
+    (route) => route.id === "route-ai-product",
+  );
+
+  const slowerTarget = structuredClone(dataset);
+  const productRole = slowerTarget.roles.find(
+    (role) => role.id === "target-ai-product-manager",
+  );
+  productRole.typicalPrepMonths += 6;
+  const slower = rankRoutes(slowerTarget, DEFAULT_WEIGHTS, 6).find(
+    (route) => route.id === "route-ai-product",
+  );
+
+  const gapHeavy = structuredClone(dataset);
+  const targetSkillIds = new Set(productRole.requiredSkills.map((item) => item.skillId));
+  gapHeavy.profile.skills = gapHeavy.profile.skills.map((skill) =>
+    targetSkillIds.has(skill.skillId)
+      ? { ...skill, confidence: 0 }
+      : skill,
+  );
+  const gapHeavyRoute = rankRoutes(gapHeavy, DEFAULT_WEIGHTS, 6).find(
+    (route) => route.id === "route-ai-product",
+  );
+
+  assert.ok(slower.componentScores.speed < baseline.componentScores.speed);
+  assert.ok(gapHeavyRoute.componentScores.speed < baseline.componentScores.speed);
+});
+
+test("scenario explanations identify the dominant weight change and rank movement", () => {
+  const baseline = rankRoutes(dataset, DEFAULT_WEIGHTS, 6);
+  const technical = rankRoutes(dataset, PRESET_WEIGHTS.technical, 6);
+  const route = technical.find((item) => item.id === "route-ai-solutions");
+  const previous = baseline.find((item) => item.id === route.id);
+
+  const explanation = explainScenario(
+    route,
+    previous,
+    "最大化技术深度",
+    PRESET_WEIGHTS.technical,
+    DEFAULT_WEIGHTS,
+    technical.indexOf(route) + 1,
+    baseline.indexOf(previous) + 1,
+  );
+
+  assert.match(explanation, /AI 杠杆权重/);
+  assert.match(explanation, /第 2 → 第 3/);
+});
+
 test("every recommendation is enriched with strengths, gaps, and resume evidence", () => {
   const routes = enrichRoutes(dataset, rankRoutes(dataset, DEFAULT_WEIGHTS, 6));
   for (const route of routes) {
@@ -75,6 +125,22 @@ test("Live AI responses are schema-gated and failures preserve the original text
   assert.equal(
     validateLiveAiProfile({
       headline: "人才数据研究者",
+      summary: "",
+      skills: [],
+    }).ok,
+    false,
+  );
+  assert.equal(
+    validateLiveAiProfile({
+      headline: "人才数据研究者",
+      summary: "研究职业流动与 AI 转型。",
+      skills: [{ name: "未知技能", confidence: 0, evidence: "模型猜测" }],
+    }).ok,
+    false,
+  );
+  assert.equal(
+    validateLiveAiProfile({
+      headline: "人才数据研究者",
       summary: "研究职业流动与 AI 转型。",
       skills: [{ name: "因果推断", confidence: 0.9, evidence: "DID 与事件研究" }],
     }).ok,
@@ -91,4 +157,3 @@ test("Live AI responses are schema-gated and failures preserve the original text
   assert.equal(result.originalText, "我的经历");
   assert.match(result.notice, /已回退到稳定演示模式/);
 });
-

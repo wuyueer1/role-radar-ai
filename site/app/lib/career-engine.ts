@@ -17,6 +17,7 @@ const SCORE_KEYS: ScoreKey[] = [
   "aiLeverage",
   "speed",
 ];
+const MIN_LIVE_AI_SKILL_CONFIDENCE = 0.5;
 
 export const DEFAULT_WEIGHTS: Weights = {
   skillTransfer: 0.3,
@@ -215,12 +216,23 @@ function aiLeverageScore(profile: CandidateProfile, role: Role): number {
 }
 
 function speedScore(
+  profile: CandidateProfile,
+  role: Role,
   route: RouteDefinition,
   horizonMonths: number,
 ): number {
-  const latePenalty = Math.max(0, route.estimatedMonths - horizonMonths) * 8;
-  const durationPenalty = Math.max(0, route.estimatedMonths - 3) * 2;
-  return clamp(100 - latePenalty - durationPenalty);
+  const missingGapCount = role.requiredSkills.filter(
+    (requirement) =>
+      (candidateSkill(profile, requirement.skillId)?.confidence ?? 0) < 0.65,
+  ).length;
+  const expectedPreparationMonths =
+    (route.estimatedMonths + role.typicalPrepMonths) / 2;
+  const latePenalty =
+    Math.max(0, expectedPreparationMonths - horizonMonths) * 8;
+  const durationPenalty =
+    Math.max(0, expectedPreparationMonths - 3) * 2;
+  const gapPenalty = missingGapCount * 4;
+  return clamp(100 - latePenalty - durationPenalty - gapPenalty);
 }
 
 function componentScores(
@@ -234,7 +246,7 @@ function componentScores(
     adjacency: adjacencyScore(data, route),
     evidence: evidenceCoverage(data.profile, targetRole),
     aiLeverage: aiLeverageScore(data.profile, targetRole),
-    speed: speedScore(route, horizonMonths),
+    speed: speedScore(data.profile, targetRole, route, horizonMonths),
   };
 }
 
@@ -325,16 +337,51 @@ export function enrichRoutes(
 
 export function explainScenario(
   route: ScoredRoute,
-  previousScore: number | undefined,
+  previousRoute: ScoredRoute | undefined,
   scenarioLabel: string,
+  weights: Weights,
+  previousWeights: Weights = DEFAULT_WEIGHTS,
+  currentRank?: number,
+  previousRank?: number,
 ): string {
-  if (previousScore === undefined || previousScore === route.overallScore) {
-    return scenarioLabel === "推荐权重"
-      ? "当前为推荐权重。"
-      : `${scenarioLabel}下，该路径保持 ${route.overallScore} 分。`;
+  if (!previousRoute || scenarioLabel === "推荐权重") {
+    return "当前为推荐权重。";
   }
-  const delta = route.overallScore - previousScore;
-  return `${scenarioLabel}后，该路径${delta > 0 ? "增加" : "减少"} ${Math.abs(delta)} 分。`;
+  const scoreLabels: Record<ScoreKey, string> = {
+    skillTransfer: "技能迁移",
+    adjacency: "职业邻近",
+    evidence: "证据强度",
+    aiLeverage: "AI 杠杆",
+    speed: "转型速度",
+  };
+  const dominantKey = SCORE_KEYS.reduce((best, key) => {
+    const contributionChange =
+      route.componentScores[key] * weights[key] -
+      previousRoute.componentScores[key] * previousWeights[key];
+    const bestChange =
+      route.componentScores[best] * weights[best] -
+      previousRoute.componentScores[best] * previousWeights[best];
+    return Math.abs(contributionChange) > Math.abs(bestChange) ? key : best;
+  });
+  const weightDelta = weights[dominantKey] - previousWeights[dominantKey];
+  const driver =
+    Math.abs(weightDelta) >= 0.005
+      ? `${scoreLabels[dominantKey]}权重 ${weightDelta > 0 ? "+" : "−"}${Math.abs(
+          Math.round(weightDelta * 100),
+        )} 个百分点`
+      : `${scoreLabels[dominantKey]}组件贡献发生变化`;
+  const rank =
+    currentRank && previousRank
+      ? currentRank === previousRank
+        ? `排名保持第 ${currentRank}`
+        : `第 ${previousRank} → 第 ${currentRank}`
+      : "排名已重新计算";
+  const delta = route.overallScore - previousRoute.overallScore;
+  const scoreChange =
+    delta === 0
+      ? "总分保持不变"
+      : `总分${delta > 0 ? "增加" : "减少"} ${Math.abs(delta)} 分`;
+  return `${scenarioLabel}：${rank}；${driver}，${scoreChange}。`;
 }
 
 export interface PlanAction {
@@ -431,7 +478,12 @@ export function validateLiveAiProfile(
   ) {
     return { ok: false, reason: "缺少有效 headline" };
   }
-  if (typeof item.summary !== "string" || !Array.isArray(item.skills)) {
+  if (
+    typeof item.summary !== "string" ||
+    item.summary.trim().length < 8 ||
+    !Array.isArray(item.skills) ||
+    item.skills.length === 0
+  ) {
     return { ok: false, reason: "缺少 summary 或 skills" };
   }
   const validSkills = item.skills.every((skill) => {
@@ -439,8 +491,10 @@ export function validateLiveAiProfile(
     const entry = skill as Record<string, unknown>;
     return (
       typeof entry.name === "string" &&
+      entry.name.trim().length > 0 &&
       typeof entry.confidence === "number" &&
-      entry.confidence >= 0 &&
+      Number.isFinite(entry.confidence) &&
+      entry.confidence >= MIN_LIVE_AI_SKILL_CONFIDENCE &&
       entry.confidence <= 1 &&
       typeof entry.evidence === "string" &&
       entry.evidence.trim().length > 0
@@ -448,7 +502,7 @@ export function validateLiveAiProfile(
   });
   return validSkills
     ? { ok: true, value: item as unknown as LiveAiProfile }
-    : { ok: false, reason: "skills 结构不合法" };
+    : { ok: false, reason: "skills 结构不合法或置信度不足" };
 }
 
 export async function analyzeProfileWithFallback(
@@ -473,4 +527,3 @@ export async function analyzeProfileWithFallback(
     };
   }
 }
-

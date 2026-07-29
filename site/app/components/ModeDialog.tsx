@@ -1,17 +1,28 @@
-import { useEffect } from "react";
+import { useState } from "react";
+
+import { analyzeProfileWithFallback } from "../lib/career-engine.ts";
+import { useDialogFocus } from "./useDialogFocus";
 
 interface ModeDialogProps {
   onClose: () => void;
 }
 
 export function ModeDialog({ onClose }: ModeDialogProps) {
-  useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-    };
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, [onClose]);
+  const dialogRef = useDialogFocus<HTMLElement>(onClose);
+  const [originalText, setOriginalText] = useState("");
+  const [notice, setNotice] = useState("");
+  const [isChecking, setIsChecking] = useState(false);
+
+  async function verifyFallback() {
+    setIsChecking(true);
+    const result = await analyzeProfileWithFallback(originalText, {
+      async analyze() {
+        throw new Error("Live AI endpoint is not configured");
+      },
+    });
+    setNotice(result.notice);
+    setIsChecking(false);
+  }
 
   return (
     <div
@@ -22,10 +33,12 @@ export function ModeDialog({ onClose }: ModeDialogProps) {
       }}
     >
       <section
+        ref={dialogRef}
         className="mode-dialog"
         role="dialog"
         aria-modal="true"
         aria-labelledby="mode-dialog-title"
+        tabIndex={-1}
       >
         <p className="section-index">MODEL BOUNDARY</p>
         <h2 id="mode-dialog-title">模型边界</h2>
@@ -43,11 +56,37 @@ export function ModeDialog({ onClose }: ModeDialogProps) {
         <p className="notice">
           浏览器不保存密钥；只有配置同源服务端端点后，Live AI 才会启用。
         </p>
-        <button className="primary-button" type="button" onClick={onClose}>
-          我明白了
-        </button>
+        <label className="live-ai-demo">
+          <span>自由文本经历</span>
+          <textarea
+            data-autofocus
+            value={originalText}
+            onChange={(event) => setOriginalText(event.target.value)}
+            placeholder="粘贴一段经历，验证模型不可用时原文仍被保留"
+          />
+        </label>
+        {notice && (
+          <p className="fallback-notice" role="status">
+            {notice}
+          </p>
+        )}
+        <div className="mode-actions">
+          <button
+            className="secondary-button"
+            type="button"
+            onClick={verifyFallback}
+            disabled={isChecking}
+          >
+            {isChecking ? "验证中…" : "验证稳定降级"}
+          </button>
+          <button type="button" disabled>
+            启用 Live AI（需服务端端点）
+          </button>
+          <button className="primary-button" type="button" onClick={onClose}>
+            我明白了
+          </button>
+        </div>
       </section>
     </div>
   );
 }
-

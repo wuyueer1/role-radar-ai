@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
   buildNinetyDayPlan,
 } from "../lib/career-engine.ts";
+import { useDialogFocus } from "./useDialogFocus";
 import type {
   CandidateProfile,
   ScoreKey,
@@ -48,14 +49,7 @@ export function DetailDrawer({
     route.evidenceIds.includes(item.id),
   );
   const plan = buildNinetyDayPlan(route, skills);
-
-  useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-    };
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, [onClose]);
+  const dialogRef = useDialogFocus<HTMLElement>(onClose);
 
   return (
     <div
@@ -66,11 +60,13 @@ export function DetailDrawer({
       }}
     >
       <aside
+        ref={dialogRef}
         className="detail-drawer"
         role="dialog"
         aria-modal="true"
         aria-labelledby="drawer-title"
         data-tour-target="drawer"
+        tabIndex={-1}
       >
         <header>
           <div>
@@ -78,6 +74,7 @@ export function DetailDrawer({
             <h2 id="drawer-title">{route.label} · 路径决策依据</h2>
           </div>
           <button
+            data-autofocus
             className="icon-button"
             type="button"
             aria-label="关闭路径决策依据"
@@ -188,4 +185,3 @@ export function DetailDrawer({
     </div>
   );
 }
-

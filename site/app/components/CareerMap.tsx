@@ -19,12 +19,25 @@ export function CareerMap({
   selectedRoleId,
   onSelectRole,
 }: CareerMapProps) {
+  const matchedRoutes = selectedRoleId
+    ? routes.filter((route) => route.roleIds.includes(selectedRoleId))
+    : routes;
+  const offRouteNeighbors = new Set<string>(selectedRoleId ? [selectedRoleId] : []);
+  if (selectedRoleId && matchedRoutes.length === 0) {
+    for (const edge of transitions) {
+      if (
+        edge.sourceRoleId === selectedRoleId ||
+        edge.targetRoleId === selectedRoleId
+      ) {
+        offRouteNeighbors.add(edge.sourceRoleId);
+        offRouteNeighbors.add(edge.targetRoleId);
+      }
+    }
+  }
   const relatedRoles = selectedRoleId
-    ? new Set(
-        routes
-          .filter((route) => route.roleIds.includes(selectedRoleId))
-          .flatMap((route) => route.roleIds),
-      )
+    ? matchedRoutes.length > 0
+      ? new Set(matchedRoutes.flatMap((route) => route.roleIds))
+      : offRouteNeighbors
     : new Set(roles.map((role) => role.id));
   const roleMap = new Map(roles.map((role) => [role.id, role]));
   const selectedRole = selectedRoleId
@@ -68,6 +81,7 @@ export function CareerMap({
             return (
               <line
                 key={`${source.id}-${target.id}`}
+                data-transition={`${source.id}-${target.id}`}
                 x1={source.position.x}
                 y1={source.position.y}
                 x2={target.position.x}
@@ -118,4 +132,3 @@ export function CareerMap({
     </section>
   );
 }
-

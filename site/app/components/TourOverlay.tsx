@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { useDialogFocus } from "./useDialogFocus";
+
 const STEPS = [
   {
     title: "传统匹配分隐藏了什么？",
@@ -24,7 +26,7 @@ const STEPS = [
   {
     title: "把结论变成 90 天证据",
     body: "最后不是一句建议，而是分阶段交付物、证据目标和模型边界。",
-    target: "drawer",
+    target: "routes",
   },
 ] as const;
 
@@ -39,6 +41,7 @@ export function TourOverlay({
 }: TourOverlayProps) {
   const [index, setIndex] = useState(0);
   const step = STEPS[index];
+  const dialogRef = useDialogFocus<HTMLElement>(onClose);
 
   function go(nextIndex: number) {
     setIndex(nextIndex);
@@ -47,10 +50,12 @@ export function TourOverlay({
 
   return (
     <aside
+      ref={dialogRef}
       className="tour-overlay"
       role="dialog"
       aria-modal="true"
       aria-labelledby="tour-title"
+      tabIndex={-1}
     >
       <div className="tour-progress">
         <span>{index + 1} / 5</span>
@@ -66,8 +71,20 @@ export function TourOverlay({
       <p className="section-index">INTERVIEW MODE</p>
       <h2 id="tour-title">{step.title}</h2>
       <p>{step.body}</p>
+      {index === STEPS.length - 1 && (
+        <div className="tour-plan" aria-label="90 天行动计划预览">
+          <span>0–30 天</span>
+          <span>31–60 天</span>
+          <span>61–90 天</span>
+        </div>
+      )}
       <div className="tour-actions">
-        <button className="text-button" type="button" onClick={onClose}>
+        <button
+          data-autofocus
+          className="text-button"
+          type="button"
+          onClick={onClose}
+        >
           退出讲解
         </button>
         {index > 0 && (
@@ -96,4 +113,3 @@ export function TourOverlay({
     </aside>
   );
 }
-

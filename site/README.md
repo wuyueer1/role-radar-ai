@@ -26,7 +26,8 @@ CareerGraph AI 是一个面向 AI 转型者的可解释职业跃迁实验室。�
 - 情景模拟：最快进入 AI、最大化技术深度、发挥商业优势；
 - 依据抽屉：证据、评分、90 天行动计划和模型说明；
 - 三分钟讲解：5 步内置面试演示；
-- 双模式边界：默认稳定演示完整离线运行，可选 Live AI 仅做结构化抽取和语言表达。
+- 双模式边界：默认稳定演示完整离线运行，可选 Live AI 仅做结构化抽取和语言表达；
+- 现场韧性：Service Worker 缓存核心页面，断网刷新仍可继续演示。
 
 ## 技术结构
 
@@ -45,7 +46,7 @@ flowchart LR
 - React 19 + TypeScript + Vinext；
 - 原生 SVG 职业图谱；
 - 纯函数领域引擎，UI 不复制评分规则；
-- Vitest、Testing Library 和 Node 测试；
+- Vitest、Testing Library、Node 测试和 Playwright 双视口端到端测试；
 - Cloudflare/Sites 构建与部署；
 - 无远程字体、无客户端密钥、无数据库依赖。
 
@@ -65,9 +66,10 @@ npm run dev
 ```bash
 npm run test:all
 npm run lint
+npm run test:e2e
 ```
 
-`test:all` 会运行生产构建、数据/评分/降级测试、服务端渲染测试和整页交互测试。
+`test:all` 会运行类型检查、生产构建、数据/评分/降级测试、服务端渲染测试和组件交互测试。`test:e2e` 会用桌面与紧凑视口验证完整面试流程和断网刷新。
 
 ## 面试演示
 
@@ -92,6 +94,8 @@ app/
   components/        画像、图谱、路径、抽屉和讲解组件
   lib/               策展数据与职业决策引擎
   CareerGraphApp.tsx 整页状态协调
-tests/               领域、SSR 与交互验证
+tests/               领域、SSR 与组件交互验证
+e2e/                 真实浏览器面试流程与断网刷新验证
 public/og.png         社交预览封面
+public/sw.js          面试现场离线缓存
 ```

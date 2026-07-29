@@ -38,7 +38,8 @@ body {
 }
 
 button,
-input {
+input,
+textarea {
   font: inherit;
 }
 
@@ -48,6 +49,7 @@ button {
 
 button:focus-visible,
 input:focus-visible,
+textarea:focus-visible,
 [tabindex]:focus-visible {
   outline: 3px solid rgba(217, 108, 74, 0.45);
   outline-offset: 3px;
@@ -640,6 +642,64 @@ input:focus-visible,
   line-height: 1.55;
 }
 
+.role-exploration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 11px;
+  padding: 12px;
+  border: 1px solid var(--teal);
+  border-radius: 12px;
+  background: rgba(220, 229, 222, 0.5);
+}
+
+.role-exploration > .section-index,
+.role-exploration > h3,
+.role-exploration > .exploration-note {
+  grid-column: 1 / -1;
+}
+
+.role-exploration h3 {
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+.role-exploration .exploration-note,
+.role-exploration > div p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 0.67rem;
+  line-height: 1.5;
+}
+
+.role-exploration > div {
+  padding: 10px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.role-exploration > div > span {
+  color: var(--teal);
+  font-family: var(--mono);
+  font-size: 0.61rem;
+}
+
+.role-exploration ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 7px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.role-exploration li {
+  padding: 4px 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.59rem;
+}
+
 .app-footer {
   margin-top: 15px;
   padding-top: 13px;
@@ -834,6 +894,8 @@ input:focus-visible,
 
 .mode-dialog {
   width: min(500px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
   padding: 28px;
   border-radius: 18px;
   background: var(--paper);
@@ -860,6 +922,58 @@ input:focus-visible,
   margin: 4px 0 0;
   color: var(--ink-muted);
   font-size: 0.75rem;
+}
+
+.live-ai-demo {
+  display: grid;
+  gap: 7px;
+  margin-top: 18px;
+  color: var(--ink-muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+}
+
+.live-ai-demo textarea {
+  width: 100%;
+  min-height: 88px;
+  resize: vertical;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.55);
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.fallback-notice {
+  margin: 10px 0 0;
+  color: var(--teal);
+  font-size: 0.72rem;
+}
+
+.mode-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.mode-actions button {
+  min-height: 40px;
+  padding: 0 13px;
+  border-radius: 999px;
+}
+
+.mode-actions .secondary-button {
+  color: var(--ink);
+  border-color: var(--teal);
+}
+
+.mode-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
 }
 
 .tour-overlay {
@@ -905,6 +1019,23 @@ input:focus-visible,
 
 .tour-progress i.is-complete {
   background: var(--coral);
+}
+
+.tour-plan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 15px;
+}
+
+.tour-plan span {
+  padding: 8px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-align: center;
 }
 
 .tour-actions {
@@ -1010,6 +1141,7 @@ input:focus-visible,
   }
 
   .route-summary,
+  .role-exploration,
   .plan-grid {
     grid-template-columns: 1fr;
   }
