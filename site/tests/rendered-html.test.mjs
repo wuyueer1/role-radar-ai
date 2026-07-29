@@ -63,3 +63,17 @@ test("removes all disposable starter-preview infrastructure", async () => {
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
   await assert.rejects(access(new URL("../app/_sites-preview", templateRoot)));
 });
+
+test("uses only the supported public npm registry in the lockfile", async () => {
+  const packageLock = JSON.parse(
+    await readFile(new URL("../package-lock.json", import.meta.url), "utf8"),
+  );
+  const unsupported = Object.entries(packageLock.packages)
+    .map(([name, value]) => ({ name, resolved: value.resolved }))
+    .filter(({ resolved }) => {
+      if (!resolved) return false;
+      return new URL(resolved).hostname !== "registry.npmjs.org";
+    });
+
+  assert.deepEqual(unsupported, []);
+});
