@@ -8,6 +8,6 @@
   --muted: #5e6670;
   --line: color-mix(in srgb, var(--ink) 18%, transparent);
   --shadow: 0 24px 70px rgb(17 24 33 / 10%);
-  --sans: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --sans: "Avenir Next", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }

@@ -1,5 +1,8 @@
-import { useEffect, useState } from "react";
-import { loadSnapshot, SnapshotLoadError } from "./data/loadSnapshot";
+import { useCallback, useEffect, useState } from "react";
+import { AppHeader } from "./components/AppHeader";
+import { MarketOverview } from "./components/MarketOverview";
+import { SourceHealthDialog } from "./components/SourceHealthDialog";
+import { getFreshness, loadSnapshot, SnapshotLoadError } from "./data/loadSnapshot";
 import { parseMarketSnapshot } from "./domain/schemas";
 import type { MarketSnapshot } from "./domain/types";
 import { useJobExplorer, type ExplorerJob } from "./state/useJobExplorer";
@@ -7,6 +10,7 @@ import { useJobExplorer, type ExplorerJob } from "./state/useJobExplorer";
 interface RoleRadarAppProps {
   initialSnapshot?: unknown;
   fetcher?: typeof fetch;
+  now?: Date;
 }
 
 type DataState =
@@ -29,10 +33,12 @@ const initialDataState = (value: unknown): DataState => {
   }
 };
 
-export function RoleRadarApp({ initialSnapshot, fetcher = fetch }: RoleRadarAppProps) {
+export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRadarAppProps) {
   const [data, setData] = useState<DataState>(() => initialDataState(initialSnapshot));
   const [retryKey, setRetryKey] = useState(0);
+  const [sourceDialogOpen, setSourceDialogOpen] = useState(false);
   const explorer = useJobExplorer(data.snapshot?.jobs ?? EMPTY_JOBS);
+  const closeSourceDialog = useCallback(() => setSourceDialogOpen(false), []);
 
   useEffect(() => {
     if (initialSnapshot !== undefined) return;
@@ -60,16 +66,27 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch }: RoleRadarAppP
       <a className="skip-link" href="#main-content">
         跳到主要内容
       </a>
-      <header className="app-header">
-        <div>
-          <p className="eyebrow">AI JOB INTELLIGENCE / PUBLIC PORTFOLIO</p>
-          <h1>
-            RoleRadar <span>AI</span>
-          </h1>
-          <p>把招聘市场变成可解释的个人机会</p>
-        </div>
-        <button type="button">分析一条 JD</button>
-      </header>
+      {data.phase === "ready" ? (
+        <AppHeader
+          snapshot={data.snapshot}
+          freshness={getFreshness(data.snapshot.snapshotAt, now ?? new Date())}
+          onOpenSources={() => setSourceDialogOpen(true)}
+          onOpenJd={() => undefined}
+        />
+      ) : (
+        <header className="app-header app-header--loading">
+          <div>
+            <p className="eyebrow">AI JOB INTELLIGENCE / PUBLIC PORTFOLIO</p>
+            <h1>
+              RoleRadar <span>AI</span>
+            </h1>
+            <p className="hero-promise">把招聘市场变成可解释的个人机会</p>
+          </div>
+          <button className="primary-action" type="button">
+            分析一条 JD
+          </button>
+        </header>
+      )}
       <main id="main-content" aria-busy={data.phase === "loading"}>
         {data.phase === "loading" ? <p>正在读取最近成功的岗位快照…</p> : null}
         {data.phase === "error" ? (
@@ -87,16 +104,19 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch }: RoleRadarAppP
           </div>
         ) : null}
         {data.phase === "ready" ? (
-          <section aria-label="岗位数据已就绪">
-            <p aria-live="polite">已载入 {explorer.visibleJobs.length} 个真实岗位</p>
-            {explorer.selectedJob ? (
-              <p>
-                当前选择：{explorer.selectedJob.company} · {explorer.selectedJob.title}
-              </p>
-            ) : null}
-          </section>
+          <>
+            <MarketOverview snapshot={data.snapshot} />
+            <section className="data-ready" aria-label="岗位数据已就绪">
+              <p aria-live="polite">已载入 {explorer.visibleJobs.length} 个真实岗位</p>
+            </section>
+          </>
         ) : null}
       </main>
+      <SourceHealthDialog
+        open={sourceDialogOpen}
+        sources={data.snapshot?.sourceHealth ?? []}
+        onClose={closeSourceDialog}
+      />
     </div>
   );
 }

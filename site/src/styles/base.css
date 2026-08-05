@@ -31,7 +31,10 @@ button {
 }
 
 button:focus-visible,
-a:focus-visible {
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
@@ -51,49 +54,11 @@ a:focus-visible {
   transform: translateY(0);
 }
 
-.app-shell {
-  margin: 0 auto;
-  max-width: 1600px;
-  padding: clamp(1rem, 3vw, 3rem);
-}
-
-.app-header {
-  align-items: flex-end;
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  padding-bottom: 2rem;
-}
-
 .eyebrow {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
-}
-
-h1 {
-  font-size: clamp(3rem, 8vw, 7rem);
-  letter-spacing: -0.08em;
-  line-height: 0.9;
-  margin: 0.35rem 0 1rem;
-}
-
-h1 span {
-  color: var(--blue);
-}
-
-main {
-  min-height: 45vh;
-  padding-block: 3rem;
-}
-
-@media (max-width: 640px) {
-  .app-header {
-    align-items: stretch;
-    flex-direction: column;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

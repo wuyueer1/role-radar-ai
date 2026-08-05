@@ -918,7 +918,7 @@ Expected: FAIL because `loadSnapshot.ts` is missing.
 
 `useJobExplorer` must initialize `q`, `location`, `family`, `source`, `sort`, and `job` from `URLSearchParams`; default location scope is `default`; default sort is `match`; invalid values are ignored. State changes use `history.replaceState`, filters are combined, and selection falls back to the first visible job.
 
-- [ ] **Step 5: Wire loading states into the app and commit**
+- [x] **Step 5: Wire loading states into the app and commit**
 
 Render explicit loading, safe error with retry, and validated explorer states. Never render raw parse errors or internal paths.
 
@@ -943,7 +943,7 @@ git commit -m "feat: load snapshots and synchronize explorer state"
 - Create: `site/tests/components/market-overview.test.tsx`
 - Modify: `site/src/RoleRadarApp.tsx`
 
-- [ ] **Step 1: Write a failing overview interaction test**
+- [x] **Step 1: Write a failing overview interaction test**
 
 ```tsx
 import { render, screen } from "@testing-library/react";
@@ -961,19 +961,19 @@ it("shows real counts, freshness, and source health", async () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing components**
+- [x] **Step 2: Run and verify missing components**
 
 Run: `cd site && npm run test:components -- market-overview.test.tsx`
 
 Expected: FAIL because overview components are missing.
 
-- [ ] **Step 3: Implement the header and four metric cards**
+- [x] **Step 3: Implement the header and four metric cards**
 
 `AppHeader` must show product name, promise, last successful timestamp, freshness pill, `dataRevision` short digest, source-health button, and primary JD button. `MarketOverview` must render active count, new/removed 7-day counts, largest role family, and fastest-growing skill with both job count and sample denominator.
 
 Port `useDialogFocus` unchanged from the old app and use it in `SourceHealthDialog`; the dialog lists every source's company, status, job count, fetched time, and message.
 
-- [ ] **Step 4: Implement the exact editorial visual system**
+- [x] **Step 4: Implement the exact editorial visual system**
 
 Use the approved variables, 1px ink/fog borders, square-corner metric cards with one asymmetric rounded corner, mono source/time labels, blue selection, acid growth badges with ink text, and coral failure badges. The header title uses `clamp(3.2rem, 7vw, 7.4rem)` and no network font. Add reduced-motion rules and focus-visible outlines with at least 3:1 contrast.
 
