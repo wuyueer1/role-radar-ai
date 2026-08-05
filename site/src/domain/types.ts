@@ -14,6 +14,7 @@ export interface NormalizedJob {
   source: SourceProvider;
   sourceJobId: string;
   sourceUrl: string;
+  sourceUrls: string[];
   applyUrl: string;
   company: string;
   title: string;

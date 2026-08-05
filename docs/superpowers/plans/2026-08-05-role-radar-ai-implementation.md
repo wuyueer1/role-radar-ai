@@ -274,6 +274,7 @@ export interface NormalizedJob {
   source: SourceProvider;
   sourceJobId: string;
   sourceUrl: string;
+  sourceUrls: string[];
   applyUrl: string;
   company: string;
   title: string;
@@ -487,7 +488,7 @@ Run: `cd site && npm run data:probe`
 
 Expected: both `PASS anthropic-greenhouse` and `PASS binance-lever`, each with a positive count. If an endpoint fails or returns an invalid shape, set that entry to `enabled: false`, find another current official Greenhouse/Lever board, add its fixture and test, and do not proceed until two enabled entries pass the same probe.
 
-- [ ] **Step 7: Commit the source layer**
+- [x] **Step 7: Commit the source layer**
 
 ```bash
 git add site/data/source-registry.json site/pipeline/adapters site/pipeline/probe-sources.ts site/pipeline/fixtures site/tests/pipeline
@@ -503,7 +504,7 @@ git commit -m "feat: add reviewed public job source adapters"
 - Create: `site/tests/pipeline/dedupe.test.ts`
 - Create: `site/tests/fixtures/raw-jobs.ts`
 
-- [ ] **Step 1: Write failing normalization and dedupe tests**
+- [x] **Step 1: Write failing normalization and dedupe tests**
 
 ```ts
 // @vitest-environment node
@@ -528,13 +529,13 @@ describe("job normalization", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing pipeline failures**
+- [x] **Step 2: Run and verify missing pipeline failures**
 
 Run: `cd site && npm run test:pipeline -- normalize.test.ts dedupe.test.ts`
 
 Expected: FAIL because normalization modules do not exist.
 
-- [ ] **Step 3: Implement deterministic normalization**
+- [x] **Step 3: Implement deterministic normalization**
 
 `normalizeRawJob` must:
 
@@ -548,7 +549,7 @@ Expected: FAIL because normalization modules do not exist.
 8. generate SHA-256 over normalized company, title, location, and description text;
 9. set `id` to `${source}:${sourceJobId}` and `status` to `active`.
 
-- [ ] **Step 4: Implement conservative deduplication**
+- [x] **Step 4: Implement conservative deduplication**
 
 Merge jobs only when normalized company matches and either source job IDs match, fingerprints match, or normalized title + first location match with character-trigram Jaccard similarity at least `0.92`. Keep the latest non-null `updatedAt`, the longest clean description, all source URLs, and one canonical HTTPS apply URL. Never merge two jobs from different companies.
 

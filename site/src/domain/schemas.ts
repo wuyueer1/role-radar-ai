@@ -92,6 +92,7 @@ export const normalizedJobSchema = z
     source: z.enum(["greenhouse", "lever", "official-feed"]),
     sourceJobId: nonEmpty,
     sourceUrl: httpsUrl,
+    sourceUrls: z.array(httpsUrl).min(1),
     applyUrl: httpsUrl,
     company: nonEmpty,
     title: nonEmpty,
