@@ -1,0 +1,84 @@
+{
+  "id": "profile-yueer-w",
+  "displayName": "Yueer W.",
+  "headline": "信息系统博士 · 职业与人才数据研究者",
+  "summary": "把职业网络、文本嵌入与因果推断转化为可解释的人才决策产品。",
+  "targetRoleFamilies": ["ai-product", "ai-solutions", "data-science", "ai-engineering"],
+  "evidence": [
+    {
+      "id": "ev-career-network",
+      "label": "大规模职业网络研究",
+      "excerpt": "基于 48 万余名劳动者纵向履历构建劳动力市场网络与个性化加权 PageRank。",
+      "strength": 0.98,
+      "skillIds": ["data-analysis", "graph-analytics", "data-visualization"]
+    },
+    {
+      "id": "ev-nlp",
+      "label": "岗位文本归一化",
+      "excerpt": "使用 all-MiniLM-L6-v2 与 BGE-M3 完成岗位名称归一化及 SOC 映射。",
+      "strength": 0.95,
+      "skillIds": ["nlp-embeddings", "machine-learning", "data-analysis"]
+    },
+    {
+      "id": "ev-causal",
+      "label": "因果识别",
+      "excerpt": "使用 CEM、DID、固定效应、事件研究和安慰剂检验识别职业回报。",
+      "strength": 0.96,
+      "skillIds": ["causal-inference", "experiment-design"]
+    },
+    {
+      "id": "ev-supply-chain",
+      "label": "供应链金融图谱",
+      "excerpt": "参与企业画像、异构网络、风险传导与 FICO 风格信用评分方案。",
+      "strength": 0.9,
+      "skillIds": ["graph-analytics", "data-analysis", "business-analysis", "solution-design"]
+    },
+    {
+      "id": "ev-recruitment",
+      "label": "招聘漏斗优化",
+      "excerpt": "识别 20 项流程效率提升点，推动 Offer 转化率提升 5%。",
+      "strength": 0.88,
+      "skillIds": ["data-analysis", "business-analysis", "stakeholder-management", "experiment-design"]
+    },
+    {
+      "id": "ev-consulting",
+      "label": "行业与战略咨询",
+      "excerpt": "完成医药行业和企业扩张研究，将分析转化为咨询建议。",
+      "strength": 0.82,
+      "skillIds": ["business-analysis", "solution-design", "stakeholder-management"]
+    },
+    {
+      "id": "ev-teaching",
+      "label": "商业分析与机器学习教学",
+      "excerpt": "辅导数据分析、商业编程与机器学习课程，最高评教 96.3%。",
+      "strength": 0.9,
+      "skillIds": ["machine-learning", "stakeholder-management", "data-visualization"]
+    },
+    {
+      "id": "ev-ai-boundary",
+      "label": "AI 分类与人工复核",
+      "excerpt": "采用大语言模型辅助编码、人工复核与专家验证构建职业分类。",
+      "strength": 0.76,
+      "skillIds": ["responsible-ai", "product-discovery", "user-research"]
+    }
+  ],
+  "skills": [
+    { "skillId": "data-analysis", "confidence": 0.96, "evidenceIds": ["ev-career-network", "ev-nlp", "ev-supply-chain", "ev-recruitment"] },
+    { "skillId": "machine-learning", "confidence": 0.82, "evidenceIds": ["ev-nlp", "ev-teaching"] },
+    { "skillId": "nlp-embeddings", "confidence": 0.9, "evidenceIds": ["ev-nlp"] },
+    { "skillId": "graph-analytics", "confidence": 0.92, "evidenceIds": ["ev-career-network", "ev-supply-chain"] },
+    { "skillId": "causal-inference", "confidence": 0.95, "evidenceIds": ["ev-causal"] },
+    { "skillId": "experiment-design", "confidence": 0.88, "evidenceIds": ["ev-causal", "ev-recruitment"] },
+    { "skillId": "data-visualization", "confidence": 0.85, "evidenceIds": ["ev-career-network", "ev-teaching"] },
+    { "skillId": "product-discovery", "confidence": 0.58, "evidenceIds": ["ev-ai-boundary"] },
+    { "skillId": "user-research", "confidence": 0.5, "evidenceIds": ["ev-ai-boundary"] },
+    { "skillId": "stakeholder-management", "confidence": 0.84, "evidenceIds": ["ev-recruitment", "ev-consulting", "ev-teaching"] },
+    { "skillId": "business-analysis", "confidence": 0.9, "evidenceIds": ["ev-supply-chain", "ev-recruitment", "ev-consulting"] },
+    { "skillId": "solution-design", "confidence": 0.66, "evidenceIds": ["ev-supply-chain", "ev-consulting"] },
+    { "skillId": "api-integration", "confidence": 0.28, "evidenceIds": [] },
+    { "skillId": "frontend-engineering", "confidence": 0.18, "evidenceIds": [] },
+    { "skillId": "mlops", "confidence": 0.2, "evidenceIds": [] },
+    { "skillId": "responsible-ai", "confidence": 0.76, "evidenceIds": ["ev-ai-boundary"] }
+  ],
+  "explicitConstraints": []
+}

@@ -211,7 +211,7 @@ Run: `cd site && npm run test:components -- app-shell.test.tsx && npm run lint &
 
 Expected: component test and lint PASS, and Vite writes `dist/index.html`.
 
-- [ ] **Step 6: Commit the static shell**
+- [x] **Step 6: Commit the static shell**
 
 ```bash
 git add site/index.html site/src site/tests/components/app-shell.test.tsx site/package.json site/package-lock.json site/tsconfig.json site/vite.config.ts site/vitest.config.ts
@@ -228,7 +228,7 @@ git commit -m "refactor: establish public RoleRadar Vite shell"
 - Create: `site/tests/fixtures/market-snapshot.ts`
 - Modify: `site/tsconfig.json`
 
-- [ ] **Step 1: Write failing schema and privacy tests**
+- [x] **Step 1: Write failing schema and privacy tests**
 
 ```ts
 import { describe, expect, it } from "vitest";
@@ -255,13 +255,13 @@ describe("public data contracts", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify the missing contract failure**
+- [x] **Step 2: Run and verify the missing contract failure**
 
 Run: `cd site && npm run test:domain -- schemas.test.ts`
 
 Expected: FAIL because `src/domain/schemas.ts` is missing.
 
-- [ ] **Step 3: Create exact shared types**
+- [x] **Step 3: Create exact shared types**
 
 ```ts
 export type SourceProvider = "greenhouse" | "lever" | "official-feed";
@@ -338,7 +338,7 @@ export interface MarketSnapshot {
 }
 ```
 
-- [ ] **Step 4: Implement Zod schemas and parse functions**
+- [x] **Step 4: Implement Zod schemas and parse functions**
 
 Define schemas matching every field above, use `z.string().url()` for source/application URLs, `z.string().datetime()` for non-null timestamps, `z.string().regex(/^[a-f0-9]{64}$/)` for `dataRevision`, `z.number().min(0).max(100)` for component scores, and export:
 
@@ -349,9 +349,9 @@ export const parseMarketSnapshot = (input: unknown): MarketSnapshot => marketSna
 
 Create the two-job `validSnapshot` fixture with one Greenhouse and one Lever job, distinct IDs, valid HTTPS URLs, all five component scores, a fixed `snapshotAt: "2026-08-05T00:00:00.000Z"`, and a fixed 64-character lowercase hexadecimal `dataRevision`.
 
-- [ ] **Step 5: Migrate the anonymized profile exactly**
+- [x] **Step 5: Migrate the anonymized profile exactly**
 
-Create `site/data/candidate-profile.json` with `id: "profile-yueer-w"`, `displayName: "Yueer W."`, the existing headline and summary, target families `ai-product`, `ai-solutions`, `data-science`, and `ai-engineering`, the eight existing evidence records `ev-career-network` through `ev-ai-boundary`, the existing sixteen skill-confidence records, and `explicitConstraints: []`. Do not include `experienceSignals`, email, phone, address, university IDs, or file paths.
+Create `site/data/candidate-profile.json` with `id: "profile-yueer-w"`, `displayName: "Yueer W."`, the existing headline and summary, target families `ai-product`, `ai-solutions`, `data-science`, and `ai-engineering`, the eight existing evidence records `ev-career-network` through `ev-ai-boundary`, the existing sixteen skill-confidence records (normalize legacy `ux-research` to canonical `user-research`), and `explicitConstraints: []`. Do not include `experienceSignals`, email, phone, address, university IDs, or file paths.
 
 - [ ] **Step 6: Run the contract gate and commit**
 
