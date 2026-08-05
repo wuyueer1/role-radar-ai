@@ -1039,7 +1039,7 @@ Show all five component scores as text plus bars, matched JD requirement and can
 
 At 1024px and above render list/detail columns; below 1024px render detail as a focus-trapped dialog using `useDialogFocus`; below 640px stack filters and list controls without removing fields. Ensure the selected job remains addressable through `?job=<id>`.
 
-- [ ] **Step 6: Run tests and commit**
+- [x] **Step 6: Run tests and commit**
 
 Run: `cd site && npm run test:components -- job-explorer.test.tsx && npm run typecheck`
 
@@ -1064,7 +1064,7 @@ git commit -m "feat: add explainable real-job explorer"
 - Modify: `site/src/RoleRadarApp.tsx`
 - Modify: `site/src/styles/components.css`
 
-- [ ] **Step 1: Write failing cluster and JD interaction tests**
+- [x] **Step 1: Write failing cluster and JD interaction tests**
 
 ```tsx
 import { render, screen } from "@testing-library/react";
@@ -1091,31 +1091,31 @@ it("analyzes JD text locally and keeps it out of persistence", async () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing interaction failures**
+- [x] **Step 2: Run and verify missing interaction failures**
 
 Run: `cd site && npm run test:components -- cluster-map.test.tsx jd-analyzer.test.tsx`
 
 Expected: FAIL because cluster/JD components are missing.
 
-- [ ] **Step 3: Implement the SVG cluster map**
+- [x] **Step 3: Implement the SVG cluster map**
 
 Render deterministic nodes from `buildClusterGraph`; node radius reflects job count, fill reflects signed 7-day change, and edges show Jaccard value in accessible descriptions. Each SVG node must have a corresponding keyboard button with the same label and filter action. Provide a legend that states “基于已接入真实岗位，不代表全市场”.
 
-- [ ] **Step 4: Implement the JD analyzer drawer**
+- [x] **Step 4: Implement the JD analyzer drawer**
 
 Use a focus-trapped bottom drawer with a textarea, sample-fill button, local-analysis button, clear button, privacy statement, result cards, and error state. If input is a URL, only fetch allowlisted Greenhouse/Lever public URLs; for BOSS/liepin hosts, show “平台限制自动读取，请复制职位描述” without requesting the URL. Do not use `localStorage`, `sessionStorage`, analytics, or remote model calls.
 
-- [ ] **Step 5: Make the service worker data-aware**
+- [x] **Step 5: Make the service worker data-aware**
 
 Rename cache to `role-radar-v1`; precache `/`, `./favicon.svg`, `./og.png`, and `./data/current.json`; use network-first for navigation and current JSON, cache-first for hashed assets, and retain the last valid JSON response. Never cache failed or opaque responses.
 
-- [ ] **Step 6: Replace E2E with the approved three-minute journey**
+- [x] **Step 6: Replace E2E with the approved three-minute journey**
 
 The desktop, tablet, and mobile projects must verify: public shell loads without auth UI; freshness/source labels render; at least 20 jobs appear in the real seed; filters change result count; selecting a job exposes evidence and apply link; cluster click filters jobs; pasted JD returns local analysis; focus remains inside dialogs; no horizontal overflow at 1440×900, 1024×768, and 390×844; after Service Worker control, offline reload still renders the cached snapshot.
 
 Set Playwright's web server to `npm run dev -- --host 127.0.0.1 --port 4173` and add a `mobile` project at 390×844.
 
-- [ ] **Step 7: Run complete UI/E2E gates and commit**
+- [x] **Step 7: Run complete UI/E2E gates and commit**
 
 Run: `cd site && npm run test:components && npm run build && npm run test:e2e`
 

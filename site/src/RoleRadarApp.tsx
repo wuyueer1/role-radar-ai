@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AppHeader } from "./components/AppHeader";
+import { ClusterMap } from "./components/ClusterMap";
+import { JdAnalyzer } from "./components/JdAnalyzer";
 import { JobDetail } from "./components/JobDetail";
 import { JobFilters } from "./components/JobFilters";
 import { JobList } from "./components/JobList";
@@ -7,7 +9,7 @@ import { MarketOverview } from "./components/MarketOverview";
 import { SourceHealthDialog } from "./components/SourceHealthDialog";
 import { getFreshness, loadSnapshot, SnapshotLoadError } from "./data/loadSnapshot";
 import { parseMarketSnapshot } from "./domain/schemas";
-import type { MarketSnapshot } from "./domain/types";
+import type { MarketSnapshot, RoleFamily } from "./domain/types";
 import { useJobExplorer, type ExplorerJob } from "./state/useJobExplorer";
 
 interface RoleRadarAppProps {
@@ -54,6 +56,8 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
   const [data, setData] = useState<DataState>(() => initialDataState(initialSnapshot));
   const [retryKey, setRetryKey] = useState(0);
   const [sourceDialogOpen, setSourceDialogOpen] = useState(false);
+  const [jdAnalyzerOpen, setJdAnalyzerOpen] = useState(false);
+  const [clusterMessage, setClusterMessage] = useState("");
   const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
   const compactLayout = useCompactLayout();
   const roleGrowth = useMemo(
@@ -65,6 +69,8 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
   );
   const explorer = useJobExplorer(data.snapshot?.jobs ?? EMPTY_JOBS, { roleGrowth });
   const closeSourceDialog = useCallback(() => setSourceDialogOpen(false), []);
+  const closeJdAnalyzer = useCallback(() => setJdAnalyzerOpen(false), []);
+  const clearClusterMessage = useCallback(() => setClusterMessage(""), []);
   const freshness = data.snapshot
     ? getFreshness(data.snapshot.snapshotAt, now ?? new Date())
     : null;
@@ -100,7 +106,7 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
           snapshot={data.snapshot}
           freshness={freshness!}
           onOpenSources={() => setSourceDialogOpen(true)}
-          onOpenJd={() => undefined}
+          onOpenJd={() => setJdAnalyzerOpen(true)}
         />
       ) : (
         <header className="app-header app-header--loading">
@@ -111,7 +117,7 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
             </h1>
             <p className="hero-promise">把招聘市场变成可解释的个人机会</p>
           </div>
-          <button className="primary-action" type="button">
+          <button className="primary-action" type="button" onClick={() => setJdAnalyzerOpen(true)}>
             分析一条 JD
           </button>
         </header>
@@ -135,6 +141,15 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
         {data.phase === "ready" ? (
           <>
             <MarketOverview snapshot={data.snapshot} />
+            <ClusterMap
+              jobs={data.snapshot.jobs}
+              roleDeltas={roleGrowth}
+              selectedFamily={explorer.family}
+              onSelect={(family: RoleFamily, label: string) => {
+                explorer.setFamily(family);
+                setClusterMessage(`已筛选 ${label}岗位簇`);
+              }}
+            />
             <section className="job-explorer" aria-labelledby="job-explorer-title">
               <div className="explorer-heading">
                 <div>
@@ -153,17 +168,18 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
                 sort={explorer.sort}
                 minMatch={explorer.minMatch}
                 freshness={freshness!}
-                onQuery={explorer.setQuery}
-                onLocation={explorer.setLocation}
-                onFamily={explorer.setFamily}
-                onSource={explorer.setSource}
-                onSort={explorer.setSort}
-                onMinMatch={explorer.setMinMatch}
+                onQuery={(value) => { clearClusterMessage(); explorer.setQuery(value); }}
+                onLocation={(value) => { clearClusterMessage(); explorer.setLocation(value); }}
+                onFamily={(value) => { clearClusterMessage(); explorer.setFamily(value); }}
+                onSource={(value) => { clearClusterMessage(); explorer.setSource(value); }}
+                onSort={(value) => { clearClusterMessage(); explorer.setSort(value); }}
+                onMinMatch={(value) => { clearClusterMessage(); explorer.setMinMatch(value); }}
               />
               <div className="explorer-layout">
                 <JobList
                   jobs={explorer.visibleJobs}
                   selectedId={explorer.selectedJob?.id}
+                  statusMessage={clusterMessage}
                   onSelect={(jobId) => {
                     explorer.selectJob(jobId);
                     if (compactLayout) setMobileDetailOpen(true);
@@ -189,6 +205,7 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
         sources={data.snapshot?.sourceHealth ?? []}
         onClose={closeSourceDialog}
       />
+      <JdAnalyzer open={jdAnalyzerOpen} onClose={closeJdAnalyzer} fetcher={fetcher} />
     </div>
   );
 }

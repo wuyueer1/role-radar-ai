@@ -3,6 +3,7 @@ import type { ExplorerJob } from "../state/useJobExplorer";
 interface JobListProps {
   jobs: ExplorerJob[];
   selectedId?: string;
+  statusMessage?: string;
   onSelect: (jobId: string) => void;
 }
 
@@ -11,13 +12,13 @@ const updatedLabel = (value: string | null, fallback: string): string =>
     new Date(value ?? fallback),
   );
 
-export function JobList({ jobs, selectedId, onSelect }: JobListProps) {
+export function JobList({ jobs, selectedId, statusMessage, onSelect }: JobListProps) {
   return (
     <div className="job-results">
       <div className="results-heading">
         <p className="eyebrow">LIVE ROLES / EXPLAINABLE RANKING</p>
         <p role="status" aria-live="polite">
-          找到 {jobs.length} 个岗位
+          {statusMessage ? `${statusMessage} · ` : ""}找到 {jobs.length} 个岗位
         </p>
       </div>
       <div className="job-list">

@@ -66,6 +66,49 @@ main {
   margin: 0;
 }
 
+.cluster-section {
+  border-top: 1px solid var(--ink);
+  margin-top: clamp(4rem, 9vw, 9rem);
+  padding-top: clamp(2rem, 4vw, 4rem);
+}
+
+.cluster-copy {
+  align-items: end;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.35fr);
+}
+
+.cluster-canvas {
+  aspect-ratio: 16 / 8.5;
+  border: 1px solid var(--ink);
+  margin-top: 2rem;
+  min-height: 28rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.cluster-svg,
+.cluster-node-layer {
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.cluster-legend {
+  align-items: center;
+  border-bottom: 1px solid var(--ink);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 3.5rem;
+}
+
+.cluster-legend p {
+  margin-left: auto;
+}
+
 .job-explorer {
   border-top: 1px solid var(--ink);
   margin-top: clamp(4rem, 9vw, 9rem);
@@ -181,6 +224,29 @@ main {
   z-index: 80;
 }
 
+.jd-backdrop {
+  align-items: end;
+  padding: 0;
+}
+
+.jd-drawer {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-bottom: 0;
+  box-shadow: 0 -1.5rem 4rem rgb(17 24 33 / 18%);
+  max-height: 94vh;
+  overflow: auto;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  width: 100%;
+}
+
+.jd-grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(20rem, 0.44fr) minmax(28rem, 0.56fr);
+  margin-top: 1.5rem;
+}
+
 .source-dialog {
   background: var(--paper);
   border: 1px solid var(--ink);
@@ -224,8 +290,14 @@ main {
   }
 
   .hero-grid,
-  .section-heading {
+  .section-heading,
+  .cluster-copy,
+  .jd-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cluster-canvas {
+    aspect-ratio: 4 / 3;
   }
 
   .hero-actions {
@@ -259,6 +331,16 @@ main {
     align-items: stretch;
     display: flex;
     flex-direction: column;
+  }
+
+  .cluster-canvas {
+    aspect-ratio: 5 / 7;
+    min-height: 31rem;
+  }
+
+  .cluster-legend p {
+    flex-basis: 100%;
+    margin-left: 0;
   }
 
   .job-filters {
