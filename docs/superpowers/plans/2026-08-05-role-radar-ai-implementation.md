@@ -734,7 +734,7 @@ Create one node per non-empty role family with `jobCount`, `delta7d`, top five s
 
 Compare the latest 7 complete calendar days with the preceding 7 and the latest 30 with the preceding 30. Count stable job IDs for new/removed jobs, calculate skill share with both numerator and denominator, exclude skills with fewer than five current jobs, and label all output `connected-sources-only`.
 
-- [ ] **Step 5: Run tests and commit**
+- [x] **Step 5: Run tests and commit**
 
 Run: `cd site && npm run test:domain -- clusters.test.ts trends.test.ts`
 
@@ -755,7 +755,7 @@ git commit -m "feat: derive job clusters and market trends"
 - Create: `site/tests/pipeline/e5_contract_test.py`
 - Create: `site/tests/fixtures/semantic.ts`
 
-- [ ] **Step 1: Write a failing provider fallback test**
+- [x] **Step 1: Write a failing provider fallback test**
 
 ```ts
 // @vitest-environment node
@@ -772,13 +772,13 @@ describe("E5 provider", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing provider failure**
+- [x] **Step 2: Run and verify missing provider failure**
 
 Run: `cd site && npm run test:pipeline -- e5-provider.test.ts`
 
 Expected: FAIL because the provider is missing.
 
-- [ ] **Step 3: Pin the Python runtime contract**
+- [x] **Step 3: Pin the Python runtime contract**
 
 `requirements-e5.txt` must contain:
 
@@ -794,11 +794,11 @@ sentence-transformers==5.6.0
 
 The script must return exit code 2 for invalid stdin schema and write diagnostic messages only to stderr.
 
-- [ ] **Step 4: Implement the Node provider and percentile conversion**
+- [x] **Step 4: Implement the Node provider and percentile conversion**
 
 Spawn `python3 pipeline/embeddings/e5.py`, pass profile/jobs JSON through stdin, enforce a 120-second timeout, validate output IDs, and convert cosines to stable cohort percentiles using average rank for ties. On spawn, timeout, exit, or validation failure, compute TF-IDF cosine scores and return `mode: "rules-fallback"` with model revision `tfidf-v1`.
 
-- [ ] **Step 5: Verify both fast and real contracts**
+- [x] **Step 5: Verify both fast and real contracts**
 
 Run: `cd site && npm run test:pipeline -- e5-provider.test.ts`
 
