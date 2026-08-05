@@ -1,6 +1,6 @@
 # RoleRadar AI｜AI 岗位情报与匹配工作台
 
-**状态：** 产品设计已批准，等待书面规格复核  
+**状态：** 产品设计与书面规格已批准
 **日期：** 2026-07-30  
 **目标岗位：** AI 产品经理 / AI 解决方案为主，数据科学与 AI 应用工程为辅  
 **作品定位：** 面向 AI 岗位面试的公开 AI coding 作品，同时是候选人本人可以持续使用的岗位筛选工具
@@ -294,6 +294,7 @@ Greenhouse 和 Lever 都需要具体公司的 board token 或 site name。仓库
 ### 8.4 `MarketSnapshot`
 
 - `snapshotAt`
+- `dataRevision`
 - `sourceHealth[]`
 - `activeJobCount`
 - `newJobCount`
@@ -356,7 +357,7 @@ GitHub Actions 工作流：
 7. 使用该次数据提交的精确版本构建静态站点并部署 GitHub Pages；
 8. 任一步失败时不写入 `market-data`，也不覆盖最近成功的公开站点。
 
-`market-data` 只保存当前规范化岗位、每日聚合历史和来源健康状态；完整历史 JD 不保留。自动化提交使用专用路径和最小 `contents: write` 权限，公开页面显示其数据提交 ID，便于复现。
+`market-data` 只保存当前规范化岗位、每日聚合历史和来源健康状态；完整历史 JD 不保留。自动化提交使用专用路径和最小 `contents: write` 权限。公开页面显示规范化快照主体的 SHA-256 `dataRevision` 短摘要，Git 分支历史保留外部提交版本；二者共同提供复现线索，同时避免让快照 JSON 自引用提交自身的 ID。
 
 公开页面的新鲜度规则：
 
