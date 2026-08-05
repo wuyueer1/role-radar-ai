@@ -808,7 +808,7 @@ Run after installing Python dependencies: `cd site && python3 -m pip install -r 
 
 Expected: Python contract test PASS and output score count equals input job count.
 
-- [ ] **Step 6: Commit the semantic layer**
+- [x] **Step 6: Commit the semantic layer**
 
 ```bash
 git add site/pipeline/embeddings site/tests/pipeline/e5-provider.test.ts site/tests/pipeline/e5_contract_test.py site/tests/fixtures/semantic.ts
@@ -826,7 +826,7 @@ git commit -m "feat: add pinned multilingual semantic scoring"
 - Create: `site/public/data/history.json`
 - Create: `site/public/data/source-health.json`
 
-- [ ] **Step 1: Write a failing partial-source snapshot test**
+- [x] **Step 1: Write a failing partial-source snapshot test**
 
 ```ts
 // @vitest-environment node
@@ -848,19 +848,19 @@ describe("snapshot orchestration", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing orchestrator failure**
+- [x] **Step 2: Run and verify missing orchestrator failure**
 
 Run: `cd site && npm run test:pipeline -- build-snapshot.test.ts`
 
 Expected: FAIL because `build-snapshot.ts` is missing.
 
-- [ ] **Step 3: Implement the orchestration boundary**
+- [x] **Step 3: Implement the orchestration boundary**
 
 `buildSnapshot` must load only enabled reviewed sources, settle adapters independently, normalize/dedupe active jobs, keep only target AI role families, extract skills, call semantic scoring, calculate job intelligence, clusters and trends, compute `dataRevision` as SHA-256 over deterministic canonical JSON for the complete snapshot body excluding `dataRevision`, parse the final result through `parseMarketSnapshot`, and return snapshot/history/health objects without writing files.
 
 `run.ts` must read the previous JSON files, call `buildSnapshot`, write all three outputs into a temporary sibling directory, parse them again, then atomically rename them into `public/data`. If validation or writing fails, leave the existing files unchanged and exit 1.
 
-- [ ] **Step 4: Generate a real last-good seed**
+- [x] **Step 4: Generate a real last-good seed**
 
 Run: `cd site && npm run data:probe && npm run data:update`
 

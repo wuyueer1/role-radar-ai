@@ -115,7 +115,7 @@ export const normalizedJobSchema = z
   })
   .strict();
 
-const sourceHealthSchema = z
+export const sourceHealthSchema = z
   .object({
     sourceId: nonEmpty,
     company: nonEmpty,
@@ -163,3 +163,6 @@ export const parseCandidateProfile = (input: unknown): CandidateProfile =>
 
 export const parseMarketSnapshot = (input: unknown): MarketSnapshot =>
   marketSnapshotSchema.parse(input);
+
+export const parseSourceHealth = (input: unknown) =>
+  z.array(sourceHealthSchema).min(1).parse(input);

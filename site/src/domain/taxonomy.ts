@@ -60,7 +60,7 @@ const roleRules: Array<{
   },
   {
     family: "ai-product",
-    titlePatterns: [/ai product/i, /product manager.*ai/i, /ai.*product manager/i, /ai 产品/, /人工智能产品/, /产品经理/],
+    titlePatterns: [/\bai product\b/i, /product manager.*ai/i, /ai.*product manager/i, /ai 产品/, /人工智能产品/, /产品经理/],
     skillSignals: ["product-discovery", "user-research", "llm", "responsible-ai"],
   },
   {
@@ -70,7 +70,19 @@ const roleRules: Array<{
   },
   {
     family: "ai-engineering",
-    titlePatterns: [/ai engineer/i, /machine learning engineer/i, /ml engineer/i, /llm engineer/i, /ai 工程师/, /算法工程师/, /机器学习工程师/],
+    titlePatterns: [
+      /ai engineer/i,
+      /machine learning engineer/i,
+      /ml engineer/i,
+      /llm engineer/i,
+      /(?:engineering manager|engineer).*\binference\b/i,
+      /\binference\b.*(?:engineering manager|engineer)/i,
+      /research engineer.*(?:machine learning|\bai\b|model|alignment)/i,
+      /(?:machine learning|\bai\b|model|alignment).*research engineer/i,
+      /ai 工程师/,
+      /算法工程师/,
+      /机器学习工程师/,
+    ],
     skillSignals: ["rag", "vector-databases", "api-integration", "mlops", "cloud", "frontend-engineering"],
   },
   {
@@ -87,6 +99,7 @@ export function classifyRoleFamily(title: string, skills: string[]): RoleFamily 
 
   for (const rule of roleRules) {
     const titleScore = rule.titlePatterns.some((pattern) => pattern.test(normalizedTitle)) ? 3 : 0;
+    if (titleScore === 0) continue;
     const skillScore = rule.skillSignals.filter((skill) => skillSet.has(skill)).length;
     const score = titleScore + skillScore;
     if (score > best.score) best = { family: rule.family, score };
