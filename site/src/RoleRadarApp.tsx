@@ -1,5 +1,8 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { AppHeader } from "./components/AppHeader";
+import { JobDetail } from "./components/JobDetail";
+import { JobFilters } from "./components/JobFilters";
+import { JobList } from "./components/JobList";
 import { MarketOverview } from "./components/MarketOverview";
 import { SourceHealthDialog } from "./components/SourceHealthDialog";
 import { getFreshness, loadSnapshot, SnapshotLoadError } from "./data/loadSnapshot";
@@ -20,6 +23,20 @@ type DataState =
 
 const EMPTY_JOBS: ExplorerJob[] = [];
 
+const useCompactLayout = (): boolean => {
+  const [compact, setCompact] = useState(
+    () => typeof window !== "undefined" && window.matchMedia?.("(max-width: 1023px)").matches,
+  );
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const media = window.matchMedia("(max-width: 1023px)");
+    const update = (event: MediaQueryListEvent) => setCompact(event.matches);
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+  return compact;
+};
+
 const initialDataState = (value: unknown): DataState => {
   if (value === undefined) return { phase: "loading", snapshot: null, message: null };
   try {
@@ -37,8 +54,20 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
   const [data, setData] = useState<DataState>(() => initialDataState(initialSnapshot));
   const [retryKey, setRetryKey] = useState(0);
   const [sourceDialogOpen, setSourceDialogOpen] = useState(false);
-  const explorer = useJobExplorer(data.snapshot?.jobs ?? EMPTY_JOBS);
+  const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
+  const compactLayout = useCompactLayout();
+  const roleGrowth = useMemo(
+    () =>
+      Object.fromEntries(
+        (data.snapshot?.roleFamilyStats ?? []).map((item) => [item.roleFamily, item.delta7d]),
+      ),
+    [data.snapshot?.roleFamilyStats],
+  );
+  const explorer = useJobExplorer(data.snapshot?.jobs ?? EMPTY_JOBS, { roleGrowth });
   const closeSourceDialog = useCallback(() => setSourceDialogOpen(false), []);
+  const freshness = data.snapshot
+    ? getFreshness(data.snapshot.snapshotAt, now ?? new Date())
+    : null;
 
   useEffect(() => {
     if (initialSnapshot !== undefined) return;
@@ -69,7 +98,7 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
       {data.phase === "ready" ? (
         <AppHeader
           snapshot={data.snapshot}
-          freshness={getFreshness(data.snapshot.snapshotAt, now ?? new Date())}
+          freshness={freshness!}
           onOpenSources={() => setSourceDialogOpen(true)}
           onOpenJd={() => undefined}
         />
@@ -106,9 +135,52 @@ export function RoleRadarApp({ initialSnapshot, fetcher = fetch, now }: RoleRada
         {data.phase === "ready" ? (
           <>
             <MarketOverview snapshot={data.snapshot} />
-            <section className="data-ready" aria-label="岗位数据已就绪">
-              <p aria-live="polite">已载入 {explorer.visibleJobs.length} 个真实岗位</p>
+            <section className="job-explorer" aria-labelledby="job-explorer-title">
+              <div className="explorer-heading">
+                <div>
+                  <p className="eyebrow">OPPORTUNITY EXPLORER / SHAREABLE FILTERS</p>
+                  <h2 id="job-explorer-title">从市场供给，找到值得行动的岗位</h2>
+                </div>
+                <p className="data-ready" aria-live="polite">
+                  已载入 {explorer.visibleJobs.length} 个真实岗位
+                </p>
+              </div>
+              <JobFilters
+                query={explorer.query}
+                location={explorer.location}
+                family={explorer.family}
+                source={explorer.source}
+                sort={explorer.sort}
+                minMatch={explorer.minMatch}
+                freshness={freshness!}
+                onQuery={explorer.setQuery}
+                onLocation={explorer.setLocation}
+                onFamily={explorer.setFamily}
+                onSource={explorer.setSource}
+                onSort={explorer.setSort}
+                onMinMatch={explorer.setMinMatch}
+              />
+              <div className="explorer-layout">
+                <JobList
+                  jobs={explorer.visibleJobs}
+                  selectedId={explorer.selectedJob?.id}
+                  onSelect={(jobId) => {
+                    explorer.selectJob(jobId);
+                    if (compactLayout) setMobileDetailOpen(true);
+                  }}
+                />
+                {!compactLayout && explorer.selectedJob ? (
+                  <JobDetail job={explorer.selectedJob} />
+                ) : null}
+              </div>
             </section>
+            {compactLayout && mobileDetailOpen && explorer.selectedJob ? (
+              <JobDetail
+                dialog
+                job={explorer.selectedJob}
+                onClose={() => setMobileDetailOpen(false)}
+              />
+            ) : null}
           </>
         ) : null}
       </main>

@@ -60,11 +60,114 @@ main {
 }
 
 .data-ready {
-  border-bottom: 1px solid var(--line);
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.76rem;
-  padding-top: 1rem;
+  margin: 0;
+}
+
+.job-explorer {
+  border-top: 1px solid var(--ink);
+  margin-top: clamp(4rem, 9vw, 9rem);
+  padding-top: clamp(2rem, 4vw, 4rem);
+}
+
+.explorer-heading {
+  align-items: end;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.job-filters {
+  border-bottom: 1px solid var(--ink);
+  border-top: 1px solid var(--ink);
+  display: grid;
+  gap: 1px;
+  grid-template-columns: minmax(14rem, 2fr) repeat(4, minmax(8rem, 1fr)) minmax(9rem, 1fr) minmax(7rem, 0.7fr);
+  margin-top: 2rem;
+}
+
+.explorer-layout {
+  align-items: start;
+  display: grid;
+  grid-template-columns: minmax(22rem, 0.42fr) minmax(30rem, 0.58fr);
+}
+
+.job-results {
+  border-left: 1px solid var(--ink);
+}
+
+.job-list {
+  max-height: min(76rem, 120vh);
+  overflow-y: auto;
+}
+
+.job-detail {
+  border: 1px solid var(--ink);
+  border-top: 0;
+  max-height: min(86vh, 1100px);
+  overflow-y: auto;
+  padding: clamp(1rem, 2.5vw, 2.5rem);
+  position: sticky;
+  top: 1rem;
+}
+
+.job-detail--dialog {
+  background: var(--paper);
+  max-height: 92vh;
+  max-width: 900px;
+  position: static;
+  width: 100%;
+}
+
+.detail-heading {
+  align-items: start;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.detail-columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.score-row {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(7rem, 0.7fr) minmax(8rem, 1fr) 2.5rem;
+}
+
+.method-section dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 1280px) {
+  .job-filters {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .filter-search {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1023px) {
+  .explorer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .job-results {
+    border-right: 1px solid var(--ink);
+  }
+
+  .job-list {
+    max-height: none;
+  }
 }
 
 .dialog-backdrop {
@@ -149,5 +252,30 @@ main {
   .source-message,
   .source-row time {
     grid-column: auto;
+  }
+
+  .explorer-heading,
+  .detail-columns {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-filters {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .method-section dl {
+    grid-template-columns: 1fr;
+  }
+
+  .score-row {
+    grid-template-columns: minmax(7rem, 1fr) 3rem;
+  }
+
+  .score-track {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 }

@@ -15,7 +15,7 @@ describe("market overview", () => {
     );
 
     expect(within(screen.getByTestId("active-metric")).getByText("2")).toBeVisible();
-    expect(screen.getByText("最新")).toBeVisible();
+    expect(screen.getAllByText("最新").every((element) => element instanceof HTMLElement)).toBe(true);
     expect(screen.getByText(/aaaaaaaaaa/)).toBeVisible();
 
     const sourceButton = screen.getByRole("button", { name: "查看数据源状态" });

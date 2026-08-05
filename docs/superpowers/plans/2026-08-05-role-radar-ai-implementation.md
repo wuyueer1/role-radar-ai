@@ -977,7 +977,7 @@ Port `useDialogFocus` unchanged from the old app and use it in `SourceHealthDial
 
 Use the approved variables, 1px ink/fog borders, square-corner metric cards with one asymmetric rounded corner, mono source/time labels, blue selection, acid growth badges with ink text, and coral failure badges. The header title uses `clamp(3.2rem, 7vw, 7.4rem)` and no network font. Add reduced-motion rules and focus-visible outlines with at least 3:1 contrast.
 
-- [ ] **Step 5: Run component and accessibility assertions, then commit**
+- [x] **Step 5: Run component and accessibility assertions, then commit**
 
 Run: `cd site && npm run test:components -- market-overview.test.tsx`
 
@@ -999,7 +999,7 @@ git commit -m "feat: build editorial market intelligence overview"
 - Modify: `site/src/styles/layout.css`
 - Modify: `site/src/styles/components.css`
 
-- [ ] **Step 1: Write a failing end-user explorer test**
+- [x] **Step 1: Write a failing end-user explorer test**
 
 ```tsx
 import { render, screen } from "@testing-library/react";
@@ -1021,21 +1021,21 @@ it("filters jobs and exposes traceable evidence before applying", async () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing explorer failure**
+- [x] **Step 2: Run and verify missing explorer failure**
 
 Run: `cd site && npm run test:components -- job-explorer.test.tsx`
 
 Expected: FAIL because explorer components are missing.
 
-- [ ] **Step 3: Implement filters and accessible result list**
+- [x] **Step 3: Implement filters and accessible result list**
 
 Add search, location scope, role family, source, freshness, and match-range controls plus sort options `match`, `updated`, and `growth`. Each row must expose company/title/location/source/updated time/match score and three evidence/skill tags. Use a real button per row with `aria-pressed`, not a clickable `div`; announce result counts with `aria-live="polite"`.
 
-- [ ] **Step 4: Implement five-part details and original apply link**
+- [x] **Step 4: Implement five-part details and original apply link**
 
 Show all five component scores as text plus bars, matched JD requirement and candidate evidence pairs, strengths, gaps, hard blockers, analysis mode, model revision, source/fetched timestamps, sanitized JD excerpt, and original apply link. Never label the match score as probability. External links must use `target="_blank" rel="noopener noreferrer"`.
 
-- [ ] **Step 5: Implement responsive split/drawer behavior**
+- [x] **Step 5: Implement responsive split/drawer behavior**
 
 At 1024px and above render list/detail columns; below 1024px render detail as a focus-trapped dialog using `useDialogFocus`; below 640px stack filters and list controls without removing fields. Ensure the selected job remains addressable through `?job=<id>`.
 

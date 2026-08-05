@@ -55,6 +55,10 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
   const [sort, setSort] = useState<ExplorerSort>(() =>
     validParam(initialParams(), "sort", sorts, "match"),
   );
+  const [minMatch, setMinMatch] = useState(() => {
+    const value = Number(initialParams().get("min") ?? 0);
+    return Number.isFinite(value) && value >= 0 && value <= 100 ? value : 0;
+  });
   const [requestedJobId, setRequestedJobId] = useState(() => initialParams().get("job") ?? "");
 
   const visibleJobs = useMemo(() => {
@@ -71,6 +75,7 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
       }
       if (family !== "all" && job.roleFamily !== family) return false;
       if (source !== "all" && job.source !== source) return false;
+      if (job.intelligence.matchScore < minMatch) return false;
       if (
         location !== "all" &&
         !job.locations.some((value) => normalizeLocation(value).marketScope === location)
@@ -96,7 +101,7 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
         left.id.localeCompare(right.id)
       );
     });
-  }, [family, jobs, location, options.roleGrowth, query, sort, source]);
+  }, [family, jobs, location, minMatch, options.roleGrowth, query, sort, source]);
 
   const visibleIds = visibleJobs.map((job) => job.id).join("\n");
   const selectedJob =
@@ -111,6 +116,7 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
     if (family !== "all") params.set("family", family);
     if (source !== "all") params.set("source", source);
     if (sort !== "match") params.set("sort", sort);
+    if (minMatch > 0) params.set("min", String(minMatch));
     if (selectedId && visibleJobs.some((job) => job.id === selectedId)) {
       params.set("job", selectedId);
     }
@@ -120,7 +126,7 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
       "",
       `${window.location.pathname}${search ? `?${search}` : ""}${window.location.hash}`,
     );
-  }, [family, location, query, selectedId, sort, source, visibleIds, visibleJobs]);
+  }, [family, location, minMatch, query, selectedId, sort, source, visibleIds, visibleJobs]);
 
   return {
     query,
@@ -128,6 +134,7 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
     family,
     source,
     sort,
+    minMatch,
     visibleJobs,
     selectedJob,
     setQuery: (value: string) => {
@@ -148,6 +155,10 @@ export function useJobExplorer(jobs: ExplorerJob[], options: ExplorerOptions = {
     },
     setSort: (value: ExplorerSort) => {
       setSort(value);
+      setRequestedJobId("");
+    },
+    setMinMatch: (value: number) => {
+      setMinMatch(Math.max(0, Math.min(100, value)));
       setRequestedJobId("");
     },
     selectJob: (jobId: string) => setRequestedJobId(jobId),
