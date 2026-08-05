@@ -866,7 +866,7 @@ Run: `cd site && npm run data:probe && npm run data:update`
 
 Expected: `public/data/current.json` parses successfully, contains at least two `sourceHealth` entries and at least 20 deduplicated current AI jobs; every job has an HTTPS source/apply URL and a non-empty explanation. If fewer than 20 remain, expand the reviewed registry with another current official Greenhouse or Lever board and repeat adapter fixture, probe, and terms review before continuing.
 
-- [ ] **Step 5: Run pipeline and contract gates, then commit**
+- [x] **Step 5: Run pipeline and contract gates, then commit**
 
 Run: `cd site && npm run test:pipeline && npm run test:domain && npm run typecheck`
 
@@ -886,7 +886,7 @@ git commit -m "feat: publish validated real-job snapshots"
 - Create: `site/tests/components/job-explorer-state.test.tsx`
 - Modify: `site/src/RoleRadarApp.tsx`
 
-- [ ] **Step 1: Write failing freshness and URL-state tests**
+- [x] **Step 1: Write failing freshness and URL-state tests**
 
 ```ts
 import { describe, expect, it } from "vitest";
@@ -904,17 +904,17 @@ describe("snapshot freshness", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing loader failure**
+- [x] **Step 2: Run and verify missing loader failure**
 
 Run: `cd site && npm run test:domain -- freshness.test.ts`
 
 Expected: FAIL because `loadSnapshot.ts` is missing.
 
-- [ ] **Step 3: Implement validated loading and freshness**
+- [x] **Step 3: Implement validated loading and freshness**
 
 `loadSnapshot(fetcher = fetch)` must request `./data/current.json`, reject non-2xx responses, parse JSON through `parseMarketSnapshot`, and throw a user-safe `SnapshotLoadError`. `getFreshness` returns `{ state: "fresh" | "delayed" | "stale", ageHours, label }` with inclusive 8-hour fresh and 24-hour delayed thresholds.
 
-- [ ] **Step 4: Implement query-backed explorer state**
+- [x] **Step 4: Implement query-backed explorer state**
 
 `useJobExplorer` must initialize `q`, `location`, `family`, `source`, `sort`, and `job` from `URLSearchParams`; default location scope is `default`; default sort is `match`; invalid values are ignored. State changes use `history.replaceState`, filters are combined, and selection falls back to the first visible job.
 
