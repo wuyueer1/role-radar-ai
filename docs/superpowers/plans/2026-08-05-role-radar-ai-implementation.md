@@ -74,8 +74,10 @@ The data pipeline, analysis engine, frontend, and deployment remain one plan bec
 - Modify: `site/tsconfig.json`
 - Modify: `site/vite.config.ts`
 - Modify: `site/vitest.config.ts`
+- Modify: `site/eslint.config.mjs`
+- Delete: `site/postcss.config.mjs`
 
-- [ ] **Step 1: Write the failing Vite shell test**
+- [x] **Step 1: Write the failing Vite shell test**
 
 ```tsx
 import { render, screen } from "@testing-library/react";
@@ -92,13 +94,13 @@ describe("RoleRadarApp shell", () => {
 });
 ```
 
-- [ ] **Step 2: Run the test and verify the missing module failure**
+- [x] **Step 2: Run the test and verify the missing module failure**
 
 Run: `cd site && npx vitest run tests/components/app-shell.test.tsx`
 
 Expected: FAIL because `../../src/RoleRadarApp` does not exist.
 
-- [ ] **Step 3: Install the static runtime and replace the build configuration**
+- [x] **Step 3: Install the static runtime and replace the build configuration**
 
 Run:
 
@@ -106,7 +108,7 @@ Run:
 cd site
 npm uninstall next vinext react-server-dom-webpack @cloudflare/vite-plugin @vitejs/plugin-rsc tailwindcss @tailwindcss/postcss wrangler eslint-config-next
 npm install zod
-npm install --save-dev @vitejs/plugin-react tsx
+npm install --save-dev @vitejs/plugin-react tsx @eslint/js@9.39.4 globals typescript-eslint eslint-plugin-react-hooks eslint-plugin-react-refresh
 ```
 
 Set the scripts in `site/package.json` exactly to:
@@ -147,7 +149,7 @@ export default defineConfig({
 
 Set `site/tsconfig.json` to a strict bundler configuration with `target: "ES2022"`, `jsx: "react-jsx"`, `resolveJsonModule: true`, `allowImportingTsExtensions: true`, `types: ["vite/client", "node"]`, `include: ["src", "pipeline", "tests", "vite.config.ts", "vitest.config.ts"]`, and `exclude: ["dist", "node_modules", "app", "worker", "build"]`.
 
-- [ ] **Step 4: Add the minimal shell**
+- [x] **Step 4: Add the minimal shell**
 
 ```tsx
 // site/src/RoleRadarApp.tsx
@@ -186,7 +188,7 @@ createRoot(document.getElementById("root")!).render(
 
 Create `site/index.html` with `lang="zh-CN"`, title `RoleRadar AI | AI 岗位情报与匹配工作台`, description, Open Graph/Twitter metadata pointing to `./og.png`, a theme color of `#F7F5EF`, and `<div id="root"></div><script type="module" src="/src/main.tsx"></script>`.
 
-- [ ] **Step 5: Add exact base tokens and pass the shell gate**
+- [x] **Step 5: Add exact base tokens and pass the shell gate**
 
 ```css
 /* site/src/styles/tokens.css */
@@ -205,9 +207,9 @@ Create `site/index.html` with `lang="zh-CN"`, title `RoleRadar AI | AI 岗位情
 }
 ```
 
-Run: `cd site && npm run test:components -- app-shell.test.tsx && npm run build`
+Run: `cd site && npm run test:components -- app-shell.test.tsx && npm run lint && npm run build`
 
-Expected: component test PASS and Vite writes `dist/index.html`.
+Expected: component test and lint PASS, and Vite writes `dist/index.html`.
 
 - [ ] **Step 6: Commit the static shell**
 
