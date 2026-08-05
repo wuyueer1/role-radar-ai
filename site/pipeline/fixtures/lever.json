@@ -1,0 +1,20 @@
+[
+  {
+    "id": "fixture-lever-1",
+    "text": "AI Solutions Lead — Fixture",
+    "categories": {
+      "location": "Hong Kong",
+      "allLocations": ["Hong Kong", "Remote - Asia"]
+    },
+    "descriptionPlain": "Translate business needs into responsible AI solutions.",
+    "lists": [
+      {
+        "text": "Requirements",
+        "content": "<li>Solution design</li><li>Stakeholder management</li>"
+      }
+    ],
+    "hostedUrl": "https://jobs.lever.co/binance/fixture-lever-1",
+    "applyUrl": "https://jobs.lever.co/binance/fixture-lever-1/apply",
+    "createdAt": 1785542400000
+  }
+]

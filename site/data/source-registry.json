@@ -1,0 +1,20 @@
+[
+  {
+    "id": "anthropic-greenhouse",
+    "provider": "greenhouse",
+    "company": "Anthropic",
+    "boardToken": "anthropic",
+    "enabled": true,
+    "termsUrl": "https://developer.greenhouse.io/job-board.html",
+    "reviewedAt": "2026-08-05"
+  },
+  {
+    "id": "binance-lever",
+    "provider": "lever",
+    "company": "Binance",
+    "siteName": "binance",
+    "enabled": true,
+    "termsUrl": "https://github.com/lever/postings-api",
+    "reviewedAt": "2026-08-05"
+  }
+]

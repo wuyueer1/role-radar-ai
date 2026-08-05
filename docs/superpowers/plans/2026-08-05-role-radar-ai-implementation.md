@@ -353,7 +353,7 @@ Create the two-job `validSnapshot` fixture with one Greenhouse and one Lever job
 
 Create `site/data/candidate-profile.json` with `id: "profile-yueer-w"`, `displayName: "Yueer W."`, the existing headline and summary, target families `ai-product`, `ai-solutions`, `data-science`, and `ai-engineering`, the eight existing evidence records `ev-career-network` through `ev-ai-boundary`, the existing sixteen skill-confidence records (normalize legacy `ux-research` to canonical `user-research`), and `explicitConstraints: []`. Do not include `experienceSignals`, email, phone, address, university IDs, or file paths.
 
-- [ ] **Step 6: Run the contract gate and commit**
+- [x] **Step 6: Run the contract gate and commit**
 
 Run: `cd site && npm run test:domain -- schemas.test.ts && npm run typecheck`
 
@@ -377,7 +377,7 @@ git commit -m "feat: define RoleRadar public data contracts"
 - Create: `site/tests/pipeline/adapters.test.ts`
 - Create: `site/tests/pipeline/probe-sources.test.ts`
 
-- [ ] **Step 1: Write failing adapter contract tests**
+- [x] **Step 1: Write failing adapter contract tests**
 
 ```ts
 // @vitest-environment node
@@ -402,13 +402,13 @@ describe("job source adapters", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing adapter failures**
+- [x] **Step 2: Run and verify missing adapter failures**
 
 Run: `cd site && npm run test:pipeline -- adapters.test.ts`
 
 Expected: FAIL because adapter modules do not exist.
 
-- [ ] **Step 3: Define the adapter boundary**
+- [x] **Step 3: Define the adapter boundary**
 
 ```ts
 export interface SourceRegistryEntry {
@@ -442,7 +442,7 @@ export interface JobSourceAdapter {
 }
 ```
 
-- [ ] **Step 4: Implement fixture-backed mapping and network adapters**
+- [x] **Step 4: Implement fixture-backed mapping and network adapters**
 
 Greenhouse must call `https://boards-api.greenhouse.io/v1/boards/{boardToken}/jobs?content=true`, require `{ jobs: array }`, and map `id`, `title`, `location.name`, `content`, `absolute_url`, `first_published`, and `updated_at`.
 
@@ -450,7 +450,7 @@ Lever must call `https://api.lever.co/v0/postings/{siteName}?mode=json`, require
 
 Both adapters must throw `SourceContractError` for non-2xx responses or invalid JSON shape and must never return a job without `applyUrl`.
 
-- [ ] **Step 5: Add reviewed registry and a probe gate**
+- [x] **Step 5: Add reviewed registry and a probe gate**
 
 ```json
 [
@@ -477,7 +477,7 @@ Both adapters must throw `SourceContractError` for non-2xx responses or invalid 
 
 `probe-sources.ts` must apply a 15-second `AbortSignal.timeout`, parse through the actual adapter, require at least one job, print `PASS <id> <count>` for valid entries, print `FAIL <id> <reason>` to stderr for failures, and exit 1 when any enabled entry fails.
 
-- [ ] **Step 6: Verify fixtures, then probe real public endpoints**
+- [x] **Step 6: Verify fixtures, then probe real public endpoints**
 
 Run: `cd site && npm run test:pipeline -- adapters.test.ts probe-sources.test.ts`
 
