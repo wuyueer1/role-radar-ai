@@ -605,7 +605,7 @@ Define canonical skills and Chinese/English aliases for at least: `data-analysis
 
 Classification precedence must be `people-analytics`, `ai-product`, `ai-solutions`, `ai-engineering`, `data-science`, then `other`; title matches weigh 3 and skill matches weigh 1. `normalizeLocation` must mark China mainland, Hong Kong, Singapore, and explicit APAC remote strings as `default`, all other locations as `global`, without inferring work authorization.
 
-- [ ] **Step 4: Verify bilingual regression and commit**
+- [x] **Step 4: Verify bilingual regression and commit**
 
 Run: `cd site && npm run test:domain -- taxonomy.test.ts`
 
@@ -624,48 +624,51 @@ git commit -m "feat: add bilingual AI job taxonomy"
 - Create: `site/tests/fixtures/jd-text.ts`
 - Create: `site/tests/fixtures/jobs.ts`
 
-- [ ] **Step 1: Write failing scoring and evidence tests**
+- [x] **Step 1: Write failing scoring and evidence tests**
 
 ```ts
 import { describe, expect, it } from "vitest";
 import profile from "../../data/candidate-profile.json";
 import { analyzeLocalJd, scoreJob } from "../../src/domain/matching";
+import { parseCandidateProfile } from "../../src/domain/schemas";
 import { aiProductJob } from "../fixtures/jobs";
 import { LOCAL_AI_PM_JD } from "../fixtures/jd-text";
 
+const candidateProfile = parseCandidateProfile(profile);
+
 describe("explainable matching", () => {
   it("uses the approved five-component weights", () => {
-    const result = scoreJob(aiProductJob, profile, { semanticPercentile: 80, mode: "e5" });
+    const result = scoreJob(aiProductJob, candidateProfile, { semanticPercentile: 80, mode: "e5" });
     const c = result.componentScores;
     expect(result.matchScore).toBe(Math.round(c.skill * .35 + c.evidence * .25 + c.semantic * .20 + c.adjacency * .10 + c.constraints * .10));
   });
 
   it("links every strength to a real evidence record", () => {
-    const result = scoreJob(aiProductJob, profile, { semanticPercentile: 80, mode: "e5" });
+    const result = scoreJob(aiProductJob, candidateProfile, { semanticPercentile: 80, mode: "e5" });
     expect(result.matchedEvidence.length).toBeGreaterThan(0);
-    expect(result.matchedEvidence.every(item => profile.evidence.some(e => e.id === item.evidenceId))).toBe(true);
+    expect(result.matchedEvidence.every(item => candidateProfile.evidence.some(e => e.id === item.evidenceId))).toBe(true);
   });
 
   it("analyzes pasted text locally and rejects navigation noise", () => {
-    expect(analyzeLocalJd("首页 登录 下载 APP", profile)).toMatchObject({ ok: false, reason: "JD_TEXT_TOO_SHORT" });
-    expect(analyzeLocalJd(LOCAL_AI_PM_JD, profile)).toMatchObject({ ok: true, analysis: { analysisMode: "local" } });
+    expect(analyzeLocalJd("首页 登录 下载 APP", candidateProfile)).toMatchObject({ ok: false, reason: "JD_TEXT_TOO_SHORT" });
+    expect(analyzeLocalJd(LOCAL_AI_PM_JD, candidateProfile)).toMatchObject({ ok: true, analysis: { analysisMode: "local" } });
   });
 });
 ```
 
-- [ ] **Step 2: Run and verify missing matching failures**
+- [x] **Step 2: Run and verify missing matching failures**
 
 Run: `cd site && npm run test:domain -- matching.test.ts`
 
 Expected: FAIL because `matching.ts` is missing.
 
-- [ ] **Step 3: Implement the five components and hard blockers**
+- [x] **Step 3: Implement the five components and hard blockers**
 
 Use exact weights `0.35/0.25/0.20/0.10/0.10`. Skill score is weighted candidate confidence across extracted job skills; evidence score is the weighted strongest evidence per required skill; semantic is the supplied E5 percentile; adjacency uses the exact profile-to-role-family values `{ "ai-product": 92, "ai-solutions": 90, "data-science": 94, "ai-engineering": 66, "people-analytics": 96, "other": 50 }`; constraints score only uses explicit profile/JD overlap and otherwise returns neutral `50` with an explanation. Explicit contradictory requirements add a `hardBlocker` and prevent `priority: true`.
 
 Every strength must be created from a `matchedEvidence` item, every gap from an extracted JD skill absent below candidate confidence `0.55`, and the explanation must state analysis mode rather than imply an interview probability.
 
-- [ ] **Step 4: Implement browser-only JD analysis**
+- [x] **Step 4: Implement browser-only JD analysis**
 
 `analyzeLocalJd` must require at least 120 meaningful characters, strip navigation noise, extract skills and role family, calculate TF-IDF/character-trigram relevance against profile evidence, call `scoreJob` with `mode: "local"`, and return a discriminated union:
 
