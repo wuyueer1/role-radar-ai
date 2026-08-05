@@ -678,7 +678,7 @@ type LocalJdResult =
   | { ok: false; reason: "JD_TEXT_TOO_SHORT" | "JD_TEXT_UNREADABLE" };
 ```
 
-- [ ] **Step 5: Run tests and commit**
+- [x] **Step 5: Run tests and commit**
 
 Run: `cd site && npm run test:domain -- matching.test.ts`
 
@@ -698,7 +698,7 @@ git commit -m "feat: add explainable job and local JD matching"
 - Create: `site/tests/domain/trends.test.ts`
 - Create: `site/tests/fixtures/market-history.ts`
 
-- [ ] **Step 1: Write failing cluster and trend tests**
+- [x] **Step 1: Write failing cluster and trend tests**
 
 ```ts
 import { describe, expect, it } from "vitest";
@@ -720,17 +720,17 @@ describe("market intelligence", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify missing modules**
+- [x] **Step 2: Run and verify missing modules**
 
 Run: `cd site && npm run test:domain -- clusters.test.ts trends.test.ts`
 
 Expected: FAIL because cluster and trend modules are missing.
 
-- [ ] **Step 3: Implement an interpretable role-family graph**
+- [x] **Step 3: Implement an interpretable role-family graph**
 
 Create one node per non-empty role family with `jobCount`, `delta7d`, top five skills, and top three companies. Create an edge only when skill-set Jaccard similarity is at least `0.18`; expose stable node positions from a fixed five-family layout so the SVG is deterministic and keyboard navigation does not shift between reloads.
 
-- [ ] **Step 4: Implement complete-period trends**
+- [x] **Step 4: Implement complete-period trends**
 
 Compare the latest 7 complete calendar days with the preceding 7 and the latest 30 with the preceding 30. Count stable job IDs for new/removed jobs, calculate skill share with both numerator and denominator, exclude skills with fewer than five current jobs, and label all output `connected-sources-only`.
 
