@@ -553,7 +553,7 @@ Expected: FAIL because normalization modules do not exist.
 
 Merge jobs only when normalized company matches and either source job IDs match, fingerprints match, or normalized title + first location match with character-trigram Jaccard similarity at least `0.92`. Keep the latest non-null `updatedAt`, the longest clean description, all source URLs, and one canonical HTTPS apply URL. Never merge two jobs from different companies.
 
-- [ ] **Step 5: Run idempotence gate and commit**
+- [x] **Step 5: Run idempotence gate and commit**
 
 Run: `cd site && npm run test:pipeline -- normalize.test.ts dedupe.test.ts`
 
@@ -570,7 +570,7 @@ git commit -m "feat: normalize and deduplicate public jobs"
 - Create: `site/src/domain/taxonomy.ts`
 - Create: `site/tests/domain/taxonomy.test.ts`
 
-- [ ] **Step 1: Write failing bilingual taxonomy tests**
+- [x] **Step 1: Write failing bilingual taxonomy tests**
 
 ```ts
 import { describe, expect, it } from "vitest";
@@ -593,13 +593,13 @@ describe("job taxonomy", () => {
 });
 ```
 
-- [ ] **Step 2: Run and verify failure**
+- [x] **Step 2: Run and verify failure**
 
 Run: `cd site && npm run test:domain -- taxonomy.test.ts`
 
 Expected: FAIL because the taxonomy module is missing.
 
-- [ ] **Step 3: Implement the fixed taxonomy**
+- [x] **Step 3: Implement the fixed taxonomy**
 
 Define canonical skills and Chinese/English aliases for at least: `data-analysis`, `machine-learning`, `nlp-embeddings`, `llm`, `rag`, `vector-databases`, `graph-analytics`, `causal-inference`, `experiment-design`, `data-visualization`, `product-discovery`, `user-research`, `stakeholder-management`, `business-analysis`, `solution-design`, `api-integration`, `frontend-engineering`, `mlops`, `responsible-ai`, `python`, `sql`, and `cloud`.
 
