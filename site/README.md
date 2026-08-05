@@ -1,101 +1,94 @@
-# CareerGraph AI
+# RoleRadar AI
 
-CareerGraph AI 是一个面向 AI 转型者的可解释职业跃迁实验室。它把候选人的具体经历转成可核验的能力证据，在策展职业图谱中比较多条转型路径，并把结论落到 90 天行动计划。
+RoleRadar AI 是一个公开、免登录的 AI 岗位机会分析器。它定时读取经过审查的官方招聘源，把真实岗位归一化、去重并映射到 AI 角色簇，再用候选人的可核验证据生成可复算的匹配解释。
 
-核心主张：**看见、比较并质疑 AI 的职业决策依据。**
+核心主张：**把招聘市场变成可解释的个人机会。**
 
-![CareerGraph AI 社交预览](public/og.png)
+![RoleRadar AI 社交预览](public/og.png)
 
 ## 为什么做这个作品
 
-这个作品根据 Yueer W. 的背景设计，集中展示四类能力：
+作品围绕一个真实求职任务设计：面试官和候选人都需要知道“市场上现在有什么岗位、为什么值得关注、下一步应该补什么证据”，而不是只看一张静态简历。
 
-- 职业与人才场景的领域理解；
-- NLP、职业网络、因果推断和大规模数据分析；
-- 把研究方法转成可交互产品的能力；
-- 对 AI 证据边界、失败降级和用户决策权的判断。
+它集中展示四类能力：
 
-它不是简历关键词匹配器，也不宣称预测实时招聘市场。所有演示数据均为经过说明的本地策展数据。
+- 从失败的产品假设中重新定义核心用户任务；
+- 招聘数据 adapter、schema、归一化、去重与 last-good 快照；
+- 文本语义、职业邻近度与可解释匹配产品化；
+- 无账号门槛、浏览器本地隐私与离线演示韧性。
 
 ## 核心体验
 
-- 画像面板：8 条简历证据和 7 项核心能力；
-- 职业图谱：当前角色、桥接岗位和目标 AI 岗位；
-- 三条路径：AI 产品经理、People Analytics 数据科学家、AI 解决方案顾问；
-- 五维评分：技能迁移、职业邻近、证据强度、AI 杠杆、转型速度；
-- 情景模拟：最快进入 AI、最大化技术深度、发挥商业优势；
-- 依据抽屉：证据、评分、90 天行动计划和模型说明；
-- 三分钟讲解：5 步内置面试演示；
-- 双模式边界：默认稳定演示完整离线运行，可选 Live AI 仅做结构化抽取和语言表达；
-- 现场韧性：Service Worker 缓存核心页面，断网刷新仍可继续演示。
+- 真实市场脉搏：当前岗位、新增/移除、最大角色簇和增长技能；
+- 岗位簇地图：节点大小代表岗位数，颜色代表 7 日变化，连线代表共享技能；
+- 可分享筛选：地点、角色、来源、排序、最低匹配分和 query 全部写入 URL；
+- 证据追踪：岗位要求与候选人证据一一对应，并显示五项可复算分量；
+- 原站投递：每个岗位保留 Greenhouse / Lever 官方申请链接；
+- 本地 JD 分析：粘贴文本后在浏览器内计算，不上传、不持久化；
+- 数据源健康与离线回退：单源失败不覆盖上一份有效数据。
 
-## 技术结构
+## 数据与模型边界
 
-```mermaid
-flowchart LR
-    A["策展画像与简历证据"] --> B["数据完整性校验"]
-    B --> C["确定性职业图谱"]
-    B --> D["五维评分与权重归一"]
-    C --> E["路径排序与变化解释"]
-    D --> E
-    E --> F["证据追踪与 90 天计划"]
-    G["可选 Live AI"] -->|"仅结构化抽取与表达"| F
-    G -. "不能改分或创造证据" .-> D
-```
+- 当前启用来源：Anthropic Greenhouse 与 Binance Lever；来源必须先通过条款复核、HTTP 探测和 schema 校验。
+- BOSS 直聘、猎聘等受平台限制的页面不会自动请求；用户可复制职位描述进行本地分析。
+- 定时管线优先使用固定版本的多语言 E5；环境不可用时回退到具名的确定性 TF-IDF / 规则模式。
+- 匹配分由技能 35%、证据 25%、语义 20%、角色邻近 10%、明确约束 10% 组成；它不是录用或面试概率。
+- 浏览器不接收 API secret；粘贴的 JD 不写入 localStorage、sessionStorage、数据库或分析埋点。
+- 岗位簇和趋势只代表已接入来源，不代表整个招聘市场。
 
-- React 19 + TypeScript + Vinext；
-- 原生 SVG 职业图谱；
-- 纯函数领域引擎，UI 不复制评分规则；
-- Vitest、Testing Library、Node 测试和 Playwright 双视口端到端测试；
-- Cloudflare/Sites 构建与部署；
-- 无远程字体、无客户端密钥、无数据库依赖。
+来源契约：
+
+- [Greenhouse Job Board API](https://developers.greenhouse.io/job-board.html)
+- [Lever Postings API](https://github.com/lever/postings-api)
 
 ## 本地运行
 
 需要 Node.js 22.13 或更高版本。
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-默认本地地址为 `http://localhost:3000/`。
+默认本地地址由 Vite 输出，通常为 `http://localhost:5173/`。
+
+刷新真实数据需要 Python 3.12 与 `pipeline/embeddings/requirements-e5.txt` 中的固定依赖：
+
+```bash
+npm run data:probe
+npm run data:update
+```
 
 ## 验证
 
 ```bash
-npm run test:all
 npm run lint
+npm run typecheck
+npm test
+npm run build
 npm run test:e2e
 ```
 
-`test:all` 会运行类型检查、生产构建、数据/评分/降级测试、服务端渲染测试和组件交互测试。`test:e2e` 会用桌面与紧凑视口验证完整面试流程和断网刷新。
-
-## 面试演示
-
-页面右上角的“开始三分钟讲解”可直接完成内置演示。更完整的话术、点击顺序和岗位追问准备见：
-
-- [`../docs/interview-demo.md`](../docs/interview-demo.md)
-- [`../docs/verification.md`](../docs/verification.md)
-
-## AI 与数据边界
-
-- 路径分数由本地确定性引擎计算；
-- Live AI 不能修改组件分数或总分；
-- 模型不能创造不存在的简历证据；
-- schema 校验失败时保留原始输入并回退稳定模式；
-- 页面中的图谱不代表实时市场规模，分数也不是录用概率；
-- 内置画像使用 `Yueer W.`，不包含手机号或邮箱。
+Playwright 会串行验证 1440×900、1024×768 与 390×844 三个视口，包括免账号访问、真实岗位、来源状态、筛选、证据、投递链接、本地 JD、焦点管理、横向溢出和离线刷新。
 
 ## 目录
 
 ```text
-app/
-  components/        画像、图谱、路径、抽屉和讲解组件
-  lib/               策展数据与职业决策引擎
-  CareerGraphApp.tsx 整页状态协调
-tests/               领域、SSR 与组件交互验证
-e2e/                 真实浏览器面试流程与断网刷新验证
-public/og.png         社交预览封面
-public/sw.js          面试现场离线缓存
+data/                 匿名候选人画像与来源注册表
+pipeline/             探测、adapter、归一化、去重、匹配、快照与 embeddings
+public/data/          最近一份验证成功的公开岗位快照
+src/                  RoleRadar Vite/React 应用与领域逻辑
+tests/                domain、pipeline 与 component 回归测试
+e2e/                  三视口公开访问与面试旅程
+public/sw.js          last-good 数据与离线应用缓存
 ```
+
+## 设计、实现与交付
+
+- [批准的重构设计](../docs/superpowers/specs/2026-07-30-ai-job-radar-redesign.md)
+- [测试驱动实现计划](../docs/superpowers/plans/2026-08-05-role-radar-ai-implementation.md)
+- [三分钟面试讲稿](../docs/role-radar-demo-script.md)
+- [发布验证记录](../docs/role-radar-validation.md)
+- 公开站点：等待确认 GitHub repository 后填入
+
+站点将由 GitHub Actions 每 4 小时刷新已审查来源，并只在 probe、数据更新、测试和构建全部成功后发布。旧的私有部署在公开地址通过验收前保持不变。

@@ -1144,21 +1144,21 @@ git commit -m "feat: complete RoleRadar interactive interview flow"
 - Modify: `site/public/favicon.svg`
 - Replace: `site/public/og.png`
 
-- [ ] **Step 1: Write a failing repository hygiene test**
+- [x] **Step 1: Write a failing repository hygiene test**
 
 Create `site/tests/pipeline/repository-hygiene.test.ts` that asserts package metadata contains `RoleRadar AI`, lockfile URLs use only `registry.npmjs.org`, public artifacts contain no email/phone/API-key patterns, `.openai/hosting.json` is absent, and source files contain none of `CareerGraph`, `curated demo`, `OpenAI login`, `vinext`, or `wrangler`.
 
-- [ ] **Step 2: Run and verify the legacy-code failure**
+- [x] **Step 2: Run and verify the legacy-code failure**
 
 Run: `cd site && npm run test:pipeline -- repository-hygiene.test.ts`
 
 Expected: FAIL while old app/runtime files still exist.
 
-- [ ] **Step 3: Remove only the obsolete paths and update metadata**
+- [x] **Step 3: Remove only the obsolete paths and update metadata**
 
 Delete the paths listed above after confirming `git status --short` contains no unrelated user changes. Update package name to `role-radar-ai`, version to `1.0.0`, description to `Public explainable AI job intelligence portfolio`, and README commands/data-boundary/model/deployment sections. Preserve the old version in Git history and the existing private production deployment until the new public URL passes acceptance.
 
-- [ ] **Step 4: Add exact scheduled Pages workflow**
+- [x] **Step 4: Add exact scheduled Pages workflow**
 
 Create a workflow with `schedule: cron: "17 */4 * * *"` and `workflow_dispatch`; use `actions/checkout@v6`, `actions/setup-node@v5` with Node 22 and npm cache, `actions/setup-python@v6` with Python 3.12, cache `~/.cache/huggingface`, run `npm ci`, install `pipeline/embeddings/requirements-e5.txt`, restore the latest validated files from the `market-data` checkout, run `npm run data:probe`, `npm run data:update`, `npm run test:all`, and `npm run build`, then persist only `site/public/data/*.json` to `market-data` and deploy `site/dist` with `actions/configure-pages@v5`, `actions/upload-pages-artifact@v4`, and `actions/deploy-pages@v4`.
 
@@ -1168,7 +1168,7 @@ The workflow must use `contents: write`, `pages: write`, and `id-token: write`; 
 
 Run `git remote -v` and inspect the connected GitHub account. If no approved remote exists, ask the user to confirm the target repository and whether source code may be public before creating or pushing it. Create a dedicated `market-data` branch containing only `current.json`, `history.json`, and `source-health.json`, and configure Pages to deploy from GitHub Actions. Do not delete or change the existing private Sites deployment.
 
-- [ ] **Step 6: Run fresh local completion evidence**
+- [x] **Step 6: Run fresh local completion evidence**
 
 Run:
 
@@ -1187,7 +1187,7 @@ Expected: every command exits 0; test output reports no failures; all three view
 
 Open the GitHub Pages URL in an unsigned/incognito browser and verify: no OpenAI/ChatGPT/GitHub login redirect; current data timestamp and two source statuses visible; at least 20 real jobs; original apply link opens; JD local analysis works; desktop/tablet/mobile screenshots have no clipping; Lighthouse performance/accessibility/best-practices/SEO each score at least 90. Record exact command outputs, URL, `market-data` Git commit, public `dataRevision`, screenshots, and Lighthouse scores in `docs/role-radar-validation.md`.
 
-- [ ] **Step 8: Add the three-minute interview script and commit**
+- [x] **Step 8: Add the three-minute interview script and commit**
 
 `docs/role-radar-demo-script.md` must cover: product-discovery failure in the old version, real-source freshness, personal match evidence, cluster map, pasted JD, model/fallback boundary, and public deployment. `site/README.md` must link the design, plan, validation, public site, and source terms.
 

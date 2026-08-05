@@ -1,6 +1,6 @@
 {
-  "name": "careergraph-ai",
-  "version": "0.1.0",
+  "name": "role-radar-ai",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -47,5 +47,5 @@
     "vitest": "^3.2.4"
   },
   "type": "module",
-  "description": "Explainable AI career-transition decision lab"
+  "description": "Public explainable AI job intelligence portfolio"
 }

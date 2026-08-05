@@ -1,0 +1,108 @@
+name: Refresh RoleRadar data and deploy Pages
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: role-radar-refresh-pages
+  cancel-in-progress: true
+
+jobs:
+  refresh-build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out application source
+        uses: actions/checkout@v6
+
+      - name: Check out last validated market data
+        uses: actions/checkout@v6
+        with:
+          ref: market-data
+          path: .market-data
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Cache multilingual E5 model files
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/huggingface
+          key: e5-${{ runner.os }}-${{ hashFiles('site/pipeline/embeddings/requirements-e5.txt') }}
+          restore-keys: |
+            e5-${{ runner.os }}-
+
+      - name: Restore last-good public snapshot
+        run: |
+          cp .market-data/current.json site/public/data/current.json
+          cp .market-data/history.json site/public/data/history.json
+          cp .market-data/source-health.json site/public/data/source-health.json
+
+      - name: Install Node dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Install pinned E5 dependencies
+        run: python -m pip install --disable-pip-version-check -r site/pipeline/embeddings/requirements-e5.txt
+
+      - name: Probe reviewed public sources
+        working-directory: site
+        run: npm run data:probe
+
+      - name: Build validated market snapshot
+        working-directory: site
+        run: npm run data:update
+
+      - name: Run complete test gate
+        working-directory: site
+        run: npm run test:all
+
+      - name: Build public site
+        working-directory: site
+        run: npm run build
+
+      - name: Persist validated market data only
+        working-directory: .market-data
+        run: |
+          cp ../site/public/data/current.json current.json
+          cp ../site/public/data/history.json history.json
+          cp ../site/public/data/source-health.json source-health.json
+          git add current.json history.json source-health.json
+          if git diff --cached --quiet; then
+            echo "Validated market snapshot is unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "data: refresh validated market snapshot"
+            git push origin HEAD:market-data
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site/dist
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
