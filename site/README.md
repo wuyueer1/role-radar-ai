@@ -89,6 +89,7 @@ public/sw.js          last-good 数据与离线应用缓存
 - [测试驱动实现计划](../docs/superpowers/plans/2026-08-05-role-radar-ai-implementation.md)
 - [三分钟面试讲稿](../docs/role-radar-demo-script.md)
 - [发布验证记录](../docs/role-radar-validation.md)
-- 公开站点：等待确认 GitHub repository 后填入
+- 公开站点：[https://wuyueer1.github.io/role-radar-ai/](https://wuyueer1.github.io/role-radar-ai/)
+- 公开源码：[wuyueer1/role-radar-ai](https://github.com/wuyueer1/role-radar-ai)
 
-站点将由 GitHub Actions 每 4 小时刷新已审查来源，并只在 probe、数据更新、测试和构建全部成功后发布。旧的私有部署在公开地址通过验收前保持不变。
+站点由 GitHub Actions 每 4 小时刷新已审查来源，并只在 probe、数据更新、测试和构建全部成功后发布。公开地址已于 2026-08-06 完成免登录、数据、交互与视觉验收；旧的私有部署仍保持不变。

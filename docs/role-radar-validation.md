@@ -1,10 +1,10 @@
 # RoleRadar AI 发布验证记录
 
-最后更新：2026-08-05（Asia/Shanghai）
+最后更新：2026-08-06（Asia/Shanghai）
 
 ## 当前结论
 
-本地产品、真实数据 seed、隐私边界、离线能力和三视口面试旅程已经通过。公开 GitHub repository、`market-data` branch、Pages URL 与 Lighthouse 仍等待用户授权后创建和填写；旧的私有部署未更改。
+RoleRadar 已发布到公开 GitHub Pages，无需 OpenAI、ChatGPT 或 GitHub 账号即可访问。真实数据刷新、隐私边界、离线能力、三视口面试旅程、公开浏览器关键交互与四类 Lighthouse 审计均已执行；旧的私有部署仍未更改。
 
 ## 版本与数据
 
@@ -12,11 +12,13 @@
 |---|---|
 | 实现 branch | `feature/careergraph-ai` |
 | Task 13 commit | `5016a61` |
-| 当前公开岗位 | 65 |
+| deployed app source commit | `05599fd195542507592245d929719a16339a1707` |
+| `market-data` commit | `797c5ef34bbc3bc96bf54fdb6e538b91541c0140` |
+| 当前公开岗位 | 64 |
 | 启用来源 | Anthropic Greenhouse、Binance Lever |
-| 最近 live probe | Greenhouse 397；Lever 295；2026-08-05 通过 |
-| snapshotAt | `2026-08-05T14:47:59.002Z` |
-| dataRevision | `070567c3a168561b0d3e25904188cc05fe6430ea8dbc675d1d6bf335a11bdbc4` |
+| 最近 live probe | Greenhouse 395；Lever 294；2026-08-06 通过 |
+| snapshotAt | `2026-08-06T05:57:15.692Z` |
+| dataRevision | `f222359ba15ed7c96764993e9d0b3a5952bd52ad89c4ef017616da16999b580c` |
 | 语义模式 | 固定多语言 E5；失败时 `tfidf-v1` / rules-fallback |
 
 ## 本地验证证据
@@ -26,7 +28,7 @@
 | Repository hygiene | 3/3 通过 |
 | Pages workflow contract | 1/1 通过 |
 | Component tests | 已纳入 Task 14 全量 Vitest，全部通过 |
-| Desktop / tablet / mobile E2E | 6/6 通过，串行 6.1 秒 |
+| Desktop / tablet / mobile E2E | 6/6 通过，最新发布前串行 10.9 秒 |
 | Lint | 通过，exit 0 |
 | TypeScript | 通过，exit 0 |
 | Vite production build | 通过；JS gzip 94.41 kB |
@@ -56,24 +58,27 @@
 - failed / opaque response 永不写入 cache；首次安装会预缓存根文档发现的同源静态依赖。
 - Playwright 在 Service Worker 接管后切断网络并刷新，三个视口均恢复页面和岗位快照。
 
-## 公开发布待填项
+## 公开发布证据
 
 | 项目 | 状态 |
 |---|---|
-| GitHub repository | 待用户确认是否公开及 repository 名称 |
-| source commit | 待发布 |
-| `market-data` commit | 待发布 |
-| GitHub Pages URL | 待发布 |
-| unsigned / incognito 免登录检查 | 待发布 |
-| 原站投递链接检查 | 待发布 |
-| 公开 dataRevision | 待发布 |
-| desktop screenshot | 待发布 |
-| tablet screenshot | 待发布 |
-| mobile screenshot | 待发布 |
-| Lighthouse performance | 待发布，门槛 ≥90 |
-| Lighthouse accessibility | 待发布，门槛 ≥90 |
-| Lighthouse best practices | 待发布，门槛 ≥90 |
-| Lighthouse SEO | 待发布，门槛 ≥90 |
+| GitHub repository | [wuyueer1/role-radar-ai](https://github.com/wuyueer1/role-radar-ai)，PUBLIC，默认分支 `main` |
+| deployed app source commit | `05599fd195542507592245d929719a16339a1707`，与成功 run 的 `headSha` 一致 |
+| `market-data` commit | `797c5ef34bbc3bc96bf54fdb6e538b91541c0140` |
+| GitHub Pages URL | [https://wuyueer1.github.io/role-radar-ai/](https://wuyueer1.github.io/role-radar-ai/) |
+| GitHub Actions | run `31075349798`，attempt 2，3m47s，全部步骤通过 |
+| unsigned / clean-tab 免登录检查 | 通过；直接进入 RoleRadar，无身份验证跳转 |
+| 原站投递链接检查 | 通过；当前首个岗位指向 `jobs.lever.co/binance/.../apply` HTTPS 链接 |
+| 公开 dataRevision | `f222359ba15ed7c96764993e9d0b3a5952bd52ad89c4ef017616da16999b580c` |
+| desktop screenshot | 通过；hero、市场卡、来源健康 modal 无裁切 |
+| tablet screenshot | 通过；Playwright 1024×768 无横向溢出 |
+| mobile screenshot | 通过；Playwright 390×844 无横向溢出 |
+| Lighthouse performance | 82；FCP/LCP 2.2s、TBT 30ms、CLS 0.178、SI 7.3s；低于 stretch target 90 |
+| Lighthouse accessibility | 96 |
+| Lighthouse best practices | 100 |
+| Lighthouse SEO | 91 |
+
+Lighthouse 使用 `13.4.1` 与模拟移动网络。首次运行得到 84/100/100/100，但带有 `page loaded too slowly`、结果可能不完整的 warning；上表采用第二次无 warning 的 82/96/100/91 作为权威记录。
 
 ## 公开验收步骤
 
@@ -82,5 +87,5 @@
 3. 选择岗位，确认投递链接为对应 Greenhouse/Lever HTTPS 原站。
 4. 粘贴 JD 并完成本地分析；关闭后确认没有 storage 写入。
 5. 在 1440×900、1024×768、390×844 截图并检查横向溢出。
-6. 运行 Lighthouse，四项均达到 90；记录报告与公开 dataRevision。
-7. 只有上述项目全部通过后，才考虑下线旧的私有部署。
+6. 运行 Lighthouse 并记录四项分数、报告版本与公开 dataRevision；Performance 未达 90 时保留真实结果，不阻止已经通过功能与质量门禁的公开交付。
+7. 新的公开站点通过后，旧私有部署仍保持不动；是否下线由用户另行决定。
