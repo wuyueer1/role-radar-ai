@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "snapshotAt": "2026-08-09T09:02:39.194Z",
-  "dataRevision": "4ba6b0328a4f54e5696438fbdf3482dc99c977b1ad54b2b4a60e1315c44b9d15",
+  "snapshotAt": "2026-08-09T13:16:03.499Z",
+  "dataRevision": "cc4324f56d12642a2afe573e5158d9679f86d728500b8f11e49c6b77b1fb5b47",
   "sourceHealth": [
     {
       "sourceId": "anthropic-greenhouse",
       "company": "Anthropic",
       "status": "ok",
-      "fetchedAt": "2026-08-09T09:02:39.194Z",
+      "fetchedAt": "2026-08-09T13:16:03.499Z",
       "jobCount": 392,
       "message": "Reviewed source contract valid"
     },
@@ -15,7 +15,7 @@
       "sourceId": "binance-lever",
       "company": "Binance",
       "status": "ok",
-      "fetchedAt": "2026-08-09T09:02:39.194Z",
+      "fetchedAt": "2026-08-09T13:16:03.499Z",
       "jobCount": 294,
       "message": "Reviewed source contract valid"
     }
@@ -155,7 +155,7 @@
       "constraints": [],
       "publishedAt": "2026-04-23T10:35:36-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "715acd4a13b1ad098912759be620f5abc59ded512f25bc1e0bb1f546033dfd0a",
       "intelligence": {
@@ -188,7 +188,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -221,7 +221,7 @@
       "constraints": [],
       "publishedAt": "2025-05-29T11:10:02-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "84405621fe647549ec7c222245e556574e960e0e972834a39a7b8a019be512ea",
       "intelligence": {
@@ -254,7 +254,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -287,7 +287,7 @@
       "constraints": [],
       "publishedAt": "2026-04-23T10:43:13-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "790637a0e78d4c652c1bb3cd175118baee1901d9ab75b1d1b0796cfa3c9c63f4",
       "intelligence": {
@@ -320,7 +320,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -354,7 +354,7 @@
       "constraints": [],
       "publishedAt": "2026-01-26T06:27:50.305Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "b052b4863b11a5c0ec7ecbe3c5b1beb0708dea55f9e933d19389b364395967ab",
       "intelligence": {
@@ -387,7 +387,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -422,7 +422,7 @@
       "constraints": [],
       "publishedAt": "2024-07-04T09:02:53.794Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "0012e5be4b3a3b264641e42ad884f744b053177df3593b253c55fa15dde26d95",
       "intelligence": {
@@ -461,7 +461,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -495,7 +495,7 @@
       "constraints": [],
       "publishedAt": "2021-10-08T08:43:41.417Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "8412a579a08641102a9e1d42f8921ccee811548a559941300151d0d620ff81b9",
       "intelligence": {
@@ -528,7 +528,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -561,7 +561,7 @@
       "constraints": [],
       "publishedAt": "2026-07-16T17:26:57-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "7dbaf25e04c90c2ac63b9df1d7184c045724b06a485dfe2c177a6d35a55f89bc",
       "intelligence": {
@@ -594,7 +594,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -626,7 +626,7 @@
       "constraints": [],
       "publishedAt": "2026-07-24T19:31:13-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "61dbfb5b043a4ef3693163bd2f8231ad26c7f23bd6856dde477a3d6fbe054b2e",
       "intelligence": {
@@ -653,7 +653,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -686,7 +686,7 @@
       "constraints": [],
       "publishedAt": "2025-10-10T13:58:48-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "59b4fb0c1d3c32102c291be393c5adcc6e2e1970fe55826c0588fda363b6ef77",
       "intelligence": {
@@ -719,7 +719,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -754,7 +754,7 @@
       "constraints": [],
       "publishedAt": "2026-05-21T07:31:57.035Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "d5aec9a83cebc556d1742f814d76ad3759abf89b73ca3563cf1005f00e89fbd1",
       "intelligence": {
@@ -787,7 +787,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -822,7 +822,7 @@
       "constraints": [],
       "publishedAt": "2025-11-27T03:25:54.011Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "2489e94345836edd318715259192da96e6ba3ba5761c60c170df72df18af1482",
       "intelligence": {
@@ -855,7 +855,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -893,7 +893,7 @@
       "constraints": [],
       "publishedAt": "2024-09-27T07:10:51.334Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "2fdfd4508f75807ab6124a555e0ec59fc0eecff645103e1dc095e86954b12e84",
       "intelligence": {
@@ -920,7 +920,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -955,7 +955,7 @@
       "constraints": [],
       "publishedAt": "2026-01-13T23:54:46-05:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "48cd867503ee0a11d2cdeb84bdff08a9adc6b1ede93b29b7b462fbd45b9badbf",
       "intelligence": {
@@ -996,7 +996,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1032,7 +1032,7 @@
       "constraints": [],
       "publishedAt": "2026-05-31T04:18:08-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "4b888630c7b395ba2ae0d2cb8dc6916b166b725973768a4a9cb5bdacd1bf23db",
       "intelligence": {
@@ -1074,7 +1074,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1108,7 +1108,7 @@
       "constraints": [],
       "publishedAt": "2025-07-18T17:26:41-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "cdc925d3adf7a63d38852fa1a8342ada36464215da7d0935cfa0ea7d6f1e240d",
       "intelligence": {
@@ -1143,7 +1143,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1177,7 +1177,7 @@
       "constraints": [],
       "publishedAt": "2026-02-27T13:25:16-05:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "6320d6b974afc4b408fffac76db56c7cdeb945ff4fd0c3c6892873dedf5b11ca",
       "intelligence": {
@@ -1212,7 +1212,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1248,7 +1248,7 @@
       "constraints": [],
       "publishedAt": "2026-07-22T14:09:36-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "53e5583b1ea098340d7edb60bed4bd17a6d86f6ba91e4775f277616686168dcd",
       "intelligence": {
@@ -1290,7 +1290,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1326,7 +1326,7 @@
       "constraints": [],
       "publishedAt": "2025-04-14T16:30:00-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "79a21693b6febeb3051d8228ad9fffe9241152cfc9f678da5ccb24bbdb27a993",
       "intelligence": {
@@ -1368,7 +1368,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1404,7 +1404,7 @@
       "constraints": [],
       "publishedAt": "2026-06-02T18:08:52-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "b5ea9ae367d5cda84e866923d08dad12eb4810a34fca61aaba41e5b05b7ab8ed",
       "intelligence": {
@@ -1446,7 +1446,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1482,7 +1482,7 @@
       "constraints": [],
       "publishedAt": "2026-05-25T05:25:19-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "8cc37b8151c3a515ede24c605be70c704889c62403a093c64483454850d641ae",
       "intelligence": {
@@ -1524,7 +1524,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1558,7 +1558,7 @@
       "constraints": [],
       "publishedAt": "2026-04-28T03:53:55-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "58b0cfa698a0b9717c7513eea9732993d9297031707028153d54e5c33d39f1b2",
       "intelligence": {
@@ -1593,7 +1593,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1636,7 +1636,7 @@
       "constraints": [],
       "publishedAt": "2024-11-08T02:51:49.048Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "981a76d3d90408abc3745e99009bc5bc97fd68144a168ebb6bee9e928e8afbf8",
       "intelligence": {
@@ -1672,7 +1672,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1708,7 +1708,7 @@
       "constraints": [],
       "publishedAt": "2025-03-31T14:08:49-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "3dd02d4a0a1fbcdc3603fd7cf217f42608c195720e15ed972f25ba8cb4c28120",
       "intelligence": {
@@ -1750,7 +1750,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1787,7 +1787,7 @@
       "constraints": [],
       "publishedAt": "2026-05-27T12:27:23-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "45ede238563e9ae6860fe14d4bc61ad8d740b4de9267b81a8044a2f87ddd0628",
       "intelligence": {
@@ -1835,7 +1835,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1870,7 +1870,7 @@
       "constraints": [],
       "publishedAt": "2026-02-11T12:34:39-05:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "c345dabe1cc7ac53f67d0748ea87698fa832b7b5427b48777b6a528aa8003ef3",
       "intelligence": {
@@ -1906,7 +1906,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1941,7 +1941,7 @@
       "constraints": [],
       "publishedAt": "2025-04-01T16:39:21-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "7b7d8f9090c1732ba6fbe7e6828aa4931dcf991028a954f822b3fe3351264116",
       "intelligence": {
@@ -1977,7 +1977,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2010,7 +2010,7 @@
       "constraints": [],
       "publishedAt": "2026-02-12T03:43:42-05:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "e4d7ed3b49c45a3e58fc069d33b59cc646f64c84ba720066ffbd641eb2294008",
       "intelligence": {
@@ -2039,7 +2039,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2075,7 +2075,7 @@
       "constraints": [],
       "publishedAt": "2026-03-23T16:37:20-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "7117fcdf3b47dc9ae7db9ba80a9219ae79bb96963eac913bc57949038a359891",
       "intelligence": {
@@ -2117,7 +2117,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2161,7 +2161,7 @@
       "constraints": [],
       "publishedAt": "2025-08-18T04:30:55.957Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "225458074ba15a537034f1da81f89eeb0ce8f434b24df3a51972d94a4e170b27",
       "intelligence": {
@@ -2191,7 +2191,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2229,7 +2229,7 @@
       "constraints": [],
       "publishedAt": "2026-08-04T06:16:51.471Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "7b4648e8e1496b21f83bc6d2f08f0bb925a90f8694c373e68c01cfb4cb2ffabd",
       "intelligence": {
@@ -2271,7 +2271,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2307,7 +2307,7 @@
       "constraints": [],
       "publishedAt": "2026-05-26T21:43:20-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "22c84c1c65b2a8d4f75b1a776054221cf51434332a4bc71b563c976a5000cb13",
       "intelligence": {
@@ -2349,7 +2349,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2382,7 +2382,7 @@
       "constraints": [],
       "publishedAt": "2026-06-24T13:51:42-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "c059de37a1aa8654a1213339ee2bece3ae4753e28f6d32fe9b7e206143f4c4e9",
       "intelligence": {
@@ -2411,7 +2411,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2444,7 +2444,7 @@
       "constraints": [],
       "publishedAt": "2025-04-01T19:41:06-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "35a2bcf546242f7cd38c6829828634d3c2d88695af08c1ab17cf8217ac221ef1",
       "intelligence": {
@@ -2473,7 +2473,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2517,7 +2517,7 @@
       "constraints": [],
       "publishedAt": "2022-09-09T15:13:55.168Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "a328c031e51a150ac0e573aace7c58beadb49b72fda93a6749318d39f4641332",
       "intelligence": {
@@ -2548,7 +2548,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2584,7 +2584,7 @@
       "constraints": [],
       "publishedAt": "2026-03-11T11:14:30-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "53ed7ab84ffd0fdc81a96ade7bd922ea5921c909217ee99f0611d50633a7e84b",
       "intelligence": {
@@ -2621,7 +2621,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2654,7 +2654,7 @@
       "constraints": [],
       "publishedAt": "2025-11-07T17:47:14-05:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "5cc22f4851fd43ac843abf631bc0ea4df30d832b7c0bce59ca8d04023a89b65d",
       "intelligence": {
@@ -2683,7 +2683,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2722,7 +2722,7 @@
       "constraints": [],
       "publishedAt": "2025-09-24T05:37:40.693Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "6acc3ade2e8924913b6a41d7745f1a3cda7db29f24d7a74b87e7e61e4238ea03",
       "intelligence": {
@@ -2760,7 +2760,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2796,7 +2796,7 @@
       "constraints": [],
       "publishedAt": "2026-04-21T01:41:16.600Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "dbd303bc2713e1c3e77747b9720ab0e43b007a1404805cf41a9ec6b529bd06f4",
       "intelligence": {
@@ -2826,7 +2826,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2861,7 +2861,7 @@
       "constraints": [],
       "publishedAt": "2026-06-02T14:24:51-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "aab2a48c88c0330621b5ec7084d6fc148b29c1a8ce5131500848e22bd8cd3923",
       "intelligence": {
@@ -2897,7 +2897,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2931,7 +2931,7 @@
       "constraints": [],
       "publishedAt": "2026-05-06T02:22:41-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "819ea2d44aa20a0ad6e576d52c6347f6ea5370a5113f8c675124b03e5bde6ea6",
       "intelligence": {
@@ -2961,7 +2961,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2997,7 +2997,7 @@
       "constraints": [],
       "publishedAt": "2026-04-21T01:52:10.658Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "8004e5b2d1c81c453a126ae29edc73a7afbac2a9578275b27faf19b353c2c9b0",
       "intelligence": {
@@ -3027,7 +3027,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3063,7 +3063,7 @@
       "constraints": [],
       "publishedAt": "2025-05-20T13:17:11-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "17360ccd377d632b7dd3a0d17fbce8491f56f1a323654f408907a1765509e480",
       "intelligence": {
@@ -3100,7 +3100,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3136,7 +3136,7 @@
       "constraints": [],
       "publishedAt": "2026-07-16T06:21:02.265Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "7e554774fbf203be09340b2c0d0064d4ca885010f0c2aeab6ce49e35c57dc856",
       "intelligence": {
@@ -3167,7 +3167,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3203,7 +3203,7 @@
       "constraints": [],
       "publishedAt": "2026-06-12T08:04:55.081Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "29b21ef8ab6950da72310204f9805cb0a5a927d9226f5532fda0751cfb075b2c",
       "intelligence": {
@@ -3233,7 +3233,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3269,7 +3269,7 @@
       "constraints": [],
       "publishedAt": "2026-05-20T18:53:11-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "d6b087fb49bf1f29b9835dc0bbe00939216f52d93ab9f7631f036fdcde198765",
       "intelligence": {
@@ -3306,7 +3306,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3343,7 +3343,7 @@
       "constraints": [],
       "publishedAt": "2026-06-03T11:30:49-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "f5b25fd90c575281eef51f9f93007a6c025dc74deecd29513f5d97a4473c1e80",
       "intelligence": {
@@ -3381,7 +3381,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3420,7 +3420,7 @@
       "constraints": [],
       "publishedAt": "2024-11-26T04:03:14.782Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "6c07df10ee89c29123f6374c45eeb2a2af026169f8f94f5b0d3feedb8e5438be",
       "intelligence": {
@@ -3458,7 +3458,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3494,7 +3494,7 @@
       "constraints": [],
       "publishedAt": "2026-06-08T16:10:07-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "a1cdf8fcfc41836ae98a9a0bf19adb4ae372ca545c782e8039be32dd7c27557e",
       "intelligence": {
@@ -3531,7 +3531,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3565,7 +3565,7 @@
       "constraints": [],
       "publishedAt": "2026-06-12T16:17:38-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "a756dad35644eb3ce4ac66744980af9b4a58d530fc7061363f9e6a7fc7e717cf",
       "intelligence": {
@@ -3595,7 +3595,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3631,7 +3631,7 @@
       "constraints": [],
       "publishedAt": "2026-06-29T10:33:21-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "0cba0d3512eb5a66e156c3be4001139feb295e94266ba842ddaaef52b5e50c44",
       "intelligence": {
@@ -3668,7 +3668,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3703,7 +3703,7 @@
       "constraints": [],
       "publishedAt": "2026-07-16T02:44:15.457Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "9410b238a1e2ec6330515b4b0f82e2ba03a9dfab0a49e5aeeb5b66406105422c",
       "intelligence": {
@@ -3733,7 +3733,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3769,7 +3769,7 @@
       "constraints": [],
       "publishedAt": "2026-04-21T01:45:10.251Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "03298dcc5e25e766e9a19da7ea52fd3ea93d3381a5a1eca8116bdaf024a7f5ca",
       "intelligence": {
@@ -3799,7 +3799,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3836,7 +3836,7 @@
       "constraints": [],
       "publishedAt": "2026-06-03T11:30:48-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "795c3be83fa2cdbb748e77b31056941762a5095e6e6297759558b6243f7bb827",
       "intelligence": {
@@ -3874,7 +3874,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3910,7 +3910,7 @@
       "constraints": [],
       "publishedAt": "2026-02-02T09:58:04-05:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "ea451f9e63834b8f30e5a68420b9718caca67efc12a9b493c05cf1b963a09b23",
       "intelligence": {
@@ -3947,7 +3947,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3983,7 +3983,7 @@
       "constraints": [],
       "publishedAt": "2026-03-12T15:17:32-04:00",
       "updatedAt": "2026-08-03T18:25:22-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "42b00505c0d7823ccdc65a489c49ff9ff628157b76d54b2a38d59ed3a9611e26",
       "intelligence": {
@@ -4020,7 +4020,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4062,7 +4062,7 @@
       "constraints": [],
       "publishedAt": "2025-01-06T08:59:11.562Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "1bb70afcf8905ce3d68ec56f3f49c48ad5215842fdcddfa4b476aec47845d1ef",
       "intelligence": {
@@ -4094,7 +4094,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4129,7 +4129,7 @@
       "constraints": [],
       "publishedAt": "2026-01-08T15:47:40-05:00",
       "updatedAt": "2026-08-06T15:13:07-04:00",
-      "fetchedAt": "2026-08-09T09:02:39.493Z",
+      "fetchedAt": "2026-08-09T13:16:03.773Z",
       "status": "active",
       "contentFingerprint": "21d69650b9a835ec14c991efddfc29576293d73f33ba6fbc14150b07954db9b3",
       "intelligence": {
@@ -4160,7 +4160,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4198,7 +4198,7 @@
       "constraints": [],
       "publishedAt": "2024-05-03T11:15:08.538Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "030b3229b9ed6ca97b36c6d6ee26a014cc572acd33ea79e2bfd739b57354022f",
       "intelligence": {
@@ -4231,7 +4231,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4265,7 +4265,7 @@
       "constraints": [],
       "publishedAt": "2026-04-14T07:26:52.210Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "70e0efb670f0cfdfd64bbd6647ded2bdfbe46c217a6182228d99b8576e8d7e4a",
       "intelligence": {
@@ -4286,7 +4286,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4324,7 +4324,7 @@
       "constraints": [],
       "publishedAt": "2023-11-23T03:28:37.589Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "9ac843f61de44e6339e3220ba12ec508b1d316f6a67a6f54ae29ec3d3ea640d5",
       "intelligence": {
@@ -4343,7 +4343,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4382,7 +4382,7 @@
       "constraints": [],
       "publishedAt": "2026-04-20T13:30:52.607Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "100fdca4a75cd8d2b4716aedcde52554b6870dd849ef990d164bfa839c74c0e6",
       "intelligence": {
@@ -4405,7 +4405,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4442,7 +4442,7 @@
       "constraints": [],
       "publishedAt": "2026-04-20T07:42:22.132Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "a50923b2846a83fa05b014816baa81cc37f43cc34bea58c90c245f5cf93dd25f",
       "intelligence": {
@@ -4466,7 +4466,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4501,7 +4501,7 @@
       "constraints": [],
       "publishedAt": "2026-04-20T14:08:34.706Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "cf26e62be61f00fe471f45aece0a99bba31b4f2348e1e181f3e3aa2d96a5cc57",
       "intelligence": {
@@ -4524,7 +4524,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4556,7 +4556,7 @@
       "constraints": [],
       "publishedAt": "2026-06-04T07:09:52.069Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "3bb48860980a2649a5658efe9cac3ebb34d746fad5d33544f28aa7b2a7d4a375",
       "intelligence": {
@@ -4575,7 +4575,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -4612,7 +4612,7 @@
       "constraints": [],
       "publishedAt": "2026-04-20T07:45:44.302Z",
       "updatedAt": null,
-      "fetchedAt": "2026-08-09T09:02:39.667Z",
+      "fetchedAt": "2026-08-09T13:16:04.156Z",
       "status": "active",
       "contentFingerprint": "66cfb86e1282e01fb05c6a178aa3f5a5b96f4e2b640f71def60e254fc9091419",
       "intelligence": {
@@ -4636,7 +4636,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-08-09T09:02:39.194Z",
+        "analyzedAt": "2026-08-09T13:16:03.499Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     }
