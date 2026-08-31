@@ -10690,7 +10690,6 @@
       "greenhouse:5198108008",
       "greenhouse:5198255008",
       "greenhouse:5209196008",
-      "greenhouse:5222908008",
       "greenhouse:5224564008",
       "greenhouse:5231496008",
       "greenhouse:5232055008",
@@ -10716,7 +10715,6 @@
       "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
       "lever:58cacd4c-78f1-423b-b6e4-9bab15e01ba1",
       "lever:61081858-6041-489c-8e6a-cf9e7a604060",
-      "lever:6386b7fe-ebfb-40cf-8686-6ea0c179b69b",
       "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
       "lever:834478e8-854c-40d0-8093-7bc0a5e080d5",
       "lever:89632468-7fb8-4330-9c4a-dff205b1d5f2",
@@ -10752,7 +10750,6 @@
       "cloud": [
         "greenhouse:5097742008",
         "greenhouse:5150472008",
-        "greenhouse:5222908008",
         "greenhouse:5231496008",
         "greenhouse:5238296008",
         "greenhouse:5245851008",
@@ -10789,7 +10786,6 @@
         "greenhouse:5097742008",
         "greenhouse:5115935008",
         "greenhouse:5150472008",
-        "greenhouse:5222908008",
         "greenhouse:5224564008",
         "greenhouse:5231496008",
         "greenhouse:5238296008",
@@ -10832,7 +10828,6 @@
         "greenhouse:5161402008",
         "greenhouse:5198074008",
         "greenhouse:5198108008",
-        "greenhouse:5222908008",
         "greenhouse:5239733008",
         "greenhouse:5245851008",
         "greenhouse:5285557008",
@@ -10949,7 +10944,6 @@
         "greenhouse:5198108008",
         "greenhouse:5198255008",
         "greenhouse:5209196008",
-        "greenhouse:5222908008",
         "greenhouse:5224564008",
         "greenhouse:5231496008",
         "greenhouse:5232055008",
@@ -10968,9 +10962,6 @@
         "greenhouse:5390795008",
         "greenhouse:5390799008",
         "greenhouse:5390966008"
-      ],
-      "solution-design": [
-        "greenhouse:5222908008"
       ],
       "sql": [
         "greenhouse:5116820008",
@@ -10995,7 +10986,6 @@
         "lever:1245204b-d029-4961-9819-bb6fc37d9b16",
         "lever:3deb7448-cdcc-4590-94d1-3f288c31b557",
         "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
-        "lever:6386b7fe-ebfb-40cf-8686-6ea0c179b69b",
         "lever:89632468-7fb8-4330-9c4a-dff205b1d5f2",
         "lever:bc1302e3-f280-4550-ad1d-d51b7610e240",
         "lever:f46e700b-fd02-4806-9202-6c4d7d370b21",
@@ -11043,14 +11033,10 @@
         "lever:3deb7448-cdcc-4590-94d1-3f288c31b557",
         "lever:44b997f0-ec80-442d-93e0-3210f0915216",
         "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
-        "lever:6386b7fe-ebfb-40cf-8686-6ea0c179b69b",
         "lever:89632468-7fb8-4330-9c4a-dff205b1d5f2",
         "lever:bc1302e3-f280-4550-ad1d-d51b7610e240",
         "lever:f46e700b-fd02-4806-9202-6c4d7d370b21",
         "lever:fc5c7a53-3e41-4946-a37e-22da932abb6f"
-      ],
-      "ai-solutions": [
-        "greenhouse:5222908008"
       ],
       "data-science": [
         "greenhouse:4616971008",
