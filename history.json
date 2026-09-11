@@ -15212,6 +15212,7 @@
       "lever:90f277fe-fd32-4027-be91-960677df96b3",
       "lever:99631399-d024-47b5-ade5-8bd1e947f782",
       "lever:9d5af64f-be8d-4cbf-a096-5a5a4294afbe",
+      "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc",
       "lever:ae1a07c1-c971-403c-906b-79d8c16e4f2d",
       "lever:b44b5f08-7cfd-48bd-b2a1-03b6ffb987c7",
       "lever:ba663e18-e640-4368-af28-7cfe051aab61",
@@ -15226,7 +15227,8 @@
     "skillJobIds": {
       "api-integration": [
         "greenhouse:5231496008",
-        "greenhouse:5238296008"
+        "greenhouse:5238296008",
+        "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc"
       ],
       "causal-inference": [
         "greenhouse:5116820008",
@@ -15264,6 +15266,9 @@
         "greenhouse:5209196008",
         "greenhouse:5362838008"
       ],
+      "frontend-engineering": [
+        "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc"
+      ],
       "llm": [
         "greenhouse:4610158008",
         "greenhouse:4613568008",
@@ -15296,6 +15301,7 @@
         "lever:834478e8-854c-40d0-8093-7bc0a5e080d5",
         "lever:99631399-d024-47b5-ade5-8bd1e947f782",
         "lever:9d5af64f-be8d-4cbf-a096-5a5a4294afbe",
+        "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc",
         "lever:ae1a07c1-c971-403c-906b-79d8c16e4f2d",
         "lever:b44b5f08-7cfd-48bd-b2a1-03b6ffb987c7",
         "lever:ba663e18-e640-4368-af28-7cfe051aab61",
@@ -15414,6 +15420,7 @@
         "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
         "lever:834478e8-854c-40d0-8093-7bc0a5e080d5",
         "lever:99631399-d024-47b5-ade5-8bd1e947f782",
+        "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc",
         "lever:b44b5f08-7cfd-48bd-b2a1-03b6ffb987c7",
         "lever:ba663e18-e640-4368-af28-7cfe051aab61",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
@@ -15488,6 +15495,7 @@
         "lever:1245204b-d029-4961-9819-bb6fc37d9b16",
         "lever:3deb7448-cdcc-4590-94d1-3f288c31b557",
         "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
+        "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc",
         "lever:f46e700b-fd02-4806-9202-6c4d7d370b21"
       ],
       "vector-databases": [
@@ -15529,6 +15537,7 @@
         "lever:2ead56aa-19df-4eed-ad80-e7dc2b23397c",
         "lever:58cacd4c-78f1-423b-b6e4-9bab15e01ba1",
         "lever:99631399-d024-47b5-ade5-8bd1e947f782",
+        "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc",
         "lever:ba663e18-e640-4368-af28-7cfe051aab61"
       ],
       "ai-product": [
