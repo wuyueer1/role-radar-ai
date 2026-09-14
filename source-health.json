@@ -3,16 +3,16 @@
     "sourceId": "anthropic-greenhouse",
     "company": "Anthropic",
     "status": "ok",
-    "fetchedAt": "2026-09-14T15:02:00.412Z",
-    "jobCount": 596,
+    "fetchedAt": "2026-09-14T20:19:28.416Z",
+    "jobCount": 592,
     "message": "Reviewed source contract valid"
   },
   {
     "sourceId": "binance-lever",
     "company": "Binance",
     "status": "ok",
-    "fetchedAt": "2026-09-14T15:02:00.412Z",
-    "jobCount": 292,
+    "fetchedAt": "2026-09-14T20:19:28.416Z",
+    "jobCount": 291,
     "message": "Reviewed source contract valid"
   }
 ]
