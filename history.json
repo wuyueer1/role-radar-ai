@@ -18263,7 +18263,8 @@
       "lever:e7f93f9f-9e39-4a3f-87e3-4dea1efb79b1",
       "lever:efa6ff12-8332-4e08-b587-e88f7ea68177",
       "lever:f38e2764-fd2f-4030-8a0c-cde213134027",
-      "lever:f46e700b-fd02-4806-9202-6c4d7d370b21"
+      "lever:f46e700b-fd02-4806-9202-6c4d7d370b21",
+      "lever:fc5c7a53-3e41-4946-a37e-22da932abb6f"
     ],
     "skillJobIds": {
       "api-integration": [
@@ -18298,7 +18299,8 @@
         "lever:1245204b-d029-4961-9819-bb6fc37d9b16",
         "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
         "lever:90f277fe-fd32-4027-be91-960677df96b3",
-        "lever:96e8326e-074f-4d1f-89c4-8ed1a6f96014"
+        "lever:96e8326e-074f-4d1f-89c4-8ed1a6f96014",
+        "lever:fc5c7a53-3e41-4946-a37e-22da932abb6f"
       ],
       "data-visualization": [
         "greenhouse:5116820008",
@@ -18544,7 +18546,8 @@
         "lever:3deb7448-cdcc-4590-94d1-3f288c31b557",
         "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
         "lever:ab26c3f8-3728-4750-a07b-88adb962e3bc",
-        "lever:f46e700b-fd02-4806-9202-6c4d7d370b21"
+        "lever:f46e700b-fd02-4806-9202-6c4d7d370b21",
+        "lever:fc5c7a53-3e41-4946-a37e-22da932abb6f"
       ],
       "vector-databases": [
         "lever:834478e8-854c-40d0-8093-7bc0a5e080d5",
@@ -18593,7 +18596,8 @@
         "lever:0a03c5e3-4a06-4aa7-8c06-25a473ceeb33",
         "lever:3deb7448-cdcc-4590-94d1-3f288c31b557",
         "lever:4e1e4873-f239-4996-a42b-9b79596cfa6d",
-        "lever:f46e700b-fd02-4806-9202-6c4d7d370b21"
+        "lever:f46e700b-fd02-4806-9202-6c4d7d370b21",
+        "lever:fc5c7a53-3e41-4946-a37e-22da932abb6f"
       ],
       "ai-solutions": [
         "greenhouse:5425724008"
