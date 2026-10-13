@@ -24830,7 +24830,6 @@
       "greenhouse:5232055008",
       "greenhouse:5239733008",
       "greenhouse:5245851008",
-      "greenhouse:5248983008",
       "greenhouse:5257650008",
       "greenhouse:5285250008",
       "greenhouse:5285557008",
@@ -24853,6 +24852,7 @@
       "greenhouse:5436697008",
       "greenhouse:5437172008",
       "greenhouse:5438044008",
+      "greenhouse:5440821008",
       "greenhouse:5442934008",
       "greenhouse:5445410008",
       "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
@@ -24901,7 +24901,6 @@
         "greenhouse:5224564008",
         "greenhouse:5239733008",
         "greenhouse:5245851008",
-        "greenhouse:5248983008",
         "greenhouse:5285557008",
         "greenhouse:5354765008",
         "greenhouse:5385998008",
@@ -24917,6 +24916,7 @@
         "greenhouse:5436684008",
         "greenhouse:5436697008",
         "greenhouse:5437172008",
+        "greenhouse:5440821008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
@@ -24949,7 +24949,6 @@
       ],
       "prompt-engineering": [
         "greenhouse:5057647008",
-        "greenhouse:5248983008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
@@ -24975,7 +24974,6 @@
         "greenhouse:5232055008",
         "greenhouse:5239733008",
         "greenhouse:5245851008",
-        "greenhouse:5248983008",
         "greenhouse:5285250008",
         "greenhouse:5285557008",
         "greenhouse:5362838008",
@@ -25021,7 +25019,6 @@
         "greenhouse:5232055008",
         "greenhouse:5239733008",
         "greenhouse:5245851008",
-        "greenhouse:5248983008",
         "greenhouse:5257650008",
         "greenhouse:5285250008",
         "greenhouse:5285557008",
@@ -25044,6 +25041,7 @@
         "greenhouse:5436697008",
         "greenhouse:5437172008",
         "greenhouse:5438044008",
+        "greenhouse:5440821008",
         "greenhouse:5442934008",
         "greenhouse:5445410008"
       ],
@@ -25085,7 +25083,6 @@
         "greenhouse:5198255008",
         "greenhouse:5224564008",
         "greenhouse:5245851008",
-        "greenhouse:5248983008",
         "greenhouse:5257650008",
         "greenhouse:5285557008",
         "greenhouse:5354765008",
@@ -25103,6 +25100,7 @@
         "greenhouse:5436684008",
         "greenhouse:5436697008",
         "greenhouse:5437172008",
+        "greenhouse:5440821008",
         "greenhouse:5442934008",
         "greenhouse:5445410008"
       ],
