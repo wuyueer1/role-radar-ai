@@ -24743,6 +24743,8 @@
       "greenhouse:5440821008",
       "greenhouse:5442934008",
       "greenhouse:5445410008",
+      "lever:58cacd4c-78f1-423b-b6e4-9bab15e01ba1",
+      "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
       "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
     ],
     "skillJobIds": {
@@ -24811,6 +24813,7 @@
         "greenhouse:5440821008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
+        "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ],
       "machine-learning": [
@@ -24839,12 +24842,14 @@
       ],
       "nlp-embeddings": [
         "greenhouse:4610158008",
-        "greenhouse:4631822008"
+        "greenhouse:4631822008",
+        "lever:80a64970-528f-4d90-aada-84284bd6f1f3"
       ],
       "prompt-engineering": [
         "greenhouse:5057647008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
+        "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ],
       "python": [
@@ -24888,6 +24893,7 @@
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ],
       "rag": [
+        "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ],
       "responsible-ai": [
@@ -25002,7 +25008,8 @@
         "greenhouse:5437172008",
         "greenhouse:5440821008",
         "greenhouse:5442934008",
-        "greenhouse:5445410008"
+        "greenhouse:5445410008",
+        "lever:58cacd4c-78f1-423b-b6e4-9bab15e01ba1"
       ],
       "data-science": [
         "greenhouse:4017544008",
@@ -25021,6 +25028,7 @@
         "greenhouse:5362838008",
         "greenhouse:5387564008",
         "greenhouse:5438044008",
+        "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ]
     }
