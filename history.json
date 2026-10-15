@@ -24743,6 +24743,9 @@
       "greenhouse:5440821008",
       "greenhouse:5442934008",
       "greenhouse:5445410008",
+      "greenhouse:5445760008",
+      "greenhouse:5454650008",
+      "greenhouse:5454673008",
       "lever:58cacd4c-78f1-423b-b6e4-9bab15e01ba1",
       "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
       "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
@@ -24813,6 +24816,9 @@
         "greenhouse:5440821008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
+        "greenhouse:5445760008",
+        "greenhouse:5454650008",
+        "greenhouse:5454673008",
         "lever:80a64970-528f-4d90-aada-84284bd6f1f3",
         "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ],
@@ -24947,7 +24953,10 @@
         "greenhouse:5438044008",
         "greenhouse:5440821008",
         "greenhouse:5442934008",
-        "greenhouse:5445410008"
+        "greenhouse:5445410008",
+        "greenhouse:5445760008",
+        "greenhouse:5454650008",
+        "greenhouse:5454673008"
       ],
       "sql": [
         "greenhouse:5116820008",
@@ -25009,6 +25018,9 @@
         "greenhouse:5440821008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
+        "greenhouse:5445760008",
+        "greenhouse:5454650008",
+        "greenhouse:5454673008",
         "lever:58cacd4c-78f1-423b-b6e4-9bab15e01ba1"
       ],
       "data-science": [
