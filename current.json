@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "snapshotAt": "2026-10-21T04:43:58.425Z",
-  "dataRevision": "656a52aa3addfac7558be12bc8b7138cedd88ef0555c2ab0d600e1a9699d065c",
+  "snapshotAt": "2026-10-21T13:46:49.867Z",
+  "dataRevision": "0876d50b639ae1ad7bac0676a5b522799e3dd0261e935ca819963d6112c254f7",
   "sourceHealth": [
     {
       "sourceId": "anthropic-greenhouse",
       "company": "Anthropic",
       "status": "ok",
-      "fetchedAt": "2026-10-21T04:43:58.425Z",
-      "jobCount": 674,
+      "fetchedAt": "2026-10-21T13:46:49.867Z",
+      "jobCount": 675,
       "message": "Reviewed source contract valid"
     },
     {
       "sourceId": "binance-lever",
       "company": "Binance",
       "status": "ok",
-      "fetchedAt": "2026-10-21T04:43:58.425Z",
+      "fetchedAt": "2026-10-21T13:46:49.867Z",
       "jobCount": 17,
       "message": "Reviewed source contract valid"
     }
   ],
-  "activeJobCount": 55,
+  "activeJobCount": 54,
   "newJobCount": 0,
-  "removedJobCount": 0,
+  "removedJobCount": 1,
   "roleFamilyStats": [
     {
       "roleFamily": "ai-engineering",
-      "jobCount": 37,
-      "delta7d": 2
+      "jobCount": 36,
+      "delta7d": 1
     },
     {
       "roleFamily": "data-science",
@@ -38,63 +38,63 @@
   "skillStats": [
     {
       "skillId": "llm",
-      "jobCount": 32,
-      "share": 0.5818,
-      "delta7d": 0.0248
+      "jobCount": 31,
+      "share": 0.5741,
+      "delta7d": 0.0237
     },
     {
       "skillId": "cloud",
       "jobCount": 9,
-      "share": 0.1636,
-      "delta7d": 0.0121
+      "share": 0.1667,
+      "delta7d": 0.0126
     },
     {
       "skillId": "causal-inference",
       "jobCount": 5,
-      "share": 0.0909,
-      "delta7d": -0.0021
+      "share": 0.0926,
+      "delta7d": -0.0019
     },
     {
       "skillId": "machine-learning",
       "jobCount": 23,
-      "share": 0.4182,
-      "delta7d": -0.0064
+      "share": 0.4259,
+      "delta7d": -0.0053
     },
     {
       "skillId": "data-analysis",
       "jobCount": 5,
-      "share": 0.0909,
-      "delta7d": -0.0091
+      "share": 0.0926,
+      "delta7d": -0.0089
     },
     {
       "skillId": "data-visualization",
       "jobCount": 5,
-      "share": 0.0909,
-      "delta7d": -0.0091
+      "share": 0.0926,
+      "delta7d": -0.0089
     },
     {
       "skillId": "sql",
       "jobCount": 9,
-      "share": 0.1636,
-      "delta7d": -0.0094
+      "share": 0.1667,
+      "delta7d": -0.009
     },
     {
       "skillId": "stakeholder-management",
       "jobCount": 7,
-      "share": 0.1273,
-      "delta7d": -0.0128
+      "share": 0.1296,
+      "delta7d": -0.0124
     },
     {
       "skillId": "responsible-ai",
-      "jobCount": 54,
-      "share": 0.9818,
-      "delta7d": -0.0184
+      "jobCount": 53,
+      "share": 0.9815,
+      "delta7d": -0.0185
     },
     {
       "skillId": "python",
       "jobCount": 38,
-      "share": 0.6909,
-      "delta7d": -0.0628
+      "share": 0.7037,
+      "delta7d": -0.061
     }
   ],
   "jobs": [
@@ -127,7 +127,7 @@
       "constraints": [],
       "publishedAt": "2026-04-23T10:35:36-04:00",
       "updatedAt": "2026-08-21T12:50:09-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "715acd4a13b1ad098912759be620f5abc59ded512f25bc1e0bb1f546033dfd0a",
       "intelligence": {
@@ -160,7 +160,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -193,7 +193,7 @@
       "constraints": [],
       "publishedAt": "2026-04-23T10:43:13-04:00",
       "updatedAt": "2026-08-28T14:43:58-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "790637a0e78d4c652c1bb3cd175118baee1901d9ab75b1d1b0796cfa3c9c63f4",
       "intelligence": {
@@ -226,7 +226,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -258,7 +258,7 @@
       "constraints": [],
       "publishedAt": "2024-04-22T12:52:37-04:00",
       "updatedAt": "2026-09-24T14:12:56-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "665b23d0d252a42b80e87ceb765e34fc5abcbc48f76ed9d35f13589c41d7b1c0",
       "intelligence": {
@@ -285,7 +285,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -318,7 +318,7 @@
       "constraints": [],
       "publishedAt": "2026-07-16T17:26:57-04:00",
       "updatedAt": "2026-08-21T12:50:38-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "7dbaf25e04c90c2ac63b9df1d7184c045724b06a485dfe2c177a6d35a55f89bc",
       "intelligence": {
@@ -328,7 +328,7 @@
         "componentScores": {
           "skill": 79,
           "evidence": 86,
-          "semantic": 46,
+          "semantic": 45,
           "adjacency": 94,
           "constraints": 50
         },
@@ -351,7 +351,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -384,7 +384,7 @@
       "constraints": [],
       "publishedAt": "2025-10-10T13:58:48-04:00",
       "updatedAt": "2026-08-21T12:49:42-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "59b4fb0c1d3c32102c291be393c5adcc6e2e1970fe55826c0588fda363b6ef77",
       "intelligence": {
@@ -394,7 +394,7 @@
         "componentScores": {
           "skill": 79,
           "evidence": 86,
-          "semantic": 39,
+          "semantic": 38,
           "adjacency": 94,
           "constraints": 50
         },
@@ -417,7 +417,7 @@
         "gaps": [],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -452,17 +452,17 @@
       "constraints": [],
       "publishedAt": "2026-08-14T19:48:45-04:00",
       "updatedAt": "2026-08-21T12:50:52-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "f23af70ccda234db300f4b5c994136daffa4a9a9bc9ac0f128e43ae1edf60fd4",
       "intelligence": {
         "jobId": "greenhouse:5387564008",
-        "matchScore": 69,
+        "matchScore": 68,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 64,
           "evidence": 66,
-          "semantic": 76,
+          "semantic": 75,
           "adjacency": 94,
           "constraints": 50
         },
@@ -493,7 +493,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -528,7 +528,7 @@
       "constraints": [],
       "publishedAt": "2026-07-08T19:14:37-04:00",
       "updatedAt": "2026-09-22T19:25:00-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "82e7a4313514ae29fcec156c8bcf1c240d5d22c933cb520508175e36a5ddde26",
       "intelligence": {
@@ -538,7 +538,7 @@
         "componentScores": {
           "skill": 61,
           "evidence": 65,
-          "semantic": 67,
+          "semantic": 66,
           "adjacency": 94,
           "constraints": 50
         },
@@ -569,7 +569,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -604,7 +604,7 @@
       "constraints": [],
       "publishedAt": "2026-01-13T23:54:46-05:00",
       "updatedAt": "2026-08-21T12:49:49-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "48cd867503ee0a11d2cdeb84bdff08a9adc6b1ede93b29b7b462fbd45b9badbf",
       "intelligence": {
@@ -614,7 +614,7 @@
         "componentScores": {
           "skill": 64,
           "evidence": 66,
-          "semantic": 54,
+          "semantic": 53,
           "adjacency": 94,
           "constraints": 50
         },
@@ -645,7 +645,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -681,7 +681,7 @@
       "constraints": [],
       "publishedAt": "2026-05-31T04:18:08-04:00",
       "updatedAt": "2026-08-21T12:50:08-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "4b888630c7b395ba2ae0d2cb8dc6916b166b725973768a4a9cb5bdacd1bf23db",
       "intelligence": {
@@ -723,7 +723,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -757,7 +757,7 @@
       "constraints": [],
       "publishedAt": "2025-07-18T17:26:41-04:00",
       "updatedAt": "2026-08-21T12:49:38-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "cdc925d3adf7a63d38852fa1a8342ada36464215da7d0935cfa0ea7d6f1e240d",
       "intelligence": {
@@ -792,7 +792,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -828,7 +828,7 @@
       "constraints": [],
       "publishedAt": "2025-04-14T16:30:00-04:00",
       "updatedAt": "2026-08-21T12:49:38-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "79a21693b6febeb3051d8228ad9fffe9241152cfc9f678da5ccb24bbdb27a993",
       "intelligence": {
@@ -838,7 +838,7 @@
         "componentScores": {
           "skill": 50,
           "evidence": 53,
-          "semantic": 93,
+          "semantic": 92,
           "adjacency": 66,
           "constraints": 50
         },
@@ -870,7 +870,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -906,17 +906,17 @@
       "constraints": [],
       "publishedAt": "2026-07-22T14:09:36-04:00",
       "updatedAt": "2026-08-21T12:50:40-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "53e5583b1ea098340d7edb60bed4bd17a6d86f6ba91e4775f277616686168dcd",
       "intelligence": {
         "jobId": "greenhouse:5362838008",
-        "matchScore": 61,
+        "matchScore": 60,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 49,
           "evidence": 54,
-          "semantic": 78,
+          "semantic": 77,
           "adjacency": 94,
           "constraints": 50
         },
@@ -948,85 +948,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
-        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
-      }
-    },
-    {
-      "id": "greenhouse:5239733008",
-      "source": "greenhouse",
-      "sourceJobId": "5239733008",
-      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5239733008",
-      "sourceUrls": [
-        "https://job-boards.greenhouse.io/anthropic/jobs/5239733008"
-      ],
-      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5239733008",
-      "company": "Anthropic",
-      "title": "Research Scientist, Life Sciences",
-      "normalizedTitle": "research scientist, life sciences",
-      "roleFamily": "data-science",
-      "locations": [
-        "San Francisco, CA"
-      ],
-      "workplaceType": "hybrid",
-      "language": "en",
-      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><p>We're seeking an exceptional Research Scientist to join our Life Sciences team at Anthropic. Our team is building a world-class research group focused on making Claude a superhuman life sciences research assistant. This role sits at the intersection of machine learning, software engineering, and biology — you'll directly improve model capabilities on scientific tasks through post-training, evaluation design, and RL environment development.</p> <p>As a core member of our Life Sciences team, you'll work in a high-impact team that translates deep biological domain knowledge into model training objectives, benchmarks, and agentic workflows. You'll help establish Anthropic as a leader in AI-accelerated biology while shaping how frontier models reason about and execute computational biology tasks.</p> <p>This role offers a unique opportunity to shape how frontier AI models learn to do biology. You'll work alongside some of the world's best AI researchers while tackling problems that matter for human health and scientific understanding. If you're excited about turning your computational biology expertise into model capabilities, we want to hear from you.</p> <h2><strong>Key Responsibilities</strong></h2> <ul> <li> <p>Build and ship agentic tools and integrations that let Claude execute real life science workflows — bioinformatics pipelines, database queries, analysis notebooks, literature review</p> </li> <li> <p>Design and build evaluation benchmarks that measure model capabilities on biology tasks — figure interpretation, bioinformatics, protocol reasoning, literature synthesis</p> </li> <li> <p>Work closely with product and design teams to scope, prototype, and ship features for life sciences users</p> </li> <li> <p>Partner with external biotech, pharma, and academic users to understand their workflows and turn feedback into product improvements</p> </li> <li> <p>Build and maintain the engineering infrastructure behind our biology product surface — tool scaffolding, data pipelines, eval harnesses</p> </li> <li> <p>Translate biological domain knowledge into product requirements and evaluation criteria that guide model improvement</p> </li> </ul> <h2><strong>Minimum Qualifications</strong></h2> <ul> <li> <p>Experience applying ML and software engineering to biological problems — computational biology, bioinformatics, protein ML, genomics, or similar</p> </li> <li> <p>Experience working in drug discovery or development at a biotech or pharma company, or conducted fundamental research in an academic setting — with an understanding of what real scientific workflows look like and where they break down</p> </li> <li> <p>Strong software engineering skills: comfortable building production-quality Python, working in large codebases, and owning infrastructure end-to-end</p> </li> <li> <p>Hands-on experience training or fine-tuning ML models (LLMs, protein language models, or other deep learning architectures)</p> </li> <li> <p>A track record of shipping computational tools or pipelines that biologists actually use</p> </li> <li> <p>Comfortable navigating ambiguity and defining problems in a rapidly evolving research environment</p> </li> <li> <p>Able to work independently while collaborating tightly with research, product, and domain-expert teams</p> </li> <li> <p>Results-oriented with a bias toward rapid iteration and measurable impact</p> </li> <li> <p>Passionate about using AI to accelerate scientific discovery while maintaining high ethical standards</p> </li> </ul> <h2><strong>Preferred Qualifications</strong></h2> <ul> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">5+ years of experience applying ML and software engineering to biological problems — computational biology, bioinformatics, protein ML, genomics, or similar</li> <li> <p>Ph.D. in computational biology, bioinformatics, bioengineering, CS, or a related quantitative field — or equivalent industry experience</p> </li> <li> <p>Experience with LLM post-training: RLHF, RL from verifiable rewards, SFT data curation, or eval-driven development</p> </li> <li> <p>Direct experience with therapeutic discovery pipelines — target identification, lead optimization, ADMET modeling, or clinical data analysis</p> </li> <li> <p>Familiarity with bioinformatics tooling and pipelines (sequence analysis, structure prediction, single-cell, variant calling, etc.)</p> </li> <li> <p>Experience building agentic systems or tool-use environments</p> </li> <li> <p>Published research in ML for biology, or open-source contributions to computational biology tools</p> </li> <li> <p>Fluency with biological databases (UniProt, PDB, Ensembl, NCBI) and the ability to reason about their schemas and failure modes</p> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>$300,000</span><span class=\"divider\">&mdash;</span><span>$320,000 USD</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
-      "responsibilities": [],
-      "requirements": [],
-      "preferredQualifications": [],
-      "skills": [
-        "data-analysis",
-        "machine-learning",
-        "llm",
-        "responsible-ai",
-        "python"
-      ],
-      "constraints": [],
-      "publishedAt": "2026-06-02T18:08:52-04:00",
-      "updatedAt": "2026-08-21T12:50:22-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
-      "status": "active",
-      "contentFingerprint": "b5ea9ae367d5cda84e866923d08dad12eb4810a34fca61aaba41e5b05b7ab8ed",
-      "intelligence": {
-        "jobId": "greenhouse:5239733008",
-        "matchScore": 60,
-        "analysisMode": "e5",
-        "componentScores": {
-          "skill": 51,
-          "evidence": 54,
-          "semantic": 69,
-          "adjacency": 94,
-          "constraints": 50
-        },
-        "matchedEvidence": [
-          {
-            "evidenceId": "ev-career-network",
-            "requirement": "岗位技能要求：data analysis",
-            "score": 98
-          },
-          {
-            "evidenceId": "ev-nlp",
-            "requirement": "岗位技能要求：machine learning",
-            "score": 95
-          },
-          {
-            "evidenceId": "ev-ai-boundary",
-            "requirement": "岗位技能要求：responsible ai",
-            "score": 76
-          }
-        ],
-        "strengths": [
-          "岗位技能要求：data analysis ↔ 大规模职业网络研究",
-          "岗位技能要求：machine learning ↔ 岗位文本归一化",
-          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
-        ],
-        "gaps": [
-          "待补证据：llm",
-          "待补证据：python"
-        ],
-        "hardBlockers": [],
-        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1062,7 +984,7 @@
       "constraints": [],
       "publishedAt": "2025-03-31T14:08:49-04:00",
       "updatedAt": "2026-08-28T14:43:57-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "3dd02d4a0a1fbcdc3603fd7cf217f42608c195720e15ed972f25ba8cb4c28120",
       "intelligence": {
@@ -1104,7 +1026,85 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
+        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
+      }
+    },
+    {
+      "id": "greenhouse:5239733008",
+      "source": "greenhouse",
+      "sourceJobId": "5239733008",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5239733008",
+      "sourceUrls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5239733008"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5239733008",
+      "company": "Anthropic",
+      "title": "Research Scientist, Life Sciences",
+      "normalizedTitle": "research scientist, life sciences",
+      "roleFamily": "data-science",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "workplaceType": "hybrid",
+      "language": "en",
+      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><p>We're seeking an exceptional Research Scientist to join our Life Sciences team at Anthropic. Our team is building a world-class research group focused on making Claude a superhuman life sciences research assistant. This role sits at the intersection of machine learning, software engineering, and biology — you'll directly improve model capabilities on scientific tasks through post-training, evaluation design, and RL environment development.</p> <p>As a core member of our Life Sciences team, you'll work in a high-impact team that translates deep biological domain knowledge into model training objectives, benchmarks, and agentic workflows. You'll help establish Anthropic as a leader in AI-accelerated biology while shaping how frontier models reason about and execute computational biology tasks.</p> <p>This role offers a unique opportunity to shape how frontier AI models learn to do biology. You'll work alongside some of the world's best AI researchers while tackling problems that matter for human health and scientific understanding. If you're excited about turning your computational biology expertise into model capabilities, we want to hear from you.</p> <h2><strong>Key Responsibilities</strong></h2> <ul> <li> <p>Build and ship agentic tools and integrations that let Claude execute real life science workflows — bioinformatics pipelines, database queries, analysis notebooks, literature review</p> </li> <li> <p>Design and build evaluation benchmarks that measure model capabilities on biology tasks — figure interpretation, bioinformatics, protocol reasoning, literature synthesis</p> </li> <li> <p>Work closely with product and design teams to scope, prototype, and ship features for life sciences users</p> </li> <li> <p>Partner with external biotech, pharma, and academic users to understand their workflows and turn feedback into product improvements</p> </li> <li> <p>Build and maintain the engineering infrastructure behind our biology product surface — tool scaffolding, data pipelines, eval harnesses</p> </li> <li> <p>Translate biological domain knowledge into product requirements and evaluation criteria that guide model improvement</p> </li> </ul> <h2><strong>Minimum Qualifications</strong></h2> <ul> <li> <p>Experience applying ML and software engineering to biological problems — computational biology, bioinformatics, protein ML, genomics, or similar</p> </li> <li> <p>Experience working in drug discovery or development at a biotech or pharma company, or conducted fundamental research in an academic setting — with an understanding of what real scientific workflows look like and where they break down</p> </li> <li> <p>Strong software engineering skills: comfortable building production-quality Python, working in large codebases, and owning infrastructure end-to-end</p> </li> <li> <p>Hands-on experience training or fine-tuning ML models (LLMs, protein language models, or other deep learning architectures)</p> </li> <li> <p>A track record of shipping computational tools or pipelines that biologists actually use</p> </li> <li> <p>Comfortable navigating ambiguity and defining problems in a rapidly evolving research environment</p> </li> <li> <p>Able to work independently while collaborating tightly with research, product, and domain-expert teams</p> </li> <li> <p>Results-oriented with a bias toward rapid iteration and measurable impact</p> </li> <li> <p>Passionate about using AI to accelerate scientific discovery while maintaining high ethical standards</p> </li> </ul> <h2><strong>Preferred Qualifications</strong></h2> <ul> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">5+ years of experience applying ML and software engineering to biological problems — computational biology, bioinformatics, protein ML, genomics, or similar</li> <li> <p>Ph.D. in computational biology, bioinformatics, bioengineering, CS, or a related quantitative field — or equivalent industry experience</p> </li> <li> <p>Experience with LLM post-training: RLHF, RL from verifiable rewards, SFT data curation, or eval-driven development</p> </li> <li> <p>Direct experience with therapeutic discovery pipelines — target identification, lead optimization, ADMET modeling, or clinical data analysis</p> </li> <li> <p>Familiarity with bioinformatics tooling and pipelines (sequence analysis, structure prediction, single-cell, variant calling, etc.)</p> </li> <li> <p>Experience building agentic systems or tool-use environments</p> </li> <li> <p>Published research in ML for biology, or open-source contributions to computational biology tools</p> </li> <li> <p>Fluency with biological databases (UniProt, PDB, Ensembl, NCBI) and the ability to reason about their schemas and failure modes</p> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>$300,000</span><span class=\"divider\">&mdash;</span><span>$320,000 USD</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
+      "responsibilities": [],
+      "requirements": [],
+      "preferredQualifications": [],
+      "skills": [
+        "data-analysis",
+        "machine-learning",
+        "llm",
+        "responsible-ai",
+        "python"
+      ],
+      "constraints": [],
+      "publishedAt": "2026-06-02T18:08:52-04:00",
+      "updatedAt": "2026-08-21T12:50:22-04:00",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
+      "status": "active",
+      "contentFingerprint": "b5ea9ae367d5cda84e866923d08dad12eb4810a34fca61aaba41e5b05b7ab8ed",
+      "intelligence": {
+        "jobId": "greenhouse:5239733008",
+        "matchScore": 59,
+        "analysisMode": "e5",
+        "componentScores": {
+          "skill": 51,
+          "evidence": 54,
+          "semantic": 68,
+          "adjacency": 94,
+          "constraints": 50
+        },
+        "matchedEvidence": [
+          {
+            "evidenceId": "ev-career-network",
+            "requirement": "岗位技能要求：data analysis",
+            "score": 98
+          },
+          {
+            "evidenceId": "ev-nlp",
+            "requirement": "岗位技能要求：machine learning",
+            "score": 95
+          },
+          {
+            "evidenceId": "ev-ai-boundary",
+            "requirement": "岗位技能要求：responsible ai",
+            "score": 76
+          }
+        ],
+        "strengths": [
+          "岗位技能要求：data analysis ↔ 大规模职业网络研究",
+          "岗位技能要求：machine learning ↔ 岗位文本归一化",
+          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
+        ],
+        "gaps": [
+          "待补证据：llm",
+          "待补证据：python"
+        ],
+        "hardBlockers": [],
+        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1140,7 +1140,7 @@
       "constraints": [],
       "publishedAt": "2026-05-25T05:25:19-04:00",
       "updatedAt": "2026-08-21T12:49:56-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "8cc37b8151c3a515ede24c605be70c704889c62403a093c64483454850d641ae",
       "intelligence": {
@@ -1150,7 +1150,7 @@
         "componentScores": {
           "skill": 51,
           "evidence": 54,
-          "semantic": 61,
+          "semantic": 60,
           "adjacency": 94,
           "constraints": 50
         },
@@ -1182,7 +1182,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1218,7 +1218,7 @@
       "constraints": [],
       "publishedAt": "2026-03-23T16:37:20-04:00",
       "updatedAt": "2026-10-20T02:57:56-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "925cd89a4e430bfcd35229967e5ab3cb3cfc292461b0cc84406bae0025d72b8b",
       "intelligence": {
@@ -1228,7 +1228,7 @@
         "componentScores": {
           "skill": 51,
           "evidence": 53,
-          "semantic": 59,
+          "semantic": 58,
           "adjacency": 94,
           "constraints": 50
         },
@@ -1260,7 +1260,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1295,7 +1295,7 @@
       "constraints": [],
       "publishedAt": "2026-02-11T12:34:39-05:00",
       "updatedAt": "2026-08-28T14:43:58-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "c345dabe1cc7ac53f67d0748ea87698fa832b7b5427b48777b6a528aa8003ef3",
       "intelligence": {
@@ -1331,7 +1331,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1367,7 +1367,7 @@
       "constraints": [],
       "publishedAt": "2026-05-07T14:28:01-04:00",
       "updatedAt": "2026-08-24T19:19:04-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "093a827574f01cc6cc22bf8643dbff750a26c10e2847ee639b5f588d2433e3af",
       "intelligence": {
@@ -1377,7 +1377,7 @@
         "componentScores": {
           "skill": 51,
           "evidence": 54,
-          "semantic": 48,
+          "semantic": 47,
           "adjacency": 94,
           "constraints": 50
         },
@@ -1409,7 +1409,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1442,7 +1442,7 @@
       "constraints": [],
       "publishedAt": "2026-09-29T15:03:37-04:00",
       "updatedAt": "2026-09-29T15:03:37-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "c9c4d2d212c40042e136e0dee2efc75ce9417e8bbd2588354e648196dd44d91e",
       "intelligence": {
@@ -1471,7 +1471,69 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
+        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
+      }
+    },
+    {
+      "id": "greenhouse:5112018008",
+      "source": "greenhouse",
+      "sourceJobId": "5112018008",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5112018008",
+      "sourceUrls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5112018008"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5112018008",
+      "company": "Anthropic",
+      "title": "Research Engineer, Production Model Post-Training",
+      "normalizedTitle": "research engineer, production model post-training",
+      "roleFamily": "ai-engineering",
+      "locations": [
+        "Zürich, CH"
+      ],
+      "workplaceType": "hybrid",
+      "language": "en",
+      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2 class=\"heading\"><strong>About the role</strong></h2> <p>Anthropic's production models undergo sophisticated post-training processes to enhance their capabilities, alignment, and safety. As a Research Engineer on our Post-Training team, you'll train our base models through the complete post-training stack to deliver the production Claude models that users interact with.</p> <p>You'll work at the intersection of cutting-edge research and production engineering, implementing, scaling, and improving post-training techniques like Constitutional AI, RLHF, and other alignment methodologies. Your work will directly impact the quality, safety, and capabilities of our production models.</p> <p><em>Note: For this role, we conduct all interviews in Python. This role may require responding to incidents on short-notice, including on weekends.</em></p> <h2 class=\"heading\"><strong>Responsibilities:</strong></h2> <ul> <li> <p>Implement and optimize post-training techniques at scale on frontier models</p> </li> <li> <p>Conduct research to develop and optimize post-training recipes that directly improve production model quality</p> </li> <li> <p>Design, build, and run robust, efficient pipelines for model fine-tuning and evaluation</p> </li> <li> <p>Develop tools to measure and improve model performance across various dimensions</p> </li> <li> <p>Collaborate with research teams to translate emerging techniques into production-ready implementations</p> </li> <li> <p>Debug complex issues in training pipelines and model behavior</p> </li> <li> <p>Help establish best practices for reliable, reproducible model post-training</p> </li> </ul> <h2 class=\"heading\"><strong>You may be a good fit if you:</strong></h2> <ul> <li> <p>Thrive in controlled chaos and are energised, rather than overwhelmed, when juggling multiple urgent priorities</p> </li> <li> <p>Adapt quickly to changing priorities</p> </li> <li> <p>Maintain clarity when debugging complex, time-sensitive issues</p> </li> <li> <p>Have strong software engineering skills with experience building complex ML systems</p> </li> <li> <p>Are comfortable working with large-scale distributed systems and high-performance computing</p> </li> <li> <p>Have experience with training, fine-tuning, or evaluating large language models</p> </li> <li> <p>Can balance research exploration with engineering rigor and operational reliability</p> </li> <li> <p>Are adept at analyzing and debugging model training processes</p> </li> <li> <p>Enjoy collaborating across research and engineering disciplines</p> </li> <li> <p>Can navigate ambiguity and make progress in fast-moving research environments</p> </li> </ul> <h2 class=\"heading\"><strong>Strong candidates may also:</strong></h2> <ul> <li> <p>Have experience with LLMs</p> </li> <li> <p>Have a keen interest in AI safety and responsible deployment</p> </li> </ul> <p>We welcome candidates at various experience levels, with a preference for senior engineers who have hands-on experience with frontier AI systems. However, proficiency in Python, deep learning frameworks, and distributed computing is required for this role.</p><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
+      "responsibilities": [],
+      "requirements": [],
+      "preferredQualifications": [],
+      "skills": [
+        "responsible-ai",
+        "python"
+      ],
+      "constraints": [],
+      "publishedAt": "2026-02-12T03:43:42-05:00",
+      "updatedAt": "2026-08-28T16:49:39-04:00",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
+      "status": "active",
+      "contentFingerprint": "e4d7ed3b49c45a3e58fc069d33b59cc646f64c84ba720066ffbd641eb2294008",
+      "intelligence": {
+        "jobId": "greenhouse:5112018008",
+        "matchScore": 53,
+        "analysisMode": "e5",
+        "componentScores": {
+          "skill": 38,
+          "evidence": 38,
+          "semantic": 91,
+          "adjacency": 66,
+          "constraints": 50
+        },
+        "matchedEvidence": [
+          {
+            "evidenceId": "ev-ai-boundary",
+            "requirement": "岗位技能要求：responsible ai",
+            "score": 76
+          }
+        ],
+        "strengths": [
+          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
+        ],
+        "gaps": [
+          "待补证据：python"
+        ],
+        "hardBlockers": [],
+        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1508,17 +1570,17 @@
       "constraints": [],
       "publishedAt": "2026-05-27T12:27:23-04:00",
       "updatedAt": "2026-08-21T12:50:18-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "45ede238563e9ae6860fe14d4bc61ad8d740b4de9267b81a8044a2f87ddd0628",
       "intelligence": {
         "jobId": "greenhouse:5232055008",
-        "matchScore": 54,
+        "matchScore": 53,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 59,
           "evidence": 60,
-          "semantic": 19,
+          "semantic": 17,
           "adjacency": 94,
           "constraints": 50
         },
@@ -1556,69 +1618,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
-        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
-      }
-    },
-    {
-      "id": "greenhouse:5112018008",
-      "source": "greenhouse",
-      "sourceJobId": "5112018008",
-      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5112018008",
-      "sourceUrls": [
-        "https://job-boards.greenhouse.io/anthropic/jobs/5112018008"
-      ],
-      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5112018008",
-      "company": "Anthropic",
-      "title": "Research Engineer, Production Model Post-Training",
-      "normalizedTitle": "research engineer, production model post-training",
-      "roleFamily": "ai-engineering",
-      "locations": [
-        "Zürich, CH"
-      ],
-      "workplaceType": "hybrid",
-      "language": "en",
-      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2 class=\"heading\"><strong>About the role</strong></h2> <p>Anthropic's production models undergo sophisticated post-training processes to enhance their capabilities, alignment, and safety. As a Research Engineer on our Post-Training team, you'll train our base models through the complete post-training stack to deliver the production Claude models that users interact with.</p> <p>You'll work at the intersection of cutting-edge research and production engineering, implementing, scaling, and improving post-training techniques like Constitutional AI, RLHF, and other alignment methodologies. Your work will directly impact the quality, safety, and capabilities of our production models.</p> <p><em>Note: For this role, we conduct all interviews in Python. This role may require responding to incidents on short-notice, including on weekends.</em></p> <h2 class=\"heading\"><strong>Responsibilities:</strong></h2> <ul> <li> <p>Implement and optimize post-training techniques at scale on frontier models</p> </li> <li> <p>Conduct research to develop and optimize post-training recipes that directly improve production model quality</p> </li> <li> <p>Design, build, and run robust, efficient pipelines for model fine-tuning and evaluation</p> </li> <li> <p>Develop tools to measure and improve model performance across various dimensions</p> </li> <li> <p>Collaborate with research teams to translate emerging techniques into production-ready implementations</p> </li> <li> <p>Debug complex issues in training pipelines and model behavior</p> </li> <li> <p>Help establish best practices for reliable, reproducible model post-training</p> </li> </ul> <h2 class=\"heading\"><strong>You may be a good fit if you:</strong></h2> <ul> <li> <p>Thrive in controlled chaos and are energised, rather than overwhelmed, when juggling multiple urgent priorities</p> </li> <li> <p>Adapt quickly to changing priorities</p> </li> <li> <p>Maintain clarity when debugging complex, time-sensitive issues</p> </li> <li> <p>Have strong software engineering skills with experience building complex ML systems</p> </li> <li> <p>Are comfortable working with large-scale distributed systems and high-performance computing</p> </li> <li> <p>Have experience with training, fine-tuning, or evaluating large language models</p> </li> <li> <p>Can balance research exploration with engineering rigor and operational reliability</p> </li> <li> <p>Are adept at analyzing and debugging model training processes</p> </li> <li> <p>Enjoy collaborating across research and engineering disciplines</p> </li> <li> <p>Can navigate ambiguity and make progress in fast-moving research environments</p> </li> </ul> <h2 class=\"heading\"><strong>Strong candidates may also:</strong></h2> <ul> <li> <p>Have experience with LLMs</p> </li> <li> <p>Have a keen interest in AI safety and responsible deployment</p> </li> </ul> <p>We welcome candidates at various experience levels, with a preference for senior engineers who have hands-on experience with frontier AI systems. However, proficiency in Python, deep learning frameworks, and distributed computing is required for this role.</p><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
-      "responsibilities": [],
-      "requirements": [],
-      "preferredQualifications": [],
-      "skills": [
-        "responsible-ai",
-        "python"
-      ],
-      "constraints": [],
-      "publishedAt": "2026-02-12T03:43:42-05:00",
-      "updatedAt": "2026-08-28T16:49:39-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
-      "status": "active",
-      "contentFingerprint": "e4d7ed3b49c45a3e58fc069d33b59cc646f64c84ba720066ffbd641eb2294008",
-      "intelligence": {
-        "jobId": "greenhouse:5112018008",
-        "matchScore": 53,
-        "analysisMode": "e5",
-        "componentScores": {
-          "skill": 38,
-          "evidence": 38,
-          "semantic": 91,
-          "adjacency": 66,
-          "constraints": 50
-        },
-        "matchedEvidence": [
-          {
-            "evidenceId": "ev-ai-boundary",
-            "requirement": "岗位技能要求：responsible ai",
-            "score": 76
-          }
-        ],
-        "strengths": [
-          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
-        ],
-        "gaps": [
-          "待补证据：python"
-        ],
-        "hardBlockers": [],
-        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1652,7 +1652,7 @@
       "constraints": [],
       "publishedAt": "2026-09-09T15:19:17-04:00",
       "updatedAt": "2026-09-09T15:19:17-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "05dda1516d2dea54991d50c4c7578976d238e9e441a417b4f347ec562f3a82e5",
       "intelligence": {
@@ -1662,7 +1662,7 @@
         "componentScores": {
           "skill": 53,
           "evidence": 57,
-          "semantic": 44,
+          "semantic": 43,
           "adjacency": 66,
           "constraints": 50
         },
@@ -1687,7 +1687,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1721,7 +1721,7 @@
       "constraints": [],
       "publishedAt": "2026-09-01T12:25:46-04:00",
       "updatedAt": "2026-09-01T12:26:31-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "3f91757f8a43a486101fd5fe6fab1d29b452e78aec6ff1e993b6afb1600082b1",
       "intelligence": {
@@ -1731,7 +1731,7 @@
         "componentScores": {
           "skill": 53,
           "evidence": 57,
-          "semantic": 37,
+          "semantic": 36,
           "adjacency": 66,
           "constraints": 50
         },
@@ -1756,7 +1756,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1791,7 +1791,7 @@
       "constraints": [],
       "publishedAt": "2025-04-01T16:39:21-04:00",
       "updatedAt": "2026-08-21T12:49:37-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "7b7d8f9090c1732ba6fbe7e6828aa4931dcf991028a954f822b3fe3351264116",
       "intelligence": {
@@ -1827,7 +1827,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1860,7 +1860,7 @@
       "constraints": [],
       "publishedAt": "2026-08-19T11:20:58-04:00",
       "updatedAt": "2026-09-14T17:09:40-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "8b0fac26071af8125dd2cf1fbe67373ff01bd67d7da486873385ebc5b0d952ad",
       "intelligence": {
@@ -1889,7 +1889,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1925,7 +1925,7 @@
       "constraints": [],
       "publishedAt": "2026-08-17T15:13:40-04:00",
       "updatedAt": "2026-08-28T16:46:24-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "fdea9a404d5cfba531ff665f2568f4997584b5a32f6baa66adc7b585c62edfd1",
       "intelligence": {
@@ -1962,7 +1962,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -1995,7 +1995,7 @@
       "constraints": [],
       "publishedAt": "2026-10-06T16:06:00-04:00",
       "updatedAt": "2026-10-16T06:18:15-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "8ad6c1758c3fc7a544fb6f6b24b6b1a437983164cfac98516e68e9da2c09fc77",
       "intelligence": {
@@ -2005,7 +2005,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 63,
+          "semantic": 62,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2024,7 +2024,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2057,7 +2057,7 @@
       "constraints": [],
       "publishedAt": "2025-04-01T19:41:06-04:00",
       "updatedAt": "2026-08-21T12:49:37-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "35a2bcf546242f7cd38c6829828634d3c2d88695af08c1ab17cf8217ac221ef1",
       "intelligence": {
@@ -2086,7 +2086,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2119,7 +2119,7 @@
       "constraints": [],
       "publishedAt": "2026-10-13T07:46:09-04:00",
       "updatedAt": "2026-10-14T06:49:28-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "199346826a5547f99a8ddc74bc5d02a013e1b7916f22edf8ef2ae46b4891274c",
       "intelligence": {
@@ -2148,7 +2148,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2181,7 +2181,7 @@
       "constraints": [],
       "publishedAt": "2026-09-04T11:26:23-04:00",
       "updatedAt": "2026-09-04T11:26:23-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "ab9d8c4ff0053fadc545aece3c64fafc67e492abe99055c3a93dfbf5cf6413b2",
       "intelligence": {
@@ -2191,7 +2191,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 52,
+          "semantic": 51,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2210,7 +2210,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2243,7 +2243,7 @@
       "constraints": [],
       "publishedAt": "2025-11-07T17:47:14-05:00",
       "updatedAt": "2026-10-20T16:52:40-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "5cc22f4851fd43ac843abf631bc0ea4df30d832b7c0bce59ca8d04023a89b65d",
       "intelligence": {
@@ -2253,7 +2253,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 33,
+          "semantic": 32,
           "adjacency": 94,
           "constraints": 50
         },
@@ -2272,7 +2272,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2308,7 +2308,7 @@
       "constraints": [],
       "publishedAt": "2026-03-11T11:14:30-04:00",
       "updatedAt": "2026-10-13T09:03:08-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "53ed7ab84ffd0fdc81a96ade7bd922ea5921c909217ee99f0611d50633a7e84b",
       "intelligence": {
@@ -2318,7 +2318,7 @@
         "componentScores": {
           "skill": 32,
           "evidence": 34,
-          "semantic": 65,
+          "semantic": 64,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2345,7 +2345,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2379,17 +2379,17 @@
       "constraints": [],
       "publishedAt": "2026-08-19T01:15:32-04:00",
       "updatedAt": "2026-09-02T02:48:20-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "b8213205cf7de5c2c50fd5a7acfff365093a7cf4217a4e259f9f387bb4af1e2e",
       "intelligence": {
         "jobId": "greenhouse:5390799008",
-        "matchScore": 43,
+        "matchScore": 42,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 25,
           "evidence": 25,
-          "semantic": 80,
+          "semantic": 79,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2409,7 +2409,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2444,7 +2444,7 @@
       "constraints": [],
       "publishedAt": "2026-06-02T14:24:51-04:00",
       "updatedAt": "2026-08-21T12:50:12-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "aab2a48c88c0330621b5ec7084d6fc148b29c1a8ce5131500848e22bd8cd3923",
       "intelligence": {
@@ -2480,7 +2480,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2513,7 +2513,7 @@
       "constraints": [],
       "publishedAt": "2026-06-12T16:17:38-04:00",
       "updatedAt": "2026-08-27T16:26:00-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "16dd1ebade5d113742b063bc60bbcc63a95ce408ddfcfc74da46433e5b3027de",
       "intelligence": {
@@ -2523,7 +2523,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 35,
+          "semantic": 34,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2542,69 +2542,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
-        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
-      }
-    },
-    {
-      "id": "greenhouse:5454673008",
-      "source": "greenhouse",
-      "sourceJobId": "5454673008",
-      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5454673008",
-      "sourceUrls": [
-        "https://job-boards.greenhouse.io/anthropic/jobs/5454673008"
-      ],
-      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5454673008",
-      "company": "Anthropic",
-      "title": "Applied AI Engineer, Startups (Physical AI)",
-      "normalizedTitle": "applied ai engineer, startups (physical ai)",
-      "roleFamily": "ai-engineering",
-      "locations": [
-        "San Francisco, CA"
-      ],
-      "workplaceType": "hybrid",
-      "language": "en",
-      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2> <p>As an Applied AI Engineer on the Startups team at Anthropic, you will be a trusted technical advisor to the top AI-native startups building in the physical world, across robotics, semiconductors, aerospace, manufacturing, and civil infrastructure, as they grow from early product to scale. Some of these companies build the hardware itself and want Claude woven into how they design, test, and operate it, and others build the software that engineers everywhere use to design, simulate, test, and scale, and this role works with both. You'll lead deep technical engagements, partnering directly with startup software and hardware engineering teams to help them build their products on Claude and run their own engineering with it, advising on implementation and agent design as they build what is newly possible with AI in the physical world. You will bridge the gap between what Claude can do and what it takes to build real things, working alongside some of the strongest teams in the field on problems that matter and helping mechanical, electrical, and process engineers get the kind of step change that software engineering has had from agentic coding with tools like Claude Code.</p> <p>Working closely with Applied AI Architects, Account Executives, and Anthropic's Product, Engineering, and Research teams, you'll help startups build at the edge of what is possible with Claude. You'll leverage your AI engineering expertise and your engineering domain knowledge to develop custom evaluation frameworks, design scalable architectures, and create the technical resources that enable physical AI startups to succeed with Claude.</p> <h2><strong>Responsibilities</strong></h2> <ul> <li> <p>Serve as a deep technical advisor to high-potential startups building in the physical world, whether Claude sits inside the product they sell or inside the way they design, test, and run their own hardware, working alongside them to push the boundaries of AI in engineering, manufacturing, operations, and more</p> </li> <li> <p>Work hands-on with startup software and hardware teams through pair programming and architecture reviews that accelerate their development, and understand their engineering workflows end to end, from design and simulation through test, production, and operations, so that your guidance fits how real hardware gets built</p> </li> <li> <p>Develop prototypes and technical documentation, including evaluation suites, benchmarks grounded in real engineering tasks, AI engineering techniques, and architecture diagrams, that enable startups to build, operate, and scale with Claude</p> </li> <li> <p>Create reference implementations and sample code that many companies can adopt without starting from scratch, for example integrating Claude with CAD, simulation, design tools, or industrial automation</p> </li> <li> <p>Collaborate closely with Applied AI Architects to maintain context and continuity across customer engagements</p> </li> <li> <p>Identify patterns across engagements, including what is hard about applying AI to physical systems such as reading drawings, 3D geometry, board layout and routing, GD&amp;T, latency and on-premise constraints, and physical safety, then build repeatable evaluations and solutions and contribute insights back to Product, Engineering, Research, and the broader Applied AI team&nbsp;</p> </li> <li> <p>Create technical content for startup audiences including documentation, tutorials, and sample code</p> </li> <li> <p>Foster community engagement through hackathons, webinars, technical office hours, and startup-focused events</p> </li> <li> <p>Travel to customer sites for workshops, implementation guidance, and relationship building</p> </li> </ul> <h2><strong>You may be a good fit if you have</strong></h2> <ul> <li> <p>Deep engineering experience in a physical discipline such as mechanical, electrical, aerospace, robotics, semiconductor, manufacturing, or civil engineering, gained by designing, building, or operating real hardware, along with strong opinions of your own about how to bridge the gap between what AI can do today and how physical things get built</p> </li> <li> <p>4+ years of technical experience as a software engineer, ML or research engineer, robotics or controls engineer, hardware or systems engineer, or technical founder, with either production experience building LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale, or a track record of successfully applying AI to real engineering work in design, simulation, test, or production</p> </li> <li> <p>Experience with startups or high-growth companies and a love of working with founders and small teams that move quickly</p> </li> <li> <p>Strong technical communication skills, with the ability to translate complex AI concepts into architectural decisions and actionable implementation plans for both software and hardware engineering audiences and to run technical workshops, hackathons, or developer-focused events</p> </li> <li> <p>A collaborative approach to working across teams, the range of a generalist who can context-switch from robots to chips to rockets to factories and get up to speed on a new domain quickly, and a passion for making powerful technology safe and beneficial</p> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>$280,000</span><span class=\"divider\">&mdash;</span><span>$320,000 USD</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
-      "responsibilities": [],
-      "requirements": [],
-      "preferredQualifications": [],
-      "skills": [
-        "llm",
-        "responsible-ai"
-      ],
-      "constraints": [],
-      "publishedAt": "2026-10-15T18:50:02-04:00",
-      "updatedAt": "2026-10-15T18:50:02-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
-      "status": "active",
-      "contentFingerprint": "6621affa9cdce747525ce2232443de76cf7a9b8b77bae78bb6efff4195ac0a6d",
-      "intelligence": {
-        "jobId": "greenhouse:5454673008",
-        "matchScore": 41,
-        "analysisMode": "e5",
-        "componentScores": {
-          "skill": 38,
-          "evidence": 38,
-          "semantic": 31,
-          "adjacency": 66,
-          "constraints": 50
-        },
-        "matchedEvidence": [
-          {
-            "evidenceId": "ev-ai-boundary",
-            "requirement": "岗位技能要求：responsible ai",
-            "score": 76
-          }
-        ],
-        "strengths": [
-          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
-        ],
-        "gaps": [
-          "待补证据：llm"
-        ],
-        "hardBlockers": [],
-        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2640,7 +2578,7 @@
       "constraints": [],
       "publishedAt": "2025-05-20T13:17:11-04:00",
       "updatedAt": "2026-10-13T09:03:05-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "17360ccd377d632b7dd3a0d17fbce8491f56f1a323654f408907a1765509e480",
       "intelligence": {
@@ -2650,7 +2588,7 @@
         "componentScores": {
           "skill": 32,
           "evidence": 34,
-          "semantic": 43,
+          "semantic": 42,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2677,7 +2615,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2710,11 +2648,73 @@
       "constraints": [],
       "publishedAt": "2026-10-15T18:47:12-04:00",
       "updatedAt": "2026-10-15T18:47:12-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "74b191909ba686637a5efe1451d51050f9196d42cad6539e2bdd8dce1a715dc5",
       "intelligence": {
         "jobId": "greenhouse:5454650008",
+        "matchScore": 40,
+        "analysisMode": "e5",
+        "componentScores": {
+          "skill": 38,
+          "evidence": 38,
+          "semantic": 28,
+          "adjacency": 66,
+          "constraints": 50
+        },
+        "matchedEvidence": [
+          {
+            "evidenceId": "ev-ai-boundary",
+            "requirement": "岗位技能要求：responsible ai",
+            "score": 76
+          }
+        ],
+        "strengths": [
+          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
+        ],
+        "gaps": [
+          "待补证据：llm"
+        ],
+        "hardBlockers": [],
+        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
+        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
+      }
+    },
+    {
+      "id": "greenhouse:5454673008",
+      "source": "greenhouse",
+      "sourceJobId": "5454673008",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5454673008",
+      "sourceUrls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5454673008"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5454673008",
+      "company": "Anthropic",
+      "title": "Applied AI Engineer, Startups (Physical AI)",
+      "normalizedTitle": "applied ai engineer, startups (physical ai)",
+      "roleFamily": "ai-engineering",
+      "locations": [
+        "San Francisco, CA"
+      ],
+      "workplaceType": "hybrid",
+      "language": "en",
+      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2> <p>As an Applied AI Engineer on the Startups team at Anthropic, you will be a trusted technical advisor to the top AI-native startups building in the physical world, across robotics, semiconductors, aerospace, manufacturing, and civil infrastructure, as they grow from early product to scale. Some of these companies build the hardware itself and want Claude woven into how they design, test, and operate it, and others build the software that engineers everywhere use to design, simulate, test, and scale, and this role works with both. You'll lead deep technical engagements, partnering directly with startup software and hardware engineering teams to help them build their products on Claude and run their own engineering with it, advising on implementation and agent design as they build what is newly possible with AI in the physical world. You will bridge the gap between what Claude can do and what it takes to build real things, working alongside some of the strongest teams in the field on problems that matter and helping mechanical, electrical, and process engineers get the kind of step change that software engineering has had from agentic coding with tools like Claude Code.</p> <p>Working closely with Applied AI Architects, Account Executives, and Anthropic's Product, Engineering, and Research teams, you'll help startups build at the edge of what is possible with Claude. You'll leverage your AI engineering expertise and your engineering domain knowledge to develop custom evaluation frameworks, design scalable architectures, and create the technical resources that enable physical AI startups to succeed with Claude.</p> <h2><strong>Responsibilities</strong></h2> <ul> <li> <p>Serve as a deep technical advisor to high-potential startups building in the physical world, whether Claude sits inside the product they sell or inside the way they design, test, and run their own hardware, working alongside them to push the boundaries of AI in engineering, manufacturing, operations, and more</p> </li> <li> <p>Work hands-on with startup software and hardware teams through pair programming and architecture reviews that accelerate their development, and understand their engineering workflows end to end, from design and simulation through test, production, and operations, so that your guidance fits how real hardware gets built</p> </li> <li> <p>Develop prototypes and technical documentation, including evaluation suites, benchmarks grounded in real engineering tasks, AI engineering techniques, and architecture diagrams, that enable startups to build, operate, and scale with Claude</p> </li> <li> <p>Create reference implementations and sample code that many companies can adopt without starting from scratch, for example integrating Claude with CAD, simulation, design tools, or industrial automation</p> </li> <li> <p>Collaborate closely with Applied AI Architects to maintain context and continuity across customer engagements</p> </li> <li> <p>Identify patterns across engagements, including what is hard about applying AI to physical systems such as reading drawings, 3D geometry, board layout and routing, GD&amp;T, latency and on-premise constraints, and physical safety, then build repeatable evaluations and solutions and contribute insights back to Product, Engineering, Research, and the broader Applied AI team&nbsp;</p> </li> <li> <p>Create technical content for startup audiences including documentation, tutorials, and sample code</p> </li> <li> <p>Foster community engagement through hackathons, webinars, technical office hours, and startup-focused events</p> </li> <li> <p>Travel to customer sites for workshops, implementation guidance, and relationship building</p> </li> </ul> <h2><strong>You may be a good fit if you have</strong></h2> <ul> <li> <p>Deep engineering experience in a physical discipline such as mechanical, electrical, aerospace, robotics, semiconductor, manufacturing, or civil engineering, gained by designing, building, or operating real hardware, along with strong opinions of your own about how to bridge the gap between what AI can do today and how physical things get built</p> </li> <li> <p>4+ years of technical experience as a software engineer, ML or research engineer, robotics or controls engineer, hardware or systems engineer, or technical founder, with either production experience building LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale, or a track record of successfully applying AI to real engineering work in design, simulation, test, or production</p> </li> <li> <p>Experience with startups or high-growth companies and a love of working with founders and small teams that move quickly</p> </li> <li> <p>Strong technical communication skills, with the ability to translate complex AI concepts into architectural decisions and actionable implementation plans for both software and hardware engineering audiences and to run technical workshops, hackathons, or developer-focused events</p> </li> <li> <p>A collaborative approach to working across teams, the range of a generalist who can context-switch from robots to chips to rockets to factories and get up to speed on a new domain quickly, and a passion for making powerful technology safe and beneficial</p> </li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>$280,000</span><span class=\"divider\">&mdash;</span><span>$320,000 USD</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
+      "responsibilities": [],
+      "requirements": [],
+      "preferredQualifications": [],
+      "skills": [
+        "llm",
+        "responsible-ai"
+      ],
+      "constraints": [],
+      "publishedAt": "2026-10-15T18:50:02-04:00",
+      "updatedAt": "2026-10-15T18:50:02-04:00",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
+      "status": "active",
+      "contentFingerprint": "6621affa9cdce747525ce2232443de76cf7a9b8b77bae78bb6efff4195ac0a6d",
+      "intelligence": {
+        "jobId": "greenhouse:5454673008",
         "matchScore": 40,
         "analysisMode": "e5",
         "componentScores": {
@@ -2739,7 +2739,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2772,7 +2772,7 @@
       "constraints": [],
       "publishedAt": "2026-04-28T03:53:55-04:00",
       "updatedAt": "2026-09-27T23:35:11-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "0996e5aaf5609c5728da5c122d657b2242de8f9e90a0b52ef7333ce24749ed73",
       "intelligence": {
@@ -2782,7 +2782,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 24,
+          "semantic": 23,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2801,7 +2801,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2834,7 +2834,7 @@
       "constraints": [],
       "publishedAt": "2026-09-28T22:57:03-04:00",
       "updatedAt": "2026-10-14T14:29:40-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "4ee3c4536866fdd01ba16265fa823cd150616036978c101400e7b09f9cbe5ee2",
       "intelligence": {
@@ -2844,7 +2844,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 22,
+          "semantic": 21,
           "adjacency": 66,
           "constraints": 50
         },
@@ -2863,69 +2863,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
-        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
-      }
-    },
-    {
-      "id": "greenhouse:5354765008",
-      "source": "greenhouse",
-      "sourceJobId": "5354765008",
-      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5354765008",
-      "sourceUrls": [
-        "https://job-boards.greenhouse.io/anthropic/jobs/5354765008"
-      ],
-      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5354765008",
-      "company": "Anthropic",
-      "title": "Applied AI Engineer, Enterprise",
-      "normalizedTitle": "applied ai engineer, enterprise",
-      "roleFamily": "ai-engineering",
-      "locations": [
-        "London, UK"
-      ],
-      "workplaceType": "hybrid",
-      "language": "en",
-      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2> <p>As an Applied AI Engineer on our Enterprise team, your role is to guide some of the UK's largest businesses to the frontier of AI and help them deploy Claude into their operations, their products, and their ways of working. You will become the go-to Claude Platform specialist and trusted technical advisor for your customers, advising their engineering teams on architecture, agent design, and evaluation, and working with the C-level and senior executives who sponsor these programmes to show the business value Claude can create and help them reach a confident decision to build on Claude.</p> <p>Enterprise deals are different. Procurement cycles are longer, more stakeholders are involved, and success depends on being able to connect the technical work to the outcomes the boardroom cares about. You will be as comfortable advising an engineering team on evaluation and architecture as you are presenting a value case to a CIO or CTO, and you will carry the technical thread across every stage of a multi-quarter engagement.</p> <p>You will partner closely with Enterprise Account Executives and Applied AI Architects to take each customer from first conversation, through technical evaluation, proof of value and procurement, to the decision to build on Claude. Once they have decided, you set their systems integration partner up to deliver, agreeing the target architecture and what good looks like, and you stay close as the customer's technical advisor on Claude throughout deployment, while the partner does the build. Working alongside Anthropic's Product and Engineering teams, you will use your knowledge of the Claude Platform to advise on evaluation, recommend architectures that meet enterprise security and scale requirements, and create the technical and business resources that help large organisations succeed with Claude.</p> <h2><strong>Responsibilities</strong></h2> <ul> <li>Partner with Enterprise Account Executives and Applied AI Architects to take UK enterprise customers from first conversation, through technical evaluation, proof of value and procurement, to the decision to build on Claude</li> <li>Lead the technical side of each opportunity, then remain the customer's technical advisor on Claude as they deploy</li> <li>Set customers and their systems integration partners up to deliver: agree the target architecture, define what good looks like, and advise the delivery team as the build progresses</li> <li>Help customer engineering teams see how they would build on Claude, covering architecture, agent design and evaluation</li> <li>Build and present the business value case for Claude to C-level and senior executives, linking technical capabilities to measurable outcomes such as cost, revenue, risk, and time to market</li> <li>Guide customers through long, multi-stakeholder procurement, including security and architecture reviews and a clear path to production, navigating security, compliance, data residency and governance requirements (including UK GDPR)</li> <li>Feed patterns from enterprise engagements back to Product, Engineering, and the wider Applied AI team, and travel to customer sites across the UK</li> </ul> <h2><strong>You may be a good fit if you have</strong></h2> <ul> <li>6+ years of experience as a Software Engineer, Solutions Architect, Forward Deployed Engineer, or technical founder</li> <li>Pre-sales or technical advisory experience selling into large enterprises, ideally in the UK, including owning the technical win (evaluations, proofs of concept, due diligence with security, legal and procurement)</li> <li>Experience with value-based selling and presenting a business case to C-level and VP-level stakeholders</li> <li>Production experience with LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale</li> <li>Familiarity with enterprise security, compliance, and architecture requirements, ideally in regulated sectors</li> <li>The ability to explain complex AI concepts clearly to both technical and executive audiences, and a passion for making powerful technology safe and beneficial</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>£225,000</span><span class=\"divider\">&mdash;</span><span>£255,000 GBP</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
-      "responsibilities": [],
-      "requirements": [],
-      "preferredQualifications": [],
-      "skills": [
-        "llm",
-        "responsible-ai"
-      ],
-      "constraints": [],
-      "publishedAt": "2026-09-28T06:53:58-04:00",
-      "updatedAt": "2026-09-28T06:56:13-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
-      "status": "active",
-      "contentFingerprint": "701bcd8fe91c4b3f929fc2c1806f8655c5198cf3be0c19496bffd55d00fcb6f9",
-      "intelligence": {
-        "jobId": "greenhouse:5354765008",
-        "matchScore": 38,
-        "analysisMode": "e5",
-        "componentScores": {
-          "skill": 38,
-          "evidence": 38,
-          "semantic": 17,
-          "adjacency": 66,
-          "constraints": 50
-        },
-        "matchedEvidence": [
-          {
-            "evidenceId": "ev-ai-boundary",
-            "requirement": "岗位技能要求：responsible ai",
-            "score": 76
-          }
-        ],
-        "strengths": [
-          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
-        ],
-        "gaps": [
-          "待补证据：llm"
-        ],
-        "hardBlockers": [],
-        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -2960,7 +2898,7 @@
       "constraints": [],
       "publishedAt": "2026-08-25T18:59:04-04:00",
       "updatedAt": "2026-09-18T02:03:05-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "398439d0afbfb393aa623cdccafb0f3102e740ca9e120dec19324d49da50af01",
       "intelligence": {
@@ -2991,7 +2929,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3024,7 +2962,7 @@
       "constraints": [],
       "publishedAt": "2026-09-09T19:09:53-04:00",
       "updatedAt": "2026-09-09T19:09:53-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "a41ff076183d2364b14ebb46429d55dced0fbc6de409884ec8dc1a256677a8b7",
       "intelligence": {
@@ -3034,7 +2972,7 @@
         "componentScores": {
           "skill": 38,
           "evidence": 38,
-          "semantic": 20,
+          "semantic": 19,
           "adjacency": 66,
           "constraints": 50
         },
@@ -3053,7 +2991,142 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
+        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
+      }
+    },
+    {
+      "id": "greenhouse:5224564008",
+      "source": "greenhouse",
+      "sourceJobId": "5224564008",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5224564008",
+      "sourceUrls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5224564008"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5224564008",
+      "company": "Anthropic",
+      "title": "Performance Engineer, Inference Systems",
+      "normalizedTitle": "performance engineer, inference systems",
+      "roleFamily": "ai-engineering",
+      "locations": [
+        "San Francisco, CA | New York City, NY | Seattle, WA"
+      ],
+      "workplaceType": "hybrid",
+      "language": "en",
+      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the Role</strong></h2> <p>Anthropic's inference fleet serves Claude to millions of users across our own products and the world's largest cloud platforms. The stack that makes this possible is deep and tightly coupled: accelerator kernels, model servers, distributed routing, autoscaling, capacity management. Every layer affects the others, often in ways that are hard to see in isolation.</p> <p>The Inference System Dynamics team is responsible for understanding that whole system and holding it to a high bar across four dimensions: <strong>throughput, latency, reliability, and correctness</strong>. We measure how the fleet performs against its theoretical performance frontier, run cross-layer investigations to explain the gaps, and own the correctness checks that make sure Claude's outputs are right, not just fast, across hardware platforms and serving configurations. We don't own the individual components. We instrument and model them, find the highest-leverage opportunities across them, and partner with the owning teams to land the wins.</p> <p>You'll work across all four areas. One week that might mean tracing a tail-latency regression from request timing down through routing and batching into a kernel overhead; the next it might mean tightening a correctness eval so it catches an output regression introduced by a quantization change. We're looking for performance engineers who treat correctness as part of performance.</p> <h2><strong>Key Responsibilities</strong></h2> <ul> <li>Run cross-layer performance investigations across throughput, latency, and reliability, sizing the gap between actual fleet performance and theoretical rooflines, identifying root causes, and quantifying the value of closing them</li> <li>Own and improve the correctness evaluation pipeline that validates model output quality across hardware platforms, numerics, and serving configurations, and lead the investigation when it catches a regression</li> <li>Build the observability, dashboards, and modeling tools that make throughput, latency, cost, reliability, correctness, and their interactions legible across the stack</li> <li>Partner with kernel, serving, routing, autoscaling, and capacity teams to prioritize and land the highest-impact optimizations your analysis surfaces</li> <li>Ruthlessly stack-rank a large surface area of opportunities by impact and effort, and say no to the ones that don't make the cut</li> </ul> <h2><strong>Minimum Qualifications</strong></h2> <ul> <li>Hands-on performance engineering experience: profiling, roofline analysis, latency/throughput optimization, and root-cause investigation in complex production systems</li> <li>Proficiency in Python, with the ability to read, instrument, and contribute to large production codebases you didn’t write</li> <li>Solid data analysis skills (e.g. SQL, pandas, or similar) sufficient to turn raw telemetry into clear findings</li> <li>Ability to communicate quantitative results clearly in writing to influence priorities on teams you don't manage</li> <li>Genuine interest in correctness as an engineering discipline: numerics, evaluation design, regression detection</li> </ul> <h2><strong>Preferred Qualifications</strong></h2> <ul> <li>Experience with ML systems, especially training or inference infrastructure or general LLM serving stacks. Direct large-scale inference experience is a strong plus</li> <li>Familiarity with GPU/TPU/accelerator performance concepts (memory bandwidth, kernel overheads, quantization, collective communication). Reasoning about these matters more than having written kernels yourself</li> <li>Experience with reliability engineering for high-throughput services: autoscaling, load balancing, request routing, tail latency</li> <li>Experience with model evaluation or numerical regression-detection pipelines</li> <li>Experience building observability or telemetry for distributed systems</li> <li>Comfortable having impact through influence and evidence rather than direct ownership</li> </ul> <h2><strong>Representative Projects</strong></h2> <ul> <li>Trace a 350ms latency gap on a new accelerator platform from end-to-end request timing down to a server scheduling overhead, quantify the win, and land the fix directly or with the owning team</li> <li>Redesign the correctness eval gate: determine which signals reliably catch real model-output regressions versus noise, and make it the trusted release criterion across hardware backends</li> <li>Build a FLOPs funnel that breaks down where compute actually goes across the fleet, exposing the gap between achieved throughput and kernel rooflines</li> <li>Root-cause a numerical divergence between two hardware platforms to a specific kernel change, and define the acceptance threshold going forward</li> <li>Model the latency–cost impact of changing batch-sizing and utilization targets, and turn the result into the signal the autoscaler uses in production</li> </ul> <p><em>Deadline to apply: None. Applications will be reviewed on a rolling basis.</em></p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>$350,000</span><span class=\"divider\">&mdash;</span><span>$850,000 USD</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
+      "responsibilities": [],
+      "requirements": [],
+      "preferredQualifications": [],
+      "skills": [
+        "data-analysis",
+        "llm",
+        "responsible-ai",
+        "python",
+        "sql"
+      ],
+      "constraints": [],
+      "publishedAt": "2026-05-20T18:53:11-04:00",
+      "updatedAt": "2026-08-21T12:50:15-04:00",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
+      "status": "active",
+      "contentFingerprint": "d6b087fb49bf1f29b9835dc0bbe00939216f52d93ab9f7631f036fdcde198765",
+      "intelligence": {
+        "jobId": "greenhouse:5224564008",
+        "matchScore": 37,
+        "analysisMode": "e5",
+        "componentScores": {
+          "skill": 34,
+          "evidence": 35,
+          "semantic": 25,
+          "adjacency": 66,
+          "constraints": 50
+        },
+        "matchedEvidence": [
+          {
+            "evidenceId": "ev-career-network",
+            "requirement": "岗位技能要求：data analysis",
+            "score": 98
+          },
+          {
+            "evidenceId": "ev-ai-boundary",
+            "requirement": "岗位技能要求：responsible ai",
+            "score": 76
+          }
+        ],
+        "strengths": [
+          "岗位技能要求：data analysis ↔ 大规模职业网络研究",
+          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
+        ],
+        "gaps": [
+          "待补证据：llm",
+          "待补证据：python",
+          "待补证据：sql"
+        ],
+        "hardBlockers": [],
+        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
+        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
+      }
+    },
+    {
+      "id": "greenhouse:5390754008",
+      "source": "greenhouse",
+      "sourceJobId": "5390754008",
+      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5390754008",
+      "sourceUrls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5390754008"
+      ],
+      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5390754008",
+      "company": "Anthropic",
+      "title": "Applied AI Engineer, Enterprise",
+      "normalizedTitle": "applied ai engineer, enterprise",
+      "roleFamily": "ai-engineering",
+      "locations": [
+        "Paris, France"
+      ],
+      "workplaceType": "hybrid",
+      "language": "en",
+      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h3 class=\"mt-3 -mb-1 text-[1.125rem] font-bold\">À propos du poste</h3> <p class=\"font-claude-response-body break-words whitespace-normal\">En tant qu'ingénieur·e en IA appliquée au sein de notre équipe Entreprise, votre rôle est de guider certaines des plus grandes entreprises de France vers la frontière de l'IA et de les aider à déployer Claude dans leurs opérations, leurs produits et leurs méthodes de travail. Vous deviendrez le·la spécialiste incontournable de la plateforme Claude et le·la conseiller·ère technique de confiance de vos clients, en conseillant leurs équipes d'ingénierie sur l'architecture, la conception d'agents et l'évaluation, et en travaillant avec les dirigeants et les cadres supérieurs qui sponsorisent ces programmes pour démontrer la valeur ajoutée de Claude et les aider à prendre une décision éclairée quant à l'adoption de Claude.</p> <p class=\"font-claude-response-body break-words whitespace-normal\">Les transactions avec les entreprises sont différentes. Les cycles d'approvisionnement sont plus longs, davantage de parties prenantes sont impliquées, et la réussite dépend de la capacité à relier le travail technique aux résultats qui importent pour le conseil d'administration. Vous serez tout aussi à l'aise pour conseiller une équipe d'ingénierie sur l'évaluation et l'architecture que pour présenter un dossier de valeur à un CIO ou un CTO, et vous porterez le fil technique à travers chaque étape d'un engagement s'étalant sur plusieurs trimestres.</p> <p class=\"font-claude-response-body break-words whitespace-normal\">Une grande partie de ce travail se déroule en français, avec des cadres dirigeants et des équipes d'ingénierie françaises, c'est pourquoi un français natif ou courant est essentiel pour ce poste. Vous travaillerez en étroite collaboration avec les responsables de comptes Entreprise et les architectes IA appliquée pour accompagner chaque client depuis la première conversation, à travers l'évaluation technique, la création de valeur et les achats, jusqu'à la décision de développer sur Claude. Une fois leur décision prise, vous préparerez leur partenaire d'intégration système à assurer la mise en œuvre, en définissant ensemble l'architecture cible et les critères de réussite, et vous resterez proche du client en tant que conseiller·ère technique sur Claude pendant tout le déploiement, tandis que le partenaire se chargera de la construction. En travaillant aux côtés des équipes Produit et Ingénierie d'Anthropic, vous mettrez à profit votre connaissance de la plateforme Claude pour conseiller sur l'évaluation, recommander des architectures répondant aux exigences de sécurité et d'échelle des entreprises, et créer les ressources techniques et commerciales qui aident les grandes organisations à réussir avec Claude.</p> <h3 class=\"mt-3 -mb-1 text-[1.125rem] font-bold\">Responsabilités</h3> <ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1\"> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Travailler en partenariat avec les responsables de comptes et les architectes en IA appliquée pour accompagner les clients entreprises en France depuis le premier échange jusqu'à la décision d'adopter Claude, en passant par l'évaluation technique, la validation de la valeur et le processus d'achat</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Piloter le volet technique de chaque opportunité jusqu'à cette décision, et rester le·la conseiller·ère technique du client sur Claude pendant son déploiement</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Préparer les clients et leurs partenaires d'intégration de systèmes à assurer la livraison : convenir de l'architecture cible, définir les critères de réussite, et rester disponible pour conseiller l'équipe de livraison au fur et à mesure de l'avancement de la construction</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Guider les clients grandes entreprises vers l'avant-garde de l'IA, en les conseillant sur la manière de déployer Claude dans leurs opérations, leurs produits et leurs méthodes de travail</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Aider les équipes d'ingénierie des clients à voir comment elles pourraient développer sur Claude, en couvrant l'architecture, la conception d'agents et l'évaluation, afin qu'elles puissent prendre une décision en toute confiance</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Élaborer et présenter le dossier de valeur commerciale de Claude auprès des dirigeants et des cadres supérieurs, en français et en anglais, en associant les capacités techniques à des résultats mesurables tels que les coûts, les revenus, les risques et le délai de mise sur le marché</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Guider les clients à travers de longs cycles d'approvisionnement et d'adoption impliquant de multiples parties prenantes, notamment les évaluations techniques, les preuves de concept, les revues de sécurité et d'architecture, jusqu'à la définition d'une feuille de route claire vers la mise en production</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Travailler avec les responsables de comptes sur la stratégie de compte, la qualification des opportunités commerciales et les plans d'engagement des dirigeants, et avec les architectes en IA appliquée pour assurer la continuité et le partage du contexte à travers chaque engagement</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Organiser des briefings exécutifs, des ateliers techniques et des sessions de formation destinés à la fois aux dirigeants et aux équipes d'ingénierie</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Naviguer au sein des exigences de l'entreprise en matière de sécurité, de conformité, de résidence des données et de gouvernance, en collaborant avec les équipes internes d'Anthropic si nécessaire</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Identifier les modèles à travers les engagements auprès des entreprises et transmettre les informations aux équipes Produit, Ingénierie et à l'équipe IA appliquée élargie</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Se rendre sur les sites des clients en France pour des réunions de direction, des ateliers et l'établissement de relations</li> </ul> <h3 class=\"mt-3 -mb-1 text-[1.125rem] font-bold\">Vous conviendrez particulièrement si vous avez</h3> <ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1\"> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Le français comme langue maternelle ou courant, écrit et parlé, car vous travaillerez au quotidien avec des clients entreprises français, aussi bien au niveau des dirigeants qu'au niveau ingénierie</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Plus de 6 ans d'expérience en tant qu'ingénieur·e logiciel, architecte de solutions, ingénieur·e en déploiement avancé ou fondateur·rice technique</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience dans un poste d'avant-vente ou de conseil technique auprès de grandes entreprises, idéalement sur le marché français, y compris la définition du périmètre et la conception de solutions complexes</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience dans la vente basée sur la valeur, ce qui signifie que vous êtes en mesure d'élaborer un dossier commercial, de quantifier l'impact et de le présenter à des décideurs de haut niveau</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">L'aisance à présenter et à établir des relations avec des parties prenantes de niveau C et VP</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience dans la prise en charge de la réussite technique des transactions avec les entreprises : évaluations, preuves de concept et audits techniques préalables avec les équipes d'ingénierie, de sécurité, juridique et des achats</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience en production avec des applications propulsées par des LLM, incluant le prompting, l'ingénierie du contexte, les architectures d'agents, les cadres d'évaluation et le déploiement à grande échelle</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience pratique en ingénierie, incluant la conception et le déploiement d'applications en production, afin de pouvoir échanger avec les responsables techniques et leurs équipes</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une familiarité avec les exigences en matière de sécurité, de conformité et d'architecture d'entreprise, et une expérience dans la résolution de ces problématiques avec les équipes clientes</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">La capacité à expliquer clairement des concepts complexes d'IA à des publics techniques et dirigeants, et à naviguer entre des secteurs tels que les services financiers, les soins de santé, le commerce de détail et l'industrie manufacturière</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Un intérêt marqué pour la mise en place de technologies puissantes sûres et bénéfiques</li> </ul> <h2><strong>About the role</strong></h2> <p>As an Applied AI Engineer on our Enterprise team, your role is to guide some of France's largest businesses to the frontier of AI and help them deploy Claude into their operations, their products, and their ways of working. You will become the go-to Claude Platform specialist and trusted technical advisor for your customers, advising their engineering teams on architecture, agent design, and evaluation, and working with the C-level and senior executives who sponsor these programmes to show the business value Claude can create and help them reach a confident decision to build on Claude.</p> <p>Enterprise deals are different. Procurement cycles are longer, more stakeholders are involved, and success depends on being able to connect the technical work to the outcomes the boardroom cares about. You will be as comfortable advising an engineering team on evaluation and architecture as you are presenting a value case to a CIO or CTO, and you will carry the technical thread across every stage of a multi-quarter engagement. Much of this work happens in French, with French executives and engineering teams, so native or fluent French is essential for the role.</p> <p>You will partner closely with Enterprise Account Executives and Applied AI Architects to take each customer from first conversation, through technical evaluation, proof of value and procurement, to the decision to build on Claude. Once they have decided, you set their systems integration partner up to deliver, agreeing the target architecture and what good looks like, and you stay close as the customer's technical advisor on Claude throughout deployment, while the partner does the build. Working alongside Anthropic's Product and Engineering teams, you will use your knowledge of the Claude Platform to advise on evaluation, recommend architectures that meet enterprise security and scale requirements, and create the technical and business resources that help large organisations succeed with Claude.</p> <h2><strong>Responsibilities</strong></h2> <ul> <li>Partner with Enterprise Account Executives and Applied AI Architects to take enterprise customers in France from first conversation, through technical evaluation, proof of value and procurement, to the decision to build on Claude</li> <li>Lead the technical side of each opportunity through to that decision, and remain the customer's technical advisor on Claude as they deploy</li> <li>Set customers and their systems integration partners up to deliver: agree the target architecture, define what good looks like, and stay on hand to advise the delivery team as the build progresses</li> <li>Guide enterprise customers to the frontier of AI, advising them on how to deploy Claude into their operations, their products, and their ways of working</li> <li>Help customer engineering teams see how they would build on Claude, covering architecture, agent design and evaluation, so they can make a confident decision</li> <li>Build and present the business value case for Claude with C-level and senior executives, in French and English, linking technical capabilities to measurable outcomes such as cost, revenue, risk, and time to market</li> <li>Guide customers through long, multi-stakeholder procurement and adoption cycles, including technical evaluations, proofs of concept, security and architecture reviews, and a clear path to production</li> <li>Work with Account Executives on account strategy, deal qualification, and executive engagement plans, and with Applied AI Architects to keep context and continuity across every engagement</li> <li>Run executive briefings, technical workshops, and enablement sessions for both leadership and engineering audiences</li> <li>Navigate enterprise requirements around security, compliance, data residency, and governance, working with Anthropic's internal teams where needed</li> <li>Identify patterns across enterprise engagements and feed insights back to Product, Engineering, and the wider Applied AI team</li> <li>Travel to customer sites across France for executive meetings, workshops, and relationship building</li> </ul> <h2><strong>You may be a good fit if you have</strong></h2> <ul> <li>Native or fluent French, written and spoken, as you will work day to day with French enterprise customers at both executive and engineering level</li> <li>6+ years of experience as a Software Engineer, Solutions Architect, Forward Deployed Engineer, or technical founder</li> <li>Experience in a pre-sales or technical advisory role selling into large enterprises, ideally in the French market, including scoping and designing complex solutions</li> <li>Experience with value-based selling, meaning you can build a business case, quantify impact, and present it to senior decision makers</li> <li>Comfort presenting to, and building relationships with, C-level and VP-level stakeholders</li> <li>Experience owning the technical win in enterprise deals: evaluations, proofs of concept and technical due diligence with engineering, security, legal and procurement teams</li> <li>Production experience with LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale</li> <li>A hands-on engineering background, including building and deploying production applications, so you can relate to engineering leaders and their teams</li> <li>Familiarity with enterprise security, compliance, and architecture requirements, and experience working through them with customer teams</li> <li>The ability to explain complex AI concepts clearly to both technical and executive audiences, and to move between industries such as financial services, healthcare, retail, and manufacturing</li> <li>A passion for making powerful technology safe and beneficial</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>€220.000</span><span class=\"divider\">&mdash;</span><span>€235.000 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
+      "responsibilities": [],
+      "requirements": [],
+      "preferredQualifications": [],
+      "skills": [
+        "llm",
+        "responsible-ai"
+      ],
+      "constraints": [],
+      "publishedAt": "2026-08-20T09:01:59-04:00",
+      "updatedAt": "2026-09-14T17:13:27-04:00",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
+      "status": "active",
+      "contentFingerprint": "2f80bf8f2ec7066480a61b6b75cb05d5a9797a47f988a4ca832019cd0acde530",
+      "intelligence": {
+        "jobId": "greenhouse:5390754008",
+        "matchScore": 37,
+        "analysisMode": "e5",
+        "componentScores": {
+          "skill": 38,
+          "evidence": 38,
+          "semantic": 13,
+          "adjacency": 66,
+          "constraints": 50
+        },
+        "matchedEvidence": [
+          {
+            "evidenceId": "ev-ai-boundary",
+            "requirement": "岗位技能要求：responsible ai",
+            "score": 76
+          }
+        ],
+        "strengths": [
+          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
+        ],
+        "gaps": [
+          "待补证据：llm"
+        ],
+        "hardBlockers": [],
+        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3090,17 +3163,17 @@
       "constraints": [],
       "publishedAt": "2026-09-28T14:52:20-04:00",
       "updatedAt": "2026-09-28T14:52:20-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "2e88640316ab9211f8ba5ed14501c7021bc64e0a943a896ec69bf14a68374c7e",
       "intelligence": {
         "jobId": "greenhouse:5436697008",
-        "matchScore": 38,
+        "matchScore": 37,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 31,
           "evidence": 28,
-          "semantic": 41,
+          "semantic": 40,
           "adjacency": 66,
           "constraints": 50
         },
@@ -3128,142 +3201,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
-        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
-      }
-    },
-    {
-      "id": "greenhouse:5224564008",
-      "source": "greenhouse",
-      "sourceJobId": "5224564008",
-      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5224564008",
-      "sourceUrls": [
-        "https://job-boards.greenhouse.io/anthropic/jobs/5224564008"
-      ],
-      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5224564008",
-      "company": "Anthropic",
-      "title": "Performance Engineer, Inference Systems",
-      "normalizedTitle": "performance engineer, inference systems",
-      "roleFamily": "ai-engineering",
-      "locations": [
-        "San Francisco, CA | New York City, NY | Seattle, WA"
-      ],
-      "workplaceType": "hybrid",
-      "language": "en",
-      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the Role</strong></h2> <p>Anthropic's inference fleet serves Claude to millions of users across our own products and the world's largest cloud platforms. The stack that makes this possible is deep and tightly coupled: accelerator kernels, model servers, distributed routing, autoscaling, capacity management. Every layer affects the others, often in ways that are hard to see in isolation.</p> <p>The Inference System Dynamics team is responsible for understanding that whole system and holding it to a high bar across four dimensions: <strong>throughput, latency, reliability, and correctness</strong>. We measure how the fleet performs against its theoretical performance frontier, run cross-layer investigations to explain the gaps, and own the correctness checks that make sure Claude's outputs are right, not just fast, across hardware platforms and serving configurations. We don't own the individual components. We instrument and model them, find the highest-leverage opportunities across them, and partner with the owning teams to land the wins.</p> <p>You'll work across all four areas. One week that might mean tracing a tail-latency regression from request timing down through routing and batching into a kernel overhead; the next it might mean tightening a correctness eval so it catches an output regression introduced by a quantization change. We're looking for performance engineers who treat correctness as part of performance.</p> <h2><strong>Key Responsibilities</strong></h2> <ul> <li>Run cross-layer performance investigations across throughput, latency, and reliability, sizing the gap between actual fleet performance and theoretical rooflines, identifying root causes, and quantifying the value of closing them</li> <li>Own and improve the correctness evaluation pipeline that validates model output quality across hardware platforms, numerics, and serving configurations, and lead the investigation when it catches a regression</li> <li>Build the observability, dashboards, and modeling tools that make throughput, latency, cost, reliability, correctness, and their interactions legible across the stack</li> <li>Partner with kernel, serving, routing, autoscaling, and capacity teams to prioritize and land the highest-impact optimizations your analysis surfaces</li> <li>Ruthlessly stack-rank a large surface area of opportunities by impact and effort, and say no to the ones that don't make the cut</li> </ul> <h2><strong>Minimum Qualifications</strong></h2> <ul> <li>Hands-on performance engineering experience: profiling, roofline analysis, latency/throughput optimization, and root-cause investigation in complex production systems</li> <li>Proficiency in Python, with the ability to read, instrument, and contribute to large production codebases you didn’t write</li> <li>Solid data analysis skills (e.g. SQL, pandas, or similar) sufficient to turn raw telemetry into clear findings</li> <li>Ability to communicate quantitative results clearly in writing to influence priorities on teams you don't manage</li> <li>Genuine interest in correctness as an engineering discipline: numerics, evaluation design, regression detection</li> </ul> <h2><strong>Preferred Qualifications</strong></h2> <ul> <li>Experience with ML systems, especially training or inference infrastructure or general LLM serving stacks. Direct large-scale inference experience is a strong plus</li> <li>Familiarity with GPU/TPU/accelerator performance concepts (memory bandwidth, kernel overheads, quantization, collective communication). Reasoning about these matters more than having written kernels yourself</li> <li>Experience with reliability engineering for high-throughput services: autoscaling, load balancing, request routing, tail latency</li> <li>Experience with model evaluation or numerical regression-detection pipelines</li> <li>Experience building observability or telemetry for distributed systems</li> <li>Comfortable having impact through influence and evidence rather than direct ownership</li> </ul> <h2><strong>Representative Projects</strong></h2> <ul> <li>Trace a 350ms latency gap on a new accelerator platform from end-to-end request timing down to a server scheduling overhead, quantify the win, and land the fix directly or with the owning team</li> <li>Redesign the correctness eval gate: determine which signals reliably catch real model-output regressions versus noise, and make it the trusted release criterion across hardware backends</li> <li>Build a FLOPs funnel that breaks down where compute actually goes across the fleet, exposing the gap between achieved throughput and kernel rooflines</li> <li>Root-cause a numerical divergence between two hardware platforms to a specific kernel change, and define the acceptance threshold going forward</li> <li>Model the latency–cost impact of changing batch-sizing and utilization targets, and turn the result into the signal the autoscaler uses in production</li> </ul> <p><em>Deadline to apply: None. Applications will be reviewed on a rolling basis.</em></p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>$350,000</span><span class=\"divider\">&mdash;</span><span>$850,000 USD</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
-      "responsibilities": [],
-      "requirements": [],
-      "preferredQualifications": [],
-      "skills": [
-        "data-analysis",
-        "llm",
-        "responsible-ai",
-        "python",
-        "sql"
-      ],
-      "constraints": [],
-      "publishedAt": "2026-05-20T18:53:11-04:00",
-      "updatedAt": "2026-08-21T12:50:15-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
-      "status": "active",
-      "contentFingerprint": "d6b087fb49bf1f29b9835dc0bbe00939216f52d93ab9f7631f036fdcde198765",
-      "intelligence": {
-        "jobId": "greenhouse:5224564008",
-        "matchScore": 37,
-        "analysisMode": "e5",
-        "componentScores": {
-          "skill": 34,
-          "evidence": 35,
-          "semantic": 26,
-          "adjacency": 66,
-          "constraints": 50
-        },
-        "matchedEvidence": [
-          {
-            "evidenceId": "ev-career-network",
-            "requirement": "岗位技能要求：data analysis",
-            "score": 98
-          },
-          {
-            "evidenceId": "ev-ai-boundary",
-            "requirement": "岗位技能要求：responsible ai",
-            "score": 76
-          }
-        ],
-        "strengths": [
-          "岗位技能要求：data analysis ↔ 大规模职业网络研究",
-          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
-        ],
-        "gaps": [
-          "待补证据：llm",
-          "待补证据：python",
-          "待补证据：sql"
-        ],
-        "hardBlockers": [],
-        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
-        "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
-      }
-    },
-    {
-      "id": "greenhouse:5390754008",
-      "source": "greenhouse",
-      "sourceJobId": "5390754008",
-      "sourceUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5390754008",
-      "sourceUrls": [
-        "https://job-boards.greenhouse.io/anthropic/jobs/5390754008"
-      ],
-      "applyUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5390754008",
-      "company": "Anthropic",
-      "title": "Applied AI Engineer, Enterprise",
-      "normalizedTitle": "applied ai engineer, enterprise",
-      "roleFamily": "ai-engineering",
-      "locations": [
-        "Paris, France"
-      ],
-      "workplaceType": "hybrid",
-      "language": "en",
-      "description": "<div class=\"content-intro\"><h2><strong>About Anthropic</strong></h2> <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h3 class=\"mt-3 -mb-1 text-[1.125rem] font-bold\">À propos du poste</h3> <p class=\"font-claude-response-body break-words whitespace-normal\">En tant qu'ingénieur·e en IA appliquée au sein de notre équipe Entreprise, votre rôle est de guider certaines des plus grandes entreprises de France vers la frontière de l'IA et de les aider à déployer Claude dans leurs opérations, leurs produits et leurs méthodes de travail. Vous deviendrez le·la spécialiste incontournable de la plateforme Claude et le·la conseiller·ère technique de confiance de vos clients, en conseillant leurs équipes d'ingénierie sur l'architecture, la conception d'agents et l'évaluation, et en travaillant avec les dirigeants et les cadres supérieurs qui sponsorisent ces programmes pour démontrer la valeur ajoutée de Claude et les aider à prendre une décision éclairée quant à l'adoption de Claude.</p> <p class=\"font-claude-response-body break-words whitespace-normal\">Les transactions avec les entreprises sont différentes. Les cycles d'approvisionnement sont plus longs, davantage de parties prenantes sont impliquées, et la réussite dépend de la capacité à relier le travail technique aux résultats qui importent pour le conseil d'administration. Vous serez tout aussi à l'aise pour conseiller une équipe d'ingénierie sur l'évaluation et l'architecture que pour présenter un dossier de valeur à un CIO ou un CTO, et vous porterez le fil technique à travers chaque étape d'un engagement s'étalant sur plusieurs trimestres.</p> <p class=\"font-claude-response-body break-words whitespace-normal\">Une grande partie de ce travail se déroule en français, avec des cadres dirigeants et des équipes d'ingénierie françaises, c'est pourquoi un français natif ou courant est essentiel pour ce poste. Vous travaillerez en étroite collaboration avec les responsables de comptes Entreprise et les architectes IA appliquée pour accompagner chaque client depuis la première conversation, à travers l'évaluation technique, la création de valeur et les achats, jusqu'à la décision de développer sur Claude. Une fois leur décision prise, vous préparerez leur partenaire d'intégration système à assurer la mise en œuvre, en définissant ensemble l'architecture cible et les critères de réussite, et vous resterez proche du client en tant que conseiller·ère technique sur Claude pendant tout le déploiement, tandis que le partenaire se chargera de la construction. En travaillant aux côtés des équipes Produit et Ingénierie d'Anthropic, vous mettrez à profit votre connaissance de la plateforme Claude pour conseiller sur l'évaluation, recommander des architectures répondant aux exigences de sécurité et d'échelle des entreprises, et créer les ressources techniques et commerciales qui aident les grandes organisations à réussir avec Claude.</p> <h3 class=\"mt-3 -mb-1 text-[1.125rem] font-bold\">Responsabilités</h3> <ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1\"> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Travailler en partenariat avec les responsables de comptes et les architectes en IA appliquée pour accompagner les clients entreprises en France depuis le premier échange jusqu'à la décision d'adopter Claude, en passant par l'évaluation technique, la validation de la valeur et le processus d'achat</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Piloter le volet technique de chaque opportunité jusqu'à cette décision, et rester le·la conseiller·ère technique du client sur Claude pendant son déploiement</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Préparer les clients et leurs partenaires d'intégration de systèmes à assurer la livraison : convenir de l'architecture cible, définir les critères de réussite, et rester disponible pour conseiller l'équipe de livraison au fur et à mesure de l'avancement de la construction</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Guider les clients grandes entreprises vers l'avant-garde de l'IA, en les conseillant sur la manière de déployer Claude dans leurs opérations, leurs produits et leurs méthodes de travail</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Aider les équipes d'ingénierie des clients à voir comment elles pourraient développer sur Claude, en couvrant l'architecture, la conception d'agents et l'évaluation, afin qu'elles puissent prendre une décision en toute confiance</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Élaborer et présenter le dossier de valeur commerciale de Claude auprès des dirigeants et des cadres supérieurs, en français et en anglais, en associant les capacités techniques à des résultats mesurables tels que les coûts, les revenus, les risques et le délai de mise sur le marché</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Guider les clients à travers de longs cycles d'approvisionnement et d'adoption impliquant de multiples parties prenantes, notamment les évaluations techniques, les preuves de concept, les revues de sécurité et d'architecture, jusqu'à la définition d'une feuille de route claire vers la mise en production</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Travailler avec les responsables de comptes sur la stratégie de compte, la qualification des opportunités commerciales et les plans d'engagement des dirigeants, et avec les architectes en IA appliquée pour assurer la continuité et le partage du contexte à travers chaque engagement</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Organiser des briefings exécutifs, des ateliers techniques et des sessions de formation destinés à la fois aux dirigeants et aux équipes d'ingénierie</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Naviguer au sein des exigences de l'entreprise en matière de sécurité, de conformité, de résidence des données et de gouvernance, en collaborant avec les équipes internes d'Anthropic si nécessaire</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Identifier les modèles à travers les engagements auprès des entreprises et transmettre les informations aux équipes Produit, Ingénierie et à l'équipe IA appliquée élargie</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Se rendre sur les sites des clients en France pour des réunions de direction, des ateliers et l'établissement de relations</li> </ul> <h3 class=\"mt-3 -mb-1 text-[1.125rem] font-bold\">Vous conviendrez particulièrement si vous avez</h3> <ul class=\"[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1\"> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Le français comme langue maternelle ou courant, écrit et parlé, car vous travaillerez au quotidien avec des clients entreprises français, aussi bien au niveau des dirigeants qu'au niveau ingénierie</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Plus de 6 ans d'expérience en tant qu'ingénieur·e logiciel, architecte de solutions, ingénieur·e en déploiement avancé ou fondateur·rice technique</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience dans un poste d'avant-vente ou de conseil technique auprès de grandes entreprises, idéalement sur le marché français, y compris la définition du périmètre et la conception de solutions complexes</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience dans la vente basée sur la valeur, ce qui signifie que vous êtes en mesure d'élaborer un dossier commercial, de quantifier l'impact et de le présenter à des décideurs de haut niveau</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">L'aisance à présenter et à établir des relations avec des parties prenantes de niveau C et VP</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience dans la prise en charge de la réussite technique des transactions avec les entreprises : évaluations, preuves de concept et audits techniques préalables avec les équipes d'ingénierie, de sécurité, juridique et des achats</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience en production avec des applications propulsées par des LLM, incluant le prompting, l'ingénierie du contexte, les architectures d'agents, les cadres d'évaluation et le déploiement à grande échelle</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une expérience pratique en ingénierie, incluant la conception et le déploiement d'applications en production, afin de pouvoir échanger avec les responsables techniques et leurs équipes</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Une familiarité avec les exigences en matière de sécurité, de conformité et d'architecture d'entreprise, et une expérience dans la résolution de ces problématiques avec les équipes clientes</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">La capacité à expliquer clairement des concepts complexes d'IA à des publics techniques et dirigeants, et à naviguer entre des secteurs tels que les services financiers, les soins de santé, le commerce de détail et l'industrie manufacturière</li> <li class=\"font-claude-response-body whitespace-normal break-words pl-2\">Un intérêt marqué pour la mise en place de technologies puissantes sûres et bénéfiques</li> </ul> <h2><strong>About the role</strong></h2> <p>As an Applied AI Engineer on our Enterprise team, your role is to guide some of France's largest businesses to the frontier of AI and help them deploy Claude into their operations, their products, and their ways of working. You will become the go-to Claude Platform specialist and trusted technical advisor for your customers, advising their engineering teams on architecture, agent design, and evaluation, and working with the C-level and senior executives who sponsor these programmes to show the business value Claude can create and help them reach a confident decision to build on Claude.</p> <p>Enterprise deals are different. Procurement cycles are longer, more stakeholders are involved, and success depends on being able to connect the technical work to the outcomes the boardroom cares about. You will be as comfortable advising an engineering team on evaluation and architecture as you are presenting a value case to a CIO or CTO, and you will carry the technical thread across every stage of a multi-quarter engagement. Much of this work happens in French, with French executives and engineering teams, so native or fluent French is essential for the role.</p> <p>You will partner closely with Enterprise Account Executives and Applied AI Architects to take each customer from first conversation, through technical evaluation, proof of value and procurement, to the decision to build on Claude. Once they have decided, you set their systems integration partner up to deliver, agreeing the target architecture and what good looks like, and you stay close as the customer's technical advisor on Claude throughout deployment, while the partner does the build. Working alongside Anthropic's Product and Engineering teams, you will use your knowledge of the Claude Platform to advise on evaluation, recommend architectures that meet enterprise security and scale requirements, and create the technical and business resources that help large organisations succeed with Claude.</p> <h2><strong>Responsibilities</strong></h2> <ul> <li>Partner with Enterprise Account Executives and Applied AI Architects to take enterprise customers in France from first conversation, through technical evaluation, proof of value and procurement, to the decision to build on Claude</li> <li>Lead the technical side of each opportunity through to that decision, and remain the customer's technical advisor on Claude as they deploy</li> <li>Set customers and their systems integration partners up to deliver: agree the target architecture, define what good looks like, and stay on hand to advise the delivery team as the build progresses</li> <li>Guide enterprise customers to the frontier of AI, advising them on how to deploy Claude into their operations, their products, and their ways of working</li> <li>Help customer engineering teams see how they would build on Claude, covering architecture, agent design and evaluation, so they can make a confident decision</li> <li>Build and present the business value case for Claude with C-level and senior executives, in French and English, linking technical capabilities to measurable outcomes such as cost, revenue, risk, and time to market</li> <li>Guide customers through long, multi-stakeholder procurement and adoption cycles, including technical evaluations, proofs of concept, security and architecture reviews, and a clear path to production</li> <li>Work with Account Executives on account strategy, deal qualification, and executive engagement plans, and with Applied AI Architects to keep context and continuity across every engagement</li> <li>Run executive briefings, technical workshops, and enablement sessions for both leadership and engineering audiences</li> <li>Navigate enterprise requirements around security, compliance, data residency, and governance, working with Anthropic's internal teams where needed</li> <li>Identify patterns across enterprise engagements and feed insights back to Product, Engineering, and the wider Applied AI team</li> <li>Travel to customer sites across France for executive meetings, workshops, and relationship building</li> </ul> <h2><strong>You may be a good fit if you have</strong></h2> <ul> <li>Native or fluent French, written and spoken, as you will work day to day with French enterprise customers at both executive and engineering level</li> <li>6+ years of experience as a Software Engineer, Solutions Architect, Forward Deployed Engineer, or technical founder</li> <li>Experience in a pre-sales or technical advisory role selling into large enterprises, ideally in the French market, including scoping and designing complex solutions</li> <li>Experience with value-based selling, meaning you can build a business case, quantify impact, and present it to senior decision makers</li> <li>Comfort presenting to, and building relationships with, C-level and VP-level stakeholders</li> <li>Experience owning the technical win in enterprise deals: evaluations, proofs of concept and technical due diligence with engineering, security, legal and procurement teams</li> <li>Production experience with LLM-powered applications, including prompting, context engineering, agent architectures, evaluation frameworks, and deployment at scale</li> <li>A hands-on engineering background, including building and deploying production applications, so you can relate to engineering leaders and their teams</li> <li>Familiarity with enterprise security, compliance, and architecture requirements, and experience working through them with customer teams</li> <li>The ability to explain complex AI concepts clearly to both technical and executive audiences, and to move between industries such as financial services, healthcare, retail, and manufacturing</li> <li>A passion for making powerful technology safe and beneficial</li> </ul><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>The annual compensation range for this role is listed below.&nbsp;</p> <p>For sales roles, the range provided is the role’s On Target Earnings (\"OTE\") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=\"title\">Annual Salary:</div><div class=\"pay-range\"><span>€220.000</span><span class=\"divider\">&mdash;</span><span>€235.000 EUR</span></div></div></div><div class=\"content-conclusion\"><h2><strong>Logistics</strong></h2> <p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p> <p><strong>Required field of study:&nbsp;</strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p> <p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p> <p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p> <p><strong data-stringify-type=\"bold\">Visa sponsorship:</strong>&nbsp;We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p> <p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.&nbsp; Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=\"bold\">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from&nbsp;@anthropic.com&nbsp;email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit&nbsp;<u data-stringify-type=\"underline\"><a class=\"c-link c-link--underline\" href=\"http://anthropic.com/careers\" target=\"_blank\" data-stringify-link=\"http://anthropic.com/careers\" data-sk=\"tooltip_parent\" data-remove-tab-index=\"true\">anthropic.com/careers</a></u>&nbsp;directly for confirmed position openings.</p> <h2><strong>How we're different</strong></h2> <p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p> <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI &amp; Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p> <h2><strong>Come work with us!</strong></h2> <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=\"bold\">Guidance on Candidates' AI Usage:</strong>&nbsp;Learn about&nbsp;<a class=\"c-link\" href=\"https://www.anthropic.com/candidate-ai-guidance\" target=\"_blank\" data-stringify-link=\"https://www.anthropic.com/candidate-ai-guidance\" data-sk=\"tooltip_parent\">our policy</a> for using AI in our application process.</p></div>",
-      "responsibilities": [],
-      "requirements": [],
-      "preferredQualifications": [],
-      "skills": [
-        "llm",
-        "responsible-ai"
-      ],
-      "constraints": [],
-      "publishedAt": "2026-08-20T09:01:59-04:00",
-      "updatedAt": "2026-09-14T17:13:27-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
-      "status": "active",
-      "contentFingerprint": "2f80bf8f2ec7066480a61b6b75cb05d5a9797a47f988a4ca832019cd0acde530",
-      "intelligence": {
-        "jobId": "greenhouse:5390754008",
-        "matchScore": 37,
-        "analysisMode": "e5",
-        "componentScores": {
-          "skill": 38,
-          "evidence": 38,
-          "semantic": 13,
-          "adjacency": 66,
-          "constraints": 50
-        },
-        "matchedEvidence": [
-          {
-            "evidenceId": "ev-ai-boundary",
-            "requirement": "岗位技能要求：responsible ai",
-            "score": 76
-          }
-        ],
-        "strengths": [
-          "岗位技能要求：responsible ai ↔ AI 分类与人工复核"
-        ],
-        "gaps": [
-          "待补证据：llm"
-        ],
-        "hardBlockers": [],
-        "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3297,17 +3235,17 @@
       "constraints": [],
       "publishedAt": "2026-09-23T05:01:26-04:00",
       "updatedAt": "2026-09-23T05:01:26-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "90a8e55828ed57222c1abe9e9fa5c254fd004fc871d72d13f2d5173a9aa0286b",
       "intelligence": {
         "jobId": "greenhouse:5432575008",
-        "matchScore": 37,
+        "matchScore": 36,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 25,
           "evidence": 25,
-          "semantic": 50,
+          "semantic": 49,
           "adjacency": 66,
           "constraints": 50
         },
@@ -3327,7 +3265,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3363,17 +3301,17 @@
       "constraints": [],
       "publishedAt": "2026-10-05T14:08:14-04:00",
       "updatedAt": "2026-10-09T19:29:46-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "b1e5cd2ef2a5cb6a429cb940965f36558751733a90a6a93324cd611939854187",
       "intelligence": {
         "jobId": "greenhouse:5442934008",
-        "matchScore": 37,
+        "matchScore": 36,
         "analysisMode": "e5",
         "componentScores": {
           "skill": 32,
           "evidence": 33,
-          "semantic": 28,
+          "semantic": 26,
           "adjacency": 66,
           "constraints": 50
         },
@@ -3400,7 +3338,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3436,7 +3374,7 @@
       "constraints": [],
       "publishedAt": "2026-10-06T20:00:19-04:00",
       "updatedAt": "2026-10-06T20:01:31-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "bf30e90341b199853401caa32e4efd2b3ea0c7d9fb3a523fc1e2e9dc5591b787",
       "intelligence": {
@@ -3473,7 +3411,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3509,7 +3447,7 @@
       "constraints": [],
       "publishedAt": "2026-06-29T10:33:21-04:00",
       "updatedAt": "2026-08-21T12:50:22-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "0cba0d3512eb5a66e156c3be4001139feb295e94266ba842ddaaef52b5e50c44",
       "intelligence": {
@@ -3519,7 +3457,7 @@
         "componentScores": {
           "skill": 32,
           "evidence": 34,
-          "semantic": 7,
+          "semantic": 8,
           "adjacency": 66,
           "constraints": 50
         },
@@ -3546,7 +3484,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3582,7 +3520,7 @@
       "constraints": [],
       "publishedAt": "2026-02-02T09:58:04-05:00",
       "updatedAt": "2026-08-28T14:43:57-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "ea451f9e63834b8f30e5a68420b9718caca67efc12a9b493c05cf1b963a09b23",
       "intelligence": {
@@ -3619,7 +3557,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3655,7 +3593,7 @@
       "constraints": [],
       "publishedAt": "2026-06-08T16:10:07-04:00",
       "updatedAt": "2026-09-03T09:29:10-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "8467bb1b51d5ef7d9700b83469dc601cc2c263fb0a5da949b565dd05a8f2a658",
       "intelligence": {
@@ -3692,7 +3630,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3729,7 +3667,7 @@
       "constraints": [],
       "publishedAt": "2026-09-28T14:53:28-04:00",
       "updatedAt": "2026-09-28T14:53:28-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "235696dd495f464539229cc6aad6bac2f9e01e5e5805ef8ece59c7c314e18bb6",
       "intelligence": {
@@ -3767,7 +3705,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3802,7 +3740,7 @@
       "constraints": [],
       "publishedAt": "2026-01-08T15:47:40-05:00",
       "updatedAt": "2026-10-20T19:56:30-04:00",
-      "fetchedAt": "2026-10-21T04:43:58.857Z",
+      "fetchedAt": "2026-10-21T13:46:50.394Z",
       "status": "active",
       "contentFingerprint": "97928783aec4f4fc114f93fefd24d23926e5abc804d37cbe53628f176d245f2f",
       "intelligence": {
@@ -3833,7 +3771,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     },
@@ -3871,7 +3809,7 @@
       "constraints": [],
       "publishedAt": "2024-05-03T11:15:08.538Z",
       "updatedAt": null,
-      "fetchedAt": "2026-10-21T04:43:58.864Z",
+      "fetchedAt": "2026-10-21T13:46:50.559Z",
       "status": "active",
       "contentFingerprint": "030b3229b9ed6ca97b36c6d6ee26a014cc572acd33ea79e2bfd739b57354022f",
       "intelligence": {
@@ -3904,7 +3842,7 @@
         ],
         "hardBlockers": [],
         "explanation": "总分由五个可复算分量组成；语义分使用E5 岗位池百分位，不是录用或面试概率。",
-        "analyzedAt": "2026-10-21T04:43:58.425Z",
+        "analyzedAt": "2026-10-21T13:46:49.867Z",
         "modelRevision": "intfloat/multilingual-e5-small@fd1525a9"
       }
     }
