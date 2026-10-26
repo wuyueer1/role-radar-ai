@@ -23939,7 +23939,6 @@
       "greenhouse:5387564008",
       "greenhouse:5390754008",
       "greenhouse:5390795008",
-      "greenhouse:5390799008",
       "greenhouse:5390811008",
       "greenhouse:5390966008",
       "greenhouse:5411560008",
@@ -23955,8 +23954,7 @@
       "greenhouse:5445760008",
       "greenhouse:5454650008",
       "greenhouse:5454673008",
-      "greenhouse:5461863008",
-      "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
+      "greenhouse:5461863008"
     ],
     "skillJobIds": {
       "api-integration": [
@@ -24011,7 +24009,6 @@
         "greenhouse:5385998008",
         "greenhouse:5390754008",
         "greenhouse:5390795008",
-        "greenhouse:5390799008",
         "greenhouse:5390811008",
         "greenhouse:5390966008",
         "greenhouse:5411560008",
@@ -24024,8 +24021,7 @@
         "greenhouse:5445410008",
         "greenhouse:5445760008",
         "greenhouse:5454650008",
-        "greenhouse:5454673008",
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
+        "greenhouse:5454673008"
       ],
       "machine-learning": [
         "greenhouse:4610158008",
@@ -24050,8 +24046,7 @@
         "greenhouse:5411560008",
         "greenhouse:5419869008",
         "greenhouse:5445410008",
-        "greenhouse:5461863008",
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
+        "greenhouse:5461863008"
       ],
       "nlp-embeddings": [
         "greenhouse:4610158008",
@@ -24060,8 +24055,7 @@
       "prompt-engineering": [
         "greenhouse:5057647008",
         "greenhouse:5442934008",
-        "greenhouse:5445410008",
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
+        "greenhouse:5445410008"
       ],
       "python": [
         "greenhouse:4610158008",
@@ -24092,7 +24086,6 @@
         "greenhouse:5362838008",
         "greenhouse:5385998008",
         "greenhouse:5387564008",
-        "greenhouse:5390799008",
         "greenhouse:5390966008",
         "greenhouse:5419869008",
         "greenhouse:5432575008",
@@ -24101,11 +24094,7 @@
         "greenhouse:5438044008",
         "greenhouse:5442934008",
         "greenhouse:5445410008",
-        "greenhouse:5461863008",
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
-      ],
-      "rag": [
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
+        "greenhouse:5461863008"
       ],
       "responsible-ai": [
         "greenhouse:4017544008",
@@ -24144,7 +24133,6 @@
         "greenhouse:5387564008",
         "greenhouse:5390754008",
         "greenhouse:5390795008",
-        "greenhouse:5390799008",
         "greenhouse:5390811008",
         "greenhouse:5390966008",
         "greenhouse:5411560008",
@@ -24182,9 +24170,6 @@
         "greenhouse:5436697008",
         "greenhouse:5442934008",
         "greenhouse:5461863008"
-      ],
-      "vector-databases": [
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
       ]
     },
     "roleFamilyJobIds": {
@@ -24209,7 +24194,6 @@
         "greenhouse:5385998008",
         "greenhouse:5390754008",
         "greenhouse:5390795008",
-        "greenhouse:5390799008",
         "greenhouse:5390811008",
         "greenhouse:5390966008",
         "greenhouse:5411560008",
@@ -24243,8 +24227,7 @@
         "greenhouse:5362838008",
         "greenhouse:5387564008",
         "greenhouse:5438044008",
-        "greenhouse:5461863008",
-        "lever:e21ea35c-3cb2-479e-9d74-c8149441d9fb"
+        "greenhouse:5461863008"
       ]
     }
   }
