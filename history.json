@@ -23392,7 +23392,8 @@
       "greenhouse:5461863008",
       "greenhouse:5464493008",
       "greenhouse:5467092008",
-      "greenhouse:5467099008"
+      "greenhouse:5467099008",
+      "greenhouse:5467893008"
     ],
     "skillJobIds": {
       "api-integration": [
@@ -23405,7 +23406,8 @@
         "greenhouse:5182605008",
         "greenhouse:5196852008",
         "greenhouse:5232055008",
-        "greenhouse:5464493008"
+        "greenhouse:5464493008",
+        "greenhouse:5467893008"
       ],
       "cloud": [
         "greenhouse:4641822008",
@@ -23487,6 +23489,9 @@
         "greenhouse:5445410008",
         "greenhouse:5461863008"
       ],
+      "mlops": [
+        "greenhouse:5467893008"
+      ],
       "nlp-embeddings": [
         "greenhouse:4610158008",
         "greenhouse:4631822008"
@@ -23535,7 +23540,8 @@
         "greenhouse:5461863008",
         "greenhouse:5464493008",
         "greenhouse:5467092008",
-        "greenhouse:5467099008"
+        "greenhouse:5467099008",
+        "greenhouse:5467893008"
       ],
       "responsible-ai": [
         "greenhouse:4017544008",
@@ -23591,7 +23597,8 @@
         "greenhouse:5461863008",
         "greenhouse:5464493008",
         "greenhouse:5467092008",
-        "greenhouse:5467099008"
+        "greenhouse:5467099008",
+        "greenhouse:5467893008"
       ],
       "sql": [
         "greenhouse:5116820008",
@@ -23603,7 +23610,8 @@
         "greenhouse:5232055008",
         "greenhouse:5362838008",
         "greenhouse:5390966008",
-        "greenhouse:5464493008"
+        "greenhouse:5464493008",
+        "greenhouse:5467893008"
       ],
       "stakeholder-management": [
         "greenhouse:5066977008",
@@ -23677,7 +23685,8 @@
         "greenhouse:5461863008",
         "greenhouse:5464493008",
         "greenhouse:5467092008",
-        "greenhouse:5467099008"
+        "greenhouse:5467099008",
+        "greenhouse:5467893008"
       ]
     }
   }
