@@ -21826,7 +21826,8 @@
       "greenhouse:5467893008",
       "greenhouse:5468937008",
       "greenhouse:5468939008",
-      "greenhouse:5477416008"
+      "greenhouse:5477416008",
+      "greenhouse:5483945008"
     ],
     "skillJobIds": {
       "api-integration": [
@@ -21889,7 +21890,8 @@
         "greenhouse:5454650008",
         "greenhouse:5454673008",
         "greenhouse:5467893008",
-        "greenhouse:5477416008"
+        "greenhouse:5477416008",
+        "greenhouse:5483945008"
       ],
       "machine-learning": [
         "greenhouse:4610158008",
@@ -21957,7 +21959,8 @@
         "greenhouse:5467099008",
         "greenhouse:5467893008",
         "greenhouse:5468937008",
-        "greenhouse:5468939008"
+        "greenhouse:5468939008",
+        "greenhouse:5483945008"
       ],
       "responsible-ai": [
         "greenhouse:4017544008",
@@ -22011,7 +22014,8 @@
         "greenhouse:5467893008",
         "greenhouse:5468937008",
         "greenhouse:5468939008",
-        "greenhouse:5477416008"
+        "greenhouse:5477416008",
+        "greenhouse:5483945008"
       ],
       "sql": [
         "greenhouse:5116820008",
@@ -22072,7 +22076,8 @@
         "greenhouse:5445760008",
         "greenhouse:5454650008",
         "greenhouse:5454673008",
-        "greenhouse:5477416008"
+        "greenhouse:5477416008",
+        "greenhouse:5483945008"
       ],
       "data-science": [
         "greenhouse:4017544008",
